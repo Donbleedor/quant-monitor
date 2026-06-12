@@ -1,0 +1,27 @@
+
+jiesuan_caidai.png
+size: 421,271
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+caidai
+  rotate: false
+  xy: 2, 180
+  size: 417, 89
+  orig: 417, 89
+  offset: 0, 0
+  index: -1
+caidai2
+  rotate: false
+  xy: 2, 91
+  size: 415, 87
+  orig: 415, 87
+  offset: 0, 0
+  index: -1
+caidai3
+  rotate: false
+  xy: 2, 2
+  size: 415, 87
+  orig: 415, 87
+  offset: 0, 0
+  index: -1

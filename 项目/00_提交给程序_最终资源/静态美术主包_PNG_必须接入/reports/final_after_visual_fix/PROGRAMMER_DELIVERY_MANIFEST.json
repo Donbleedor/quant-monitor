@@ -1,0 +1,54 @@
+﻿{
+  "date": "2026-06-11",
+  "status": "READY_FOR_PROGRAMMER_INTEGRATION",
+  "delivery_root": "E:\\参考图\\麻将\\项目\\00_提交给程序_最终资源\\静态美术主包_PNG_必须接入",
+  "runtime": {
+    "design_canvas": [1080, 2400],
+    "aspect_ratio": "9:20",
+    "reference_device": "720x1600 portrait"
+  },
+  "asset_groups": [
+    {
+      "id": "gameplay_first_screen_p0",
+      "path": "assets/gameplay/first_screen_p0",
+      "png_count": 55,
+      "status": "accepted_after_visual_fix"
+    },
+    {
+      "id": "menu_p0",
+      "path": "assets/menu/p0",
+      "png_count": 3,
+      "status": "accepted"
+    },
+    {
+      "id": "menu_p1",
+      "path": "assets/menu/p1",
+      "png_count": 9,
+      "status": "accepted"
+    },
+    {
+      "id": "modal_p0",
+      "path": "assets/modal/p0",
+      "png_count": 17,
+      "status": "accepted"
+    }
+  ],
+  "integration_notes": [
+    "Do not auto-crop transparent PNG bounds.",
+    "Render tile symbols as full 96x96 slots centered on tile_base_ivory.png.",
+    "Render state_tile_selected_glow.png as 180x213 centered over the selected tile.",
+    "Render state_tile_shadow.png as 168x201 under the tile.",
+    "Use a fixed 9:20 runtime shell."
+  ],
+  "do_not_use": [
+    "ART_DELIVERY_TO_PROGRAMMER_20260611",
+    "asset_work/processed/first_screen_p0",
+    "asset_work/processed/first_screen_p0_v2",
+    "asset_work/processed/first_screen_p0_completion",
+    "asset_work/processed/first_screen_p0_final",
+    "asset_work/processed/first_screen_p0_image_completion",
+    "raw_generated",
+    "rejected"
+  ]
+}
+

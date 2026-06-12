@@ -1,0 +1,561 @@
+{
+  "date": "2026-06-10",
+  "scope": "first_screen_p0_small_batch_postprocess_v2",
+  "source_dir": "asset_work\\raw_generated\\first_screen_p0",
+  "processed_dir": "asset_work\\processed\\first_screen_p0_v2",
+  "review_sheet": "asset_work\\review\\first_screen_p0_v2\\review_contact_sheet.png",
+  "assets_processed": [
+    {
+      "file": "bg_game_1080x2400.png",
+      "source": "asset_work\\raw_generated\\first_screen_p0\\bg_game_1080x2400.png",
+      "target_size": [
+        1080,
+        2400
+      ],
+      "actual_size": [
+        1080,
+        2400
+      ],
+      "transparent": false,
+      "alpha_present": false,
+      "key_mode": "none",
+      "bbox": [
+        0,
+        0,
+        1080,
+        2400
+      ],
+      "visible_bbox_size": [
+        1080,
+        2400
+      ],
+      "visible_bbox_occupancy": [
+        1.0,
+        1.0
+      ],
+      "normalization": "cover_fit",
+      "status": "passed",
+      "warnings": [],
+      "group": "background",
+      "priority": "P0"
+    },
+    {
+      "file": "board_stage_bg.png",
+      "source": "asset_work\\raw_generated\\first_screen_p0\\board_stage_bg.png",
+      "target_size": [
+        1080,
+        1840
+      ],
+      "actual_size": [
+        1080,
+        1840
+      ],
+      "transparent": false,
+      "alpha_present": false,
+      "key_mode": "none",
+      "bbox": [
+        0,
+        0,
+        1080,
+        1840
+      ],
+      "visible_bbox_size": [
+        1080,
+        1840
+      ],
+      "visible_bbox_occupancy": [
+        1.0,
+        1.0
+      ],
+      "normalization": "cover_fit",
+      "status": "passed",
+      "warnings": [],
+      "group": "background",
+      "priority": "P0"
+    },
+    {
+      "file": "hud_top_frame.png",
+      "source": "asset_work\\raw_generated\\first_screen_p0\\hud_top_frame.png",
+      "target_size": [
+        1080,
+        188
+      ],
+      "actual_size": [
+        1080,
+        188
+      ],
+      "transparent": true,
+      "alpha_present": true,
+      "key_mode": "legacy_alpha_bbox_normalization",
+      "bbox": [
+        173,
+        2,
+        907,
+        186
+      ],
+      "visible_bbox_size": [
+        734,
+        184
+      ],
+      "visible_bbox_occupancy": [
+        0.6796,
+        0.9787
+      ],
+      "normalization": "alpha_bbox_crop_then_contain_fit_v2",
+      "status": "passed",
+      "warnings": [],
+      "group": "top_hud",
+      "priority": "P0"
+    },
+    {
+      "file": "icon_hint.png",
+      "source": "asset_work\\raw_generated\\first_screen_p0\\icon_hint.png",
+      "target_size": [
+        88,
+        88
+      ],
+      "actual_size": [
+        88,
+        88
+      ],
+      "transparent": true,
+      "alpha_present": true,
+      "key_mode": "legacy_alpha_bbox_normalization",
+      "bbox": [
+        11,
+        4,
+        77,
+        83
+      ],
+      "visible_bbox_size": [
+        66,
+        79
+      ],
+      "visible_bbox_occupancy": [
+        0.75,
+        0.8977
+      ],
+      "normalization": "alpha_bbox_crop_then_contain_fit_v2",
+      "status": "passed",
+      "warnings": [],
+      "group": "bottom_tray",
+      "priority": "P0"
+    },
+    {
+      "file": "icon_home.png",
+      "source": "asset_work\\raw_generated\\first_screen_p0\\icon_home.png",
+      "target_size": [
+        88,
+        88
+      ],
+      "actual_size": [
+        88,
+        88
+      ],
+      "transparent": true,
+      "alpha_present": true,
+      "key_mode": "legacy_alpha_bbox_normalization",
+      "bbox": [
+        4,
+        5,
+        83,
+        82
+      ],
+      "visible_bbox_size": [
+        79,
+        77
+      ],
+      "visible_bbox_occupancy": [
+        0.8977,
+        0.875
+      ],
+      "normalization": "alpha_bbox_crop_then_contain_fit_v2",
+      "status": "passed",
+      "warnings": [],
+      "group": "top_hud",
+      "priority": "P0"
+    },
+    {
+      "file": "icon_pause.png",
+      "source": "asset_work\\raw_generated\\first_screen_p0\\icon_pause.png",
+      "target_size": [
+        72,
+        72
+      ],
+      "actual_size": [
+        72,
+        72
+      ],
+      "transparent": true,
+      "alpha_present": true,
+      "key_mode": "legacy_alpha_bbox_normalization",
+      "bbox": [
+        9,
+        3,
+        63,
+        68
+      ],
+      "visible_bbox_size": [
+        54,
+        65
+      ],
+      "visible_bbox_occupancy": [
+        0.75,
+        0.9028
+      ],
+      "normalization": "alpha_bbox_crop_then_contain_fit_v2",
+      "status": "passed",
+      "warnings": [],
+      "group": "top_hud",
+      "priority": "P0"
+    },
+    {
+      "file": "icon_shuffle.png",
+      "source": "asset_work\\raw_generated\\first_screen_p0\\icon_shuffle.png",
+      "target_size": [
+        88,
+        88
+      ],
+      "actual_size": [
+        88,
+        88
+      ],
+      "transparent": true,
+      "alpha_present": true,
+      "key_mode": "legacy_alpha_bbox_normalization",
+      "bbox": [
+        5,
+        4,
+        83,
+        83
+      ],
+      "visible_bbox_size": [
+        78,
+        79
+      ],
+      "visible_bbox_occupancy": [
+        0.8864,
+        0.8977
+      ],
+      "normalization": "alpha_bbox_crop_then_contain_fit_v2",
+      "status": "passed",
+      "warnings": [],
+      "group": "bottom_tray",
+      "priority": "P0"
+    },
+    {
+      "file": "icon_undo.png",
+      "source": "asset_work\\raw_generated\\first_screen_p0\\icon_undo.png",
+      "target_size": [
+        88,
+        88
+      ],
+      "actual_size": [
+        88,
+        88
+      ],
+      "transparent": true,
+      "alpha_present": true,
+      "key_mode": "legacy_alpha_bbox_normalization",
+      "bbox": [
+        11,
+        4,
+        77,
+        83
+      ],
+      "visible_bbox_size": [
+        66,
+        79
+      ],
+      "visible_bbox_occupancy": [
+        0.75,
+        0.8977
+      ],
+      "normalization": "alpha_bbox_crop_then_contain_fit_v2",
+      "status": "passed",
+      "warnings": [],
+      "group": "bottom_tray",
+      "priority": "P0"
+    },
+    {
+      "file": "tile_base_ivory.png",
+      "source": "asset_work\\raw_generated\\first_screen_p0\\tile_base_ivory.png",
+      "target_size": [
+        168,
+        201
+      ],
+      "actual_size": [
+        168,
+        201
+      ],
+      "transparent": true,
+      "alpha_present": true,
+      "key_mode": "legacy_alpha_bbox_normalization",
+      "bbox": [
+        9,
+        4,
+        158,
+        197
+      ],
+      "visible_bbox_size": [
+        149,
+        193
+      ],
+      "visible_bbox_occupancy": [
+        0.8869,
+        0.9602
+      ],
+      "normalization": "alpha_bbox_crop_then_contain_fit_v2",
+      "status": "passed",
+      "warnings": [],
+      "group": "board_tiles",
+      "priority": "P0"
+    },
+    {
+      "file": "tile_totem_01_sun_seed.png",
+      "source": "asset_work\\raw_generated\\first_screen_p0\\tile_totem_01_sun_seed.png",
+      "target_size": [
+        96,
+        96
+      ],
+      "actual_size": [
+        96,
+        96
+      ],
+      "transparent": true,
+      "alpha_present": true,
+      "key_mode": "legacy_alpha_bbox_normalization",
+      "bbox": [
+        4,
+        2,
+        92,
+        94
+      ],
+      "visible_bbox_size": [
+        88,
+        92
+      ],
+      "visible_bbox_occupancy": [
+        0.9167,
+        0.9583
+      ],
+      "normalization": "alpha_bbox_crop_then_contain_fit_v2",
+      "status": "passed",
+      "warnings": [],
+      "group": "tile_symbols",
+      "priority": "P0",
+      "tile_preview": "asset_work\\review\\first_screen_p0_v2\\preview_tile_totem_01_sun_seed_on_tile_base.png"
+    },
+    {
+      "file": "tile_totem_07_water_wave.png",
+      "source": "asset_work\\raw_generated\\first_screen_p0\\tile_totem_07_water_wave.png",
+      "target_size": [
+        96,
+        96
+      ],
+      "actual_size": [
+        96,
+        96
+      ],
+      "transparent": true,
+      "alpha_present": true,
+      "key_mode": "legacy_alpha_bbox_normalization",
+      "bbox": [
+        2,
+        9,
+        94,
+        86
+      ],
+      "visible_bbox_size": [
+        92,
+        77
+      ],
+      "visible_bbox_occupancy": [
+        0.9583,
+        0.8021
+      ],
+      "normalization": "alpha_bbox_crop_then_contain_fit_v2",
+      "status": "passed",
+      "warnings": [],
+      "group": "tile_symbols",
+      "priority": "P0",
+      "tile_preview": "asset_work\\review\\first_screen_p0_v2\\preview_tile_totem_07_water_wave_on_tile_base.png"
+    },
+    {
+      "file": "tile_totem_10_talking_drum.png",
+      "source": "asset_work\\raw_generated\\first_screen_p0\\tile_totem_10_talking_drum.png",
+      "target_size": [
+        96,
+        96
+      ],
+      "actual_size": [
+        96,
+        96
+      ],
+      "transparent": true,
+      "alpha_present": true,
+      "key_mode": "legacy_alpha_bbox_normalization",
+      "bbox": [
+        16,
+        2,
+        80,
+        94
+      ],
+      "visible_bbox_size": [
+        64,
+        92
+      ],
+      "visible_bbox_occupancy": [
+        0.6667,
+        0.9583
+      ],
+      "normalization": "alpha_bbox_crop_then_contain_fit_v2",
+      "status": "passed",
+      "warnings": [],
+      "group": "tile_symbols",
+      "priority": "P0",
+      "tile_preview": "asset_work\\review\\first_screen_p0_v2\\preview_tile_totem_10_talking_drum_on_tile_base.png"
+    },
+    {
+      "file": "tile_totem_12_cowrie_shell.png",
+      "source": "asset_work\\raw_generated\\first_screen_p0\\tile_totem_12_cowrie_shell.png",
+      "target_size": [
+        96,
+        96
+      ],
+      "actual_size": [
+        96,
+        96
+      ],
+      "transparent": true,
+      "alpha_present": true,
+      "key_mode": "legacy_alpha_bbox_normalization",
+      "bbox": [
+        15,
+        2,
+        80,
+        94
+      ],
+      "visible_bbox_size": [
+        65,
+        92
+      ],
+      "visible_bbox_occupancy": [
+        0.6771,
+        0.9583
+      ],
+      "normalization": "alpha_bbox_crop_then_contain_fit_v2",
+      "status": "passed",
+      "warnings": [],
+      "group": "tile_symbols",
+      "priority": "P0",
+      "tile_preview": "asset_work\\review\\first_screen_p0_v2\\preview_tile_totem_12_cowrie_shell_on_tile_base.png"
+    },
+    {
+      "file": "tile_totem_19_diamond_knot.png",
+      "source": "asset_work\\raw_generated\\first_screen_p0\\tile_totem_19_diamond_knot.png",
+      "target_size": [
+        96,
+        96
+      ],
+      "actual_size": [
+        96,
+        96
+      ],
+      "transparent": true,
+      "alpha_present": true,
+      "key_mode": "legacy_alpha_bbox_normalization",
+      "bbox": [
+        2,
+        2,
+        94,
+        94
+      ],
+      "visible_bbox_size": [
+        92,
+        92
+      ],
+      "visible_bbox_occupancy": [
+        0.9583,
+        0.9583
+      ],
+      "normalization": "alpha_bbox_crop_then_contain_fit_v2",
+      "status": "passed",
+      "warnings": [],
+      "group": "tile_symbols",
+      "priority": "P0",
+      "tile_preview": "asset_work\\review\\first_screen_p0_v2\\preview_tile_totem_19_diamond_knot_on_tile_base.png"
+    },
+    {
+      "file": "tile_totem_28_mask_mark.png",
+      "source": "asset_work\\raw_generated\\first_screen_p0\\tile_totem_28_mask_mark.png",
+      "target_size": [
+        96,
+        96
+      ],
+      "actual_size": [
+        96,
+        96
+      ],
+      "transparent": true,
+      "alpha_present": true,
+      "key_mode": "legacy_alpha_bbox_normalization",
+      "bbox": [
+        23,
+        2,
+        72,
+        94
+      ],
+      "visible_bbox_size": [
+        49,
+        92
+      ],
+      "visible_bbox_occupancy": [
+        0.5104,
+        0.9583
+      ],
+      "normalization": "alpha_bbox_crop_then_contain_fit_v2",
+      "status": "passed",
+      "warnings": [
+        "accepted_narrow_symbol"
+      ],
+      "group": "tile_symbols",
+      "priority": "P0",
+      "tile_preview": "asset_work\\review\\first_screen_p0_v2\\preview_tile_totem_28_mask_mark_on_tile_base.png"
+    },
+    {
+      "file": "tool_tray_panel.png",
+      "source": "asset_work\\raw_generated\\first_screen_p0\\tool_tray_panel.png",
+      "target_size": [
+        1080,
+        374
+      ],
+      "actual_size": [
+        1080,
+        374
+      ],
+      "transparent": true,
+      "alpha_present": true,
+      "key_mode": "legacy_alpha_bbox_normalization",
+      "bbox": [
+        12,
+        47,
+        1068,
+        326
+      ],
+      "visible_bbox_size": [
+        1056,
+        279
+      ],
+      "visible_bbox_occupancy": [
+        0.9778,
+        0.746
+      ],
+      "normalization": "alpha_bbox_crop_then_contain_fit_v2",
+      "status": "passed",
+      "warnings": [],
+      "group": "bottom_tray",
+      "priority": "P0"
+    }
+  ]
+}

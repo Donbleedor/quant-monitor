@@ -1,0 +1,191 @@
+{
+  "date": "2026-06-10",
+  "scope": "menu_screen_only",
+  "canvas": {
+    "width": 1080,
+    "height": 2400,
+    "ratio": "9:20",
+    "target_devices": [
+      "Transsion mainstream Android phones",
+      "720x1600 reference"
+    ]
+  },
+  "source": "current menu screenshot and style reference board",
+  "priority_definition": {
+    "P0": "must_have_for_first_menu_concept_or_first_menu_integration",
+    "P1": "follow_up_polish_or_optional_variant"
+  },
+  "asset_groups": [
+    {
+      "group": "shared_style_reuse",
+      "layer_order": 1,
+      "assets": [
+        {
+          "id": "P0-SH-01",
+          "name": "Full screen menu background",
+          "file": "bg_game_1080x2400.png",
+          "size": { "width": 1080, "height": 2400 },
+          "transparent": false,
+          "usage": "Dark emerald woven background reused from the gameplay family.",
+          "attach": "body > #app > .menu-screen",
+          "priority": "P0"
+        },
+        {
+          "id": "P1-SH-02",
+          "name": "Tile base material reference",
+          "file": "tile_base_ivory.png",
+          "size": { "width": 168, "height": 201 },
+          "transparent": true,
+          "usage": "Shared carved stone language for brand emblem or menu motif support.",
+          "attach": "logo / decorative brand element",
+          "priority": "P1"
+        },
+        {
+          "id": "P1-SH-03",
+          "name": "Shared round button shell",
+          "file": "tool_btn_shell.png",
+          "size": { "width": 182, "height": 182 },
+          "transparent": true,
+          "usage": "Reusable green/gold round button treatment.",
+          "attach": "menu secondary controls",
+          "priority": "P1"
+        },
+        {
+          "id": "P1-SH-04",
+          "name": "Shared small badge coin",
+          "file": "badge_count_coin.png",
+          "size": { "width": 44, "height": 44 },
+          "transparent": true,
+          "usage": "Optional count badge or notification dot language.",
+          "attach": "menu secondary controls",
+          "priority": "P1"
+        }
+      ]
+    },
+    {
+      "group": "menu_branding",
+      "layer_order": 2,
+      "assets": [
+        {
+          "id": "P0-MN-01",
+          "name": "Main logo lockup",
+          "file": "logo_tribal_tiles.png",
+          "size": { "width": 760, "height": 420 },
+          "transparent": true,
+          "usage": "Primary menu brand lockup with emblem and title.",
+          "attach": "#app .menu-screen .menu-logo",
+          "priority": "P0"
+        },
+        {
+          "id": "P1-MN-02",
+          "name": "Title only wordmark",
+          "file": "title_tribal_tiles.png",
+          "size": { "width": 620, "height": 160 },
+          "transparent": true,
+          "usage": "Fallback title-only wordmark for smaller menu layouts.",
+          "attach": "brand/title slot",
+          "priority": "P1"
+        }
+      ]
+    },
+    {
+      "group": "menu_primary_action",
+      "layer_order": 3,
+      "assets": [
+        {
+          "id": "P0-MN-03",
+          "name": "Primary play button",
+          "file": "button_play_large.png",
+          "size": { "width": 780, "height": 260 },
+          "transparent": true,
+          "usage": "Primary CTA shell for entering gameplay.",
+          "attach": "#app .menu-screen .btn-play",
+          "priority": "P0"
+        },
+        {
+          "id": "P1-MN-04",
+          "name": "Play glyph",
+          "file": "icon_play.png",
+          "size": { "width": 120, "height": 120 },
+          "transparent": true,
+          "usage": "Optional inner play glyph if the CTA is split into shell and icon layers.",
+          "attach": "center of play button",
+          "priority": "P1"
+        }
+      ]
+    },
+    {
+      "group": "menu_secondary_actions",
+      "layer_order": 4,
+      "assets": [
+        {
+          "id": "P0-MN-05",
+          "name": "Settings icon",
+          "file": "icon_settings.png",
+          "size": { "width": 88, "height": 88 },
+          "transparent": true,
+          "usage": "Top-right settings control.",
+          "attach": "#app .menu-screen .btn-settings",
+          "priority": "P0"
+        },
+        {
+          "id": "P1-MN-06",
+          "name": "Level icon",
+          "file": "icon_levels.png",
+          "size": { "width": 88, "height": 88 },
+          "transparent": true,
+          "usage": "Level select control.",
+          "attach": "#app .menu-screen .btn-levels",
+          "priority": "P1"
+        },
+        {
+          "id": "P1-MN-07",
+          "name": "Daily icon",
+          "file": "icon_daily.png",
+          "size": { "width": 88, "height": 88 },
+          "transparent": true,
+          "usage": "Daily challenge control.",
+          "attach": "#app .menu-screen .btn-daily",
+          "priority": "P1"
+        }
+      ]
+    },
+    {
+      "group": "menu_supporting_texture",
+      "layer_order": 5,
+      "assets": [
+        {
+          "id": "P1-MN-08",
+          "name": "Menu pattern overlay",
+          "file": "menu_pattern_overlay.png",
+          "size": { "width": 1080, "height": 2400 },
+          "transparent": true,
+          "usage": "Optional low-contrast textile overlay to deepen the menu background.",
+          "attach": "above bg_game_1080x2400.png",
+          "priority": "P1"
+        },
+        {
+          "id": "P1-MN-09",
+          "name": "Top vignette",
+          "file": "menu_vignette_top.png",
+          "size": { "width": 1080, "height": 520 },
+          "transparent": true,
+          "usage": "Optional top vignette to lift the logo and settings affordance.",
+          "attach": "top band",
+          "priority": "P1"
+        },
+        {
+          "id": "P1-MN-10",
+          "name": "Bottom vignette",
+          "file": "menu_vignette_bottom.png",
+          "size": { "width": 1080, "height": 620 },
+          "transparent": true,
+          "usage": "Optional bottom vignette to ground the CTA and secondary actions.",
+          "attach": "bottom band",
+          "priority": "P1"
+        }
+      ]
+    }
+  ]
+}
+

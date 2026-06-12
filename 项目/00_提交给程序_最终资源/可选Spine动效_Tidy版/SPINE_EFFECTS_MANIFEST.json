@@ -1,0 +1,157 @@
+﻿{
+  "package": "ART_OPTIONAL_SPINE_EFFECTS_20260611_TIDY_V2",
+  "date": "2026-06-11",
+  "status": "OPTIONAL_FOR_PROGRAMMER_EVALUATION",
+  "replaces": "ART_OPTIONAL_SPINE_EFFECTS_20260611",
+  "required_static_art_package": "E:\\参考图\\麻将\\项目\\00_提交给程序_最终资源\\静态美术主包_PNG_必须接入",
+  "selection_policy": [
+    "Use TidyCocos assets only for this V2 package.",
+    "Prefer warm material fragments, neutral light, and restrained feedback.",
+    "Avoid block/candy/rainbow/football effects that conflict with the African totem tile skin.",
+    "Keep this package optional; do not block P0 PNG integration."
+  ],
+  "effects": [
+    {
+      "id": "gameplay_box_broken_eliminate",
+      "priority": "P0_TRY_FIRST",
+      "path": "assets/p0_try_first/gameplay_box_broken_eliminate",
+      "source": "E:\\TidyCocos\\assets\\bundle\\game\\animations\\spine",
+      "files": {
+        "json": "box_broken.json",
+        "atlas_txt": "box_broken.atlas.txt",
+        "atlas": "box_broken.atlas",
+        "png": "box_broken.png"
+      },
+      "spine_version": "3.8.99",
+      "png_size": "462x520",
+      "animations": ["box_broken"],
+      "recommended_use": "Primary tile elimination candidate. Play once at matched tile centers or between the two matched tiles.",
+      "loop": false,
+      "visual_fit": "Best fit in this package. Warm wood fragments match the totem/wood/gold/ivory direction.",
+      "risk": "Low-medium. Needs scale tuning so fragments do not cover too much of the board."
+    },
+    {
+      "id": "win_fireworke_light",
+      "priority": "P0_TRY_FIRST",
+      "path": "assets/p0_try_first/win_fireworke_light",
+      "source": "E:\\TidyCocos\\assets\\bundle\\game\\animations\\spine",
+      "files": {
+        "json": "fireworke.json",
+        "atlas_txt": "fireworke.atlas.txt",
+        "atlas": "fireworke.atlas",
+        "png": "fireworke.png"
+      },
+      "spine_version": "3.8.99",
+      "png_size": "186x115",
+      "animations": ["fireworks_appear", "fireworks_idle"],
+      "recommended_use": "Victory modal or final-clear light accent. Use appear once, idle only if it remains subtle.",
+      "loop": true,
+      "visual_fit": "Good. Neutral white light and star shapes have low style conflict.",
+      "risk": "Low."
+    },
+    {
+      "id": "win_card_collect_light_bg",
+      "priority": "P0_TRY_FIRST",
+      "path": "assets/p0_try_first/win_card_collect_light_bg",
+      "source": "E:\\TidyCocos\\assets\\bundle\\game\\animations\\spine",
+      "files": {
+        "json": "EFF_Game_CardCollect_Card_bg.json",
+        "atlas_txt": "EFF_Game_CardCollect_Card_bg.atlas.txt",
+        "atlas": "EFF_Game_CardCollect_Card_bg.atlas",
+        "png": "EFF_Game_CardCollect_Card_bg.png"
+      },
+      "spine_version": "3.8.99",
+      "png_size": "548x260",
+      "animations": ["EFF_partypopper"],
+      "recommended_use": "Subtle background glow/smoke behind the victory panel or final-clear moment.",
+      "loop": false,
+      "visual_fit": "Good. Mostly neutral light and smoke, not theme-specific.",
+      "risk": "Low-medium. Animation name differs from file name; use manifest animation name."
+    },
+    {
+      "id": "win_partypopper",
+      "priority": "P1_OPTIONAL",
+      "path": "assets/p1_optional/win_partypopper",
+      "source": "E:\\TidyCocos\\assets\\bundle\\game\\animations\\spine",
+      "files": {
+        "json": "EFF_partypopper.json",
+        "atlas_txt": "EFF_partypopper.atlas.txt",
+        "atlas": "EFF_partypopper.atlas",
+        "png": "EFF_partypopper.png"
+      },
+      "spine_version": "3.8.99",
+      "png_size": "551x219",
+      "animations": ["EFF_partypopper"],
+      "recommended_use": "Optional victory celebration burst.",
+      "loop": false,
+      "visual_fit": "Medium. Celebration is useful, but colors are brighter and less aligned than P0 assets.",
+      "risk": "Medium."
+    },
+    {
+      "id": "combo_light",
+      "priority": "P1_OPTIONAL",
+      "path": "assets/p1_optional/combo_light",
+      "source": "E:\\TidyCocos\\assets\\bundle\\game\\animations\\spine",
+      "files": {
+        "json": "combo.json",
+        "atlas_txt": "combo.atlas.txt",
+        "atlas": "combo.atlas",
+        "png": "combo.png"
+      },
+      "spine_version": "3.8.99",
+      "png_size": "431x215",
+      "animations": ["combo_1", "combo_2", "combo_3", "combo_4"],
+      "recommended_use": "Optional combo feedback, not normal tile elimination.",
+      "loop": false,
+      "visual_fit": "Medium-low. Purple light and wing/star shapes may need opacity tuning.",
+      "risk": "Medium."
+    },
+    {
+      "id": "guide_hand",
+      "priority": "P1_OPTIONAL",
+      "path": "assets/p1_optional/guide_hand",
+      "source": "E:\\TidyCocos\\assets\\bundle\\game\\animations\\spine",
+      "files": {
+        "json": "Node_hand.json",
+        "atlas_txt": "Node_hand.atlas.txt",
+        "atlas": "Node_hand.atlas",
+        "png": "Node_hand.png"
+      },
+      "spine_version": "3.8.99",
+      "png_size": "306x161",
+      "animations": ["Node_hand_01", "Node_hand_02", "Node_hand_03"],
+      "recommended_use": "Optional tutorial/tap guidance only.",
+      "loop": true,
+      "visual_fit": "Utility asset, not art-direction critical.",
+      "risk": "Low-medium. Only useful if tutorial guidance exists."
+    }
+  ],
+  "reference_only": [
+    {
+      "id": "cocos_eff_eliminate_comman",
+      "path": "reference_only/cocos_particle_prefabs/EFF_eliminate_comman.prefab",
+      "type": "Cocos ParticleSystem2D prefab",
+      "directly_usable_in_mahjong_v2": false,
+      "notes": "Included only as a visual and parameter reference for recreating a light particle effect in H5."
+    }
+  ],
+  "excluded_after_review": [
+    {
+      "id": "Rainbow_fragments",
+      "reason": "Too colorful/rainbow/block-like for the current totem style."
+    },
+    {
+      "id": "ANI_Game_block_disapear",
+      "reason": "Too close to block-game dissolve effect."
+    },
+    {
+      "id": "break",
+      "reason": "White glass/ice fragments do not fit the warm totem tile material as well as box_broken."
+    },
+    {
+      "id": "worldcup_break",
+      "reason": "Contains football and green block style; direct style mismatch."
+    }
+  ]
+}
+

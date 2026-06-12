@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>调试 - 自由牌逻辑验证</title>
+    <style>
+        body { font-family: monospace; background: #1a1a1a; color: #eee; padding: 20px; }
+        pre { background: #222; padding: 12px; border-radius: 8px; overflow-x: auto; margin: 8px 0; font-size: 13px; line-height: 1.4; }
+        h2 { color: #ffd700; margin-top: 20px; }
+        .pass { color: #4caf50; }
+        .fail { color: #f44336; font-weight: bold; }
+        button { padding: 10px 20px; font-size: 16px; margin: 8px 4px; cursor: pointer; border-radius: 8px; border: none; background: #ffd700; color: #1a1a1a; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <h1>🔍 麻将消除 - 自由牌逻辑调试</h1>
+    <button onclick="runAllTests()">运行所有测试</button>
+    <button onclick="testCurrentLevel()">测试当前关卡布局</button>
+    <div id="output"></div>
+
+    <script src="data.js?v=debug"></script>
+    <script src="engine.js?v=debug"></script>
+    <script>
+    const out = document.getElementById('output');
+    function log(html) { out.innerHTML += html + '\n'; }
+    function logPre(text) { out.innerHTML += '<pre>' + text + '</pre>'; }
+
+    function runAllTests() {
+        out.innerHTML = '';
+        log('<h2>测试1: 简单3x1行 - 中间牌应该被阻挡</h2>');
+        testSimpleRow();
+
+        log('<h2>测试2: 2x2方块 - 所有牌都应该自由(每个都有一侧开放)</h2>');
+        testSquare();
+
+        log('<h2>测试3: 5x1行 - 两端自由，中间3个被阻挡</h2>');
+        testLongRow();
+
+        log('<h2>测试4: 两层堆叠 - 底层被遮挡</h2>');
+        testStacked();
+
+        log('<h2>测试5: L形 - 拐角处的牌</h2>');
+        testLShape();
+
+        log('<h2>测试6: 金字塔布局统计</h2>');
+        testPyramidStats();
+    }
+
+    function testSimpleRow() {
+        // 3 tiles in a row: (0,0,0), (1,0,0), (2,0,0)
+        const engine = new MahjongEngine();
+        engine.tiles = [
+            { id: 0, typeId: 0, x: 0, y: 0, z: 0, isFree: false, removed: false },
+            { id: 1, typeId: 1, x: 1, y: 0, z: 0, isFree: false, removed: false },
+            { id: 2, typeId: 2, x: 2, y: 0, z: 0, isFree: false, removed: false },
+        ];
+        engine.updateAllFreeStatus();
+
+        const t0 = engine.tiles[0]; // leftmost - right neighbor at x=1, no left neighbor -> FREE
+        const t1 = engine.tiles[1]; // middle - left at x=0, right at x=2 -> BLOCKED
+        const t2 = engine.tiles[2]; // rightmost - left neighbor at x=1, no right neighbor -> FREE
+
+        let result = '';
+        result += `Tile(0,0): isFree=${t0.isFree} (expect: true) ${t0.isFree ? '<span class="pass">✓ PASS</span>' : '<span class="fail">✗ FAIL</span>'}\n`;
+        result += `Tile(1,0): isFree=${t1.isFree} (expect: false) ${!t1.isFree ? '<span class="pass">✓ PASS</span>' : '<span class="fail">✗ FAIL - 中间牌不应该自由!</span>'}\n`;
+        result += `Tile(2,0): isFree=${t2.isFree} (expect: true) ${t2.isFree ? '<span class="pass">✓ PASS</span>' : '<span class="fail">✗ FAIL</span>'}\n`;
+        logPre(result);
+    }
+
+    function testSquare() {
+        // 2x2 block: each tile has at most 1 neighbor on each side
+        const engine = new MahjongEngine();
+        engine.tiles = [
+            { id: 0, typeId: 0, x: 0, y: 0, z: 0, isFree: false, removed: false },
+            { id: 1, typeId: 1, x: 1, y: 0, z: 0, isFree: false, removed: false },
+            { id: 2, typeId: 2, x: 0, y: 1, z: 0, isFree: false, removed: false },
+            { id: 3, typeId: 3, x: 1, y: 1, z: 0, isFree: false, removed: false },
+        ];
+        engine.updateAllFreeStatus();
+
+        let result = '';
+        // (0,0): right neighbor (1,0), no left -> FREE
+        // (1,0): left neighbor (0,0), no right -> FREE
+        // (0,1): right neighbor (1,1), no left -> FREE
+        // (1,1): left neighbor (0,1), no right -> FREE
+        for (const t of engine.tiles) {
+            const expect = true; // all should be free in 2x2
+            result += `Tile(${t.x},${t.y}): isFree=${t.isFree} (expect: ${expect}) ${t.isFree === expect ? '<span class="pass">✓ PASS</span>' : '<span class="fail">✗ FAIL</span>'}\n`;
+        }
+        logPre(result);
+    }
+
+    function testLongRow() {
+        // 5 tiles in a row
+        const engine = new MahjongEngine();
+        for (let x = 0; x < 5; x++) {
+            engine.tiles.push({ id: x, typeId: x, x: x, y: 0, z: 0, isFree: false, removed: false });
+        }
+        engine.updateAllFreeStatus();
+
+        let result = '';
+        for (const t of engine.tiles) {
+            const expectFree = (t.x === 0 || t.x === 4); // only ends are free
+            result += `Tile(${t.x},0): isFree=${t.isFree} (expect: ${expectFree}) ${t.isFree === expectFree ? '<span class="pass">✓ PASS</span>' : '<span class="fail">✗ FAIL</span>'}\n`;
+        }
+        logPre(result);
+    }
+
+    function testStacked() {
+        // Bottom: (0,0,0), (1,0,0)
+        // Top: (0.5,0.5,1) - overlaps both bottom tiles
+        const engine = new MahjongEngine();
+        engine.tiles = [
+            { id: 0, typeId: 0, x: 0, y: 0, z: 0, isFree: false, removed: false },
+            { id: 1, typeId: 1, x: 1, y: 0, z: 0, isFree: false, removed: false },
+            { id: 2, typeId: 2, x: 0.5, y: 0.5, z: 1, isFree: false, removed: false },
+        ];
+        engine.updateAllFreeStatus();
+
+        let result = '';
+        result += `Tile(0,0,z=0): isFree=${engine.tiles[0].isFree} (expect: false - covered by top) ${!engine.tiles[0].isFree ? '<span class="pass">✓ PASS</span>' : '<span class="fail">✗ FAIL</span>'}\n`;
+        result += `Tile(1,0,z=0): isFree=${engine.tiles[1].isFree} (expect: false - covered by top) ${!engine.tiles[1].isFree ? '<span class="pass">✓ PASS</span>' : '<span class="fail">✗ FAIL</span>'}\n`;
+        result += `Tile(0.5,0.5,z=1): isFree=${engine.tiles[2].isFree} (expect: true - top, no neighbors) ${engine.tiles[2].isFree ? '<span class="pass">✓ PASS</span>' : '<span class="fail">✗ FAIL</span>'}\n`;
+        logPre(result);
+    }
+
+    function testLShape() {
+        // L-shape: (0,0), (1,0), (2,0), (0,1)
+        const engine = new MahjongEngine();
+        engine.tiles = [
+            { id: 0, typeId: 0, x: 0, y: 0, z: 0, isFree: false, removed: false },
+            { id: 1, typeId: 1, x: 1, y: 0, z: 0, isFree: false, removed: false },
+            { id: 2, typeId: 2, x: 2, y: 0, z: 0, isFree: false, removed: false },
+            { id: 3, typeId: 3, x: 0, y: 1, z: 0, isFree: false, removed: false },
+        ];
+        engine.updateAllFreeStatus();
+
+        let result = '';
+        // (0,0): right=(1,0) yes, left=none -> FREE (left open)
+        // But wait: (0,1) is at y=1, dy=1.0. Is dy < 1.0? No, dy=1.0 is NOT < 1.0, so (0,1) is NOT a left/right neighbor of (0,0)
+        // Actually (0,1) has x=0 same as (0,0), so it's not left or right, it's above/below
+        result += `Tile(0,0): isFree=${engine.tiles[0].isFree} (expect: true - left side open) ${engine.tiles[0].isFree ? '<span class="pass">✓ PASS</span>' : '<span class="fail">✗ FAIL</span>'}\n`;
+        result += `Tile(1,0): isFree=${engine.tiles[1].isFree} (expect: false - both sides blocked) ${!engine.tiles[1].isFree ? '<span class="pass">✓ PASS</span>' : '<span class="fail">✗ FAIL</span>'}\n`;
+        result += `Tile(2,0): isFree=${engine.tiles[2].isFree} (expect: true - right side open) ${engine.tiles[2].isFree ? '<span class="pass">✓ PASS</span>' : '<span class="fail">✗ FAIL</span>'}\n`;
+        result += `Tile(0,1): isFree=${engine.tiles[3].isFree} (expect: true - no left/right neighbors) ${engine.tiles[3].isFree ? '<span class="pass">✓ PASS</span>' : '<span class="fail">✗ FAIL</span>'}\n`;
+        logPre(result);
+    }
+
+    function testPyramidStats() {
+        const positions = generatePyramidLayout(60);
+        let result = '';
+        result += `Total positions: ${positions.length}\n`;
+
+        const byZ = {};
+        positions.forEach(p => { byZ[p.z] = (byZ[p.z] || 0) + 1; });
+        result += `By layer: ${JSON.stringify(byZ)}\n\n`;
+
+        // Create engine with these positions
+        const engine = new MahjongEngine();
+        engine.tiles = [];
+        engine.nextTileId = 0;
+        for (let i = 0; i < positions.length; i++) {
+            engine.tiles.push({
+                id: i, typeId: i % 34, x: positions[i].x, y: positions[i].y, z: positions[i].z,
+                isFree: false, removed: false,
+            });
+        }
+        engine.updateAllFreeStatus();
+
+        const freeCount = engine.tiles.filter(t => t.isFree).length;
+        const blockedCount = engine.tiles.filter(t => !t.isFree).length;
+        result += `Free tiles: ${freeCount}\n`;
+        result += `Blocked tiles: ${blockedCount}\n\n`;
+
+        // Show layer 0 grid
+        const l0 = engine.tiles.filter(t => t.z === 0).sort((a,b) => a.y - b.y || a.x - b.x);
+        result += `Layer 0 (${l0.length} tiles):\n`;
+        const rows = {};
+        l0.forEach(t => { rows[t.y] = rows[t.y] || []; rows[t.y].push(t); });
+        for (const y of Object.keys(rows).sort((a,b) => a-b)) {
+            const tiles = rows[y].sort((a,b) => a.x - b.x);
+            const line = tiles.map(t => `${t.x}:${t.isFree ? 'F' : 'B'}`).join('  ');
+            result += `  y=${y}: ${line}\n`;
+        }
+
+        logPre(result);
+    }
+
+    function testCurrentLevel() {
+        out.innerHTML = '';
+        log('<h2>当前关卡布局分析 (Level 1)</h2>');
+
+        const levels = generateLevelList();
+        const config = levels[0]; // Level 1
+        const engine = new MahjongEngine();
+        engine.generateLevel(config);
+
+        const tiles = engine.tiles;
+        let result = '';
+        result += `Level: ${config.id}, Pairs: ${config.pairs}, Total: ${tiles.length}\n`;
+
+        const byZ = {};
+        tiles.forEach(t => { byZ[t.z] = (byZ[t.z] || 0) + 1; });
+        result += `By layer: ${JSON.stringify(byZ)}\n`;
+
+        const freeCount = tiles.filter(t => t.isFree).length;
+        result += `Free: ${freeCount}, Blocked: ${tiles.length - freeCount}\n\n`;
+
+        // Show each layer
+        for (const z of Object.keys(byZ).sort()) {
+            const layerTiles = tiles.filter(t => t.z === parseInt(z)).sort((a,b) => a.y - b.y || a.x - b.x);
+            result += `--- Layer ${z} (${layerTiles.length} tiles) ---\n`;
+            const rows = {};
+            layerTiles.forEach(t => { rows[t.y] = rows[t.y] || []; rows[t.y].push(t); });
+            for (const y of Object.keys(rows).sort((a,b) => a-b)) {
+                const ts = rows[y].sort((a,b) => a.x - b.x);
+                const line = ts.map(t => `(${t.x},${t.y}):${t.isFree ? 'F' : 'B'}`).join('  ');
+                result += `  y=${y}: ${line}\n`;
+            }
+            result += '\n';
+        }
+
+        logPre(result);
+    }
+    </script>
+</body>
+</html>

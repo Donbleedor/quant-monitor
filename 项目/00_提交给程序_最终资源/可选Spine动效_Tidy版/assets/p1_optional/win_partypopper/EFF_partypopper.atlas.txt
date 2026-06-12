@@ -1,0 +1,258 @@
+
+EFF_partypopper.png
+size: 551,219
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+caidai_1
+  rotate: false
+  xy: 256, 157
+  size: 100, 60
+  orig: 129, 60
+  offset: 0, 0
+  index: -1
+caidai_10
+  rotate: true
+  xy: 315, 56
+  size: 54, 38
+  orig: 55, 38
+  offset: 0, 0
+  index: -1
+caidai_11
+  rotate: true
+  xy: 501, 62
+  size: 58, 29
+  orig: 60, 31
+  offset: 2, 1
+  index: -1
+caidai_12
+  rotate: true
+  xy: 472, 15
+  size: 26, 25
+  orig: 29, 27
+  offset: 1, 2
+  index: -1
+caidai_13
+  rotate: true
+  xy: 521, 122
+  size: 15, 20
+  orig: 16, 20
+  offset: 0, 0
+  index: -1
+caidai_14
+  rotate: true
+  xy: 532, 98
+  size: 22, 13
+  orig: 23, 14
+  offset: 0, 1
+  index: -1
+caidai_15
+  rotate: true
+  xy: 531, 190
+  size: 27, 17
+  orig: 29, 17
+  offset: 1, 0
+  index: -1
+caidai_16
+  rotate: true
+  xy: 410, 42
+  size: 29, 31
+  orig: 31, 33
+  offset: 1, 1
+  index: -1
+caidai_17
+  rotate: false
+  xy: 499, 6
+  size: 25, 24
+  orig: 27, 25
+  offset: 1, 1
+  index: -1
+caidai_18
+  rotate: true
+  xy: 389, 27
+  size: 24, 19
+  orig: 25, 20
+  offset: 1, 1
+  index: -1
+caidai_19
+  rotate: false
+  xy: 529, 36
+  size: 14, 24
+  orig: 14, 24
+  offset: 0, 0
+  index: -1
+caidai_2
+  rotate: false
+  xy: 440, 169
+  size: 60, 48
+  orig: 60, 48
+  offset: 0, 0
+  index: -1
+caidai_20
+  rotate: false
+  xy: 502, 175
+  size: 27, 42
+  orig: 27, 42
+  offset: 0, 0
+  index: -1
+caidai_21
+  rotate: true
+  xy: 345, 25
+  size: 26, 42
+  orig: 27, 42
+  offset: 0, 0
+  index: -1
+caidai_22
+  rotate: false
+  xy: 410, 2
+  size: 10, 38
+  orig: 11, 38
+  offset: 1, 0
+  index: -1
+caidai_23
+  rotate: true
+  xy: 315, 112
+  size: 43, 39
+  orig: 43, 39
+  offset: 0, 0
+  index: -1
+caidai_24
+  rotate: false
+  xy: 389, 118
+  size: 65, 48
+  orig: 67, 50
+  offset: 2, 1
+  index: -1
+caidai_25
+  rotate: true
+  xy: 422, 21
+  size: 19, 17
+  orig: 19, 18
+  offset: 0, 0
+  index: -1
+caidai_26
+  rotate: false
+  xy: 501, 32
+  size: 26, 28
+  orig: 26, 29
+  offset: 0, 1
+  index: -1
+caidai_27
+  rotate: true
+  xy: 441, 13
+  size: 26, 24
+  orig: 26, 24
+  offset: 0, 0
+  index: -1
+caidai_28
+  rotate: false
+  xy: 389, 2
+  size: 12, 23
+  orig: 12, 23
+  offset: 0, 0
+  index: -1
+caidai_3
+  rotate: true
+  xy: 256, 2
+  size: 69, 56
+  orig: 69, 57
+  offset: 0, 0
+  index: -1
+caidai_30
+  rotate: false
+  xy: 472, 43
+  size: 27, 28
+  orig: 27, 28
+  offset: 0, 0
+  index: -1
+caidai_31
+  rotate: true
+  xy: 345, 2
+  size: 21, 29
+  orig: 21, 29
+  offset: 0, 0
+  index: -1
+caidai_32
+  rotate: false
+  xy: 443, 41
+  size: 27, 30
+  orig: 27, 30
+  offset: 0, 0
+  index: -1
+caidai_34
+  rotate: false
+  xy: 526, 2
+  size: 20, 28
+  orig: 20, 28
+  offset: 0, 0
+  index: -1
+caidai_37
+  rotate: true
+  xy: 521, 139
+  size: 34, 28
+  orig: 34, 28
+  offset: 0, 0
+  index: -1
+caidai_4
+  rotate: true
+  xy: 456, 122
+  size: 45, 63
+  orig: 46, 63
+  offset: 1, 0
+  index: -1
+caidai_5
+  rotate: false
+  xy: 410, 73
+  size: 89, 43
+  orig: 89, 43
+  offset: 0, 0
+  index: -1
+caidai_6
+  rotate: true
+  xy: 531, 178
+  size: 10, 13
+  orig: 10, 13
+  offset: 0, 0
+  index: -1
+caidai_7
+  rotate: true
+  xy: 314, 5
+  size: 49, 29
+  orig: 49, 29
+  offset: 0, 0
+  index: -1
+caidai_8
+  rotate: false
+  xy: 358, 107
+  size: 29, 110
+  orig: 29, 111
+  offset: 0, 1
+  index: -1
+caidai_9
+  rotate: true
+  xy: 256, 73
+  size: 82, 57
+  orig: 82, 58
+  offset: 0, 0
+  index: -1
+firework_tube_l
+  rotate: true
+  xy: 2, 3
+  size: 214, 252
+  orig: 214, 252
+  offset: 0, 0
+  index: -1
+glow
+  rotate: false
+  xy: 389, 168
+  size: 49, 49
+  orig: 60, 60
+  offset: 5, 6
+  index: -1
+qmlizi2
+  rotate: true
+  xy: 355, 53
+  size: 52, 53
+  orig: 64, 65
+  offset: 6, 6
+  index: -1

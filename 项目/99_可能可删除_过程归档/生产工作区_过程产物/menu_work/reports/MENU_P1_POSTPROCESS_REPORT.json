@@ -1,0 +1,319 @@
+{
+  "date": "2026-06-11",
+  "scope": "menu_p1",
+  "raw_dir": "E:\\参考图\\麻将\\项目\\menu_work\\raw_generated\\menu_p1",
+  "processed_dir": "E:\\参考图\\麻将\\项目\\menu_work\\processed\\menu_p1",
+  "review_dir": "E:\\参考图\\麻将\\项目\\menu_work\\review\\menu_p1",
+  "assets": [
+    {
+      "file": "title_tribal_tiles.png",
+      "source": "E:\\参考图\\麻将\\项目\\menu_work\\raw_generated\\menu_p1\\title_tribal_tiles_raw.png",
+      "target_size": [
+        620,
+        160
+      ],
+      "actual_size": [
+        620,
+        160
+      ],
+      "transparent": true,
+      "alpha_present": true,
+      "key_mode": "magenta",
+      "bbox": [
+        172,
+        13,
+        447,
+        147
+      ],
+      "visible_bbox_size": [
+        275,
+        134
+      ],
+      "visible_bbox_occupancy": [
+        0.444,
+        0.838
+      ],
+      "normalization": "alpha_bbox_crop_then_contain_fit",
+      "status": "passed_with_warnings",
+      "warnings": [
+        "family_scale_mismatch"
+      ]
+    },
+    {
+      "file": "icon_levels.png",
+      "source": "E:\\参考图\\麻将\\项目\\menu_work\\raw_generated\\menu_p1\\icon_levels_raw.png",
+      "target_size": [
+        88,
+        88
+      ],
+      "actual_size": [
+        88,
+        88
+      ],
+      "transparent": true,
+      "alpha_present": true,
+      "key_mode": "magenta",
+      "bbox": [
+        10,
+        9,
+        77,
+        79
+      ],
+      "visible_bbox_size": [
+        67,
+        70
+      ],
+      "visible_bbox_occupancy": [
+        0.761,
+        0.795
+      ],
+      "normalization": "alpha_bbox_crop_then_contain_fit",
+      "status": "passed",
+      "warnings": []
+    },
+    {
+      "file": "icon_daily.png",
+      "source": "E:\\参考图\\麻将\\项目\\menu_work\\raw_generated\\menu_p1\\icon_daily_raw.png",
+      "target_size": [
+        88,
+        88
+      ],
+      "actual_size": [
+        88,
+        88
+      ],
+      "transparent": true,
+      "alpha_present": true,
+      "key_mode": "magenta",
+      "bbox": [
+        9,
+        9,
+        78,
+        79
+      ],
+      "visible_bbox_size": [
+        69,
+        70
+      ],
+      "visible_bbox_occupancy": [
+        0.784,
+        0.795
+      ],
+      "normalization": "alpha_bbox_crop_then_contain_fit",
+      "status": "passed",
+      "warnings": []
+    },
+    {
+      "file": "tool_btn_shell.png",
+      "source": "E:\\参考图\\麻将\\项目\\menu_work\\raw_generated\\menu_p1\\tool_btn_shell_raw.png",
+      "target_size": [
+        182,
+        182
+      ],
+      "actual_size": [
+        182,
+        182
+      ],
+      "transparent": true,
+      "alpha_present": true,
+      "key_mode": "magenta",
+      "bbox": [
+        4,
+        3,
+        177,
+        178
+      ],
+      "visible_bbox_size": [
+        173,
+        175
+      ],
+      "visible_bbox_occupancy": [
+        0.951,
+        0.962
+      ],
+      "normalization": "alpha_bbox_crop_then_contain_fit",
+      "status": "passed",
+      "warnings": []
+    },
+    {
+      "file": "badge_count_coin.png",
+      "source": "E:\\参考图\\麻将\\项目\\menu_work\\raw_generated\\menu_p1\\badge_count_coin_raw.png",
+      "target_size": [
+        44,
+        44
+      ],
+      "actual_size": [
+        44,
+        44
+      ],
+      "transparent": true,
+      "alpha_present": true,
+      "key_mode": "magenta",
+      "bbox": [
+        2,
+        2,
+        41,
+        41
+      ],
+      "visible_bbox_size": [
+        39,
+        39
+      ],
+      "visible_bbox_occupancy": [
+        0.886,
+        0.886
+      ],
+      "normalization": "alpha_bbox_crop_then_contain_fit",
+      "status": "passed",
+      "warnings": []
+    },
+    {
+      "file": "tile_base_ivory.png",
+      "source": "E:\\参考图\\麻将\\项目\\menu_work\\raw_generated\\menu_p1\\tile_base_ivory_raw.png",
+      "target_size": [
+        168,
+        201
+      ],
+      "actual_size": [
+        168,
+        201
+      ],
+      "transparent": true,
+      "alpha_present": true,
+      "key_mode": "magenta",
+      "bbox": [
+        21,
+        4,
+        146,
+        197
+      ],
+      "visible_bbox_size": [
+        125,
+        193
+      ],
+      "visible_bbox_occupancy": [
+        0.744,
+        0.96
+      ],
+      "normalization": "alpha_bbox_crop_then_contain_fit",
+      "status": "passed",
+      "warnings": []
+    },
+    {
+      "file": "menu_pattern_overlay.png",
+      "source": "E:\\参考图\\麻将\\项目\\menu_work\\raw_generated\\menu_p1\\menu_pattern_overlay_raw.png",
+      "target_size": [
+        1080,
+        2400
+      ],
+      "actual_size": [
+        1080,
+        2400
+      ],
+      "transparent": true,
+      "alpha_present": true,
+      "key_mode": "magenta",
+      "bbox": [
+        0,
+        389,
+        1080,
+        2010
+      ],
+      "visible_bbox_size": [
+        1080,
+        1621
+      ],
+      "visible_bbox_occupancy": [
+        1.0,
+        0.675
+      ],
+      "normalization": "alpha_bbox_crop_then_contain_fit",
+      "status": "passed",
+      "warnings": []
+    },
+    {
+      "file": "menu_vignette_top.png",
+      "source": "E:\\参考图\\麻将\\项目\\menu_work\\raw_generated\\menu_p1\\menu_vignette_top_raw.png",
+      "target_size": [
+        1080,
+        520
+      ],
+      "actual_size": [
+        1080,
+        520
+      ],
+      "transparent": true,
+      "alpha_present": true,
+      "key_mode": "magenta",
+      "bbox": [
+        0,
+        141,
+        1080,
+        379
+      ],
+      "visible_bbox_size": [
+        1080,
+        238
+      ],
+      "visible_bbox_occupancy": [
+        1.0,
+        0.458
+      ],
+      "normalization": "alpha_bbox_crop_then_contain_fit",
+      "status": "passed",
+      "warnings": []
+    },
+    {
+      "file": "menu_vignette_bottom.png",
+      "source": "E:\\参考图\\麻将\\项目\\menu_work\\raw_generated\\menu_p1\\menu_vignette_bottom_raw.png",
+      "target_size": [
+        1080,
+        620
+      ],
+      "actual_size": [
+        1080,
+        620
+      ],
+      "transparent": true,
+      "alpha_present": true,
+      "key_mode": "magenta_chroma_cleanup_fix",
+      "bbox": [
+        1,
+        265,
+        1079,
+        620
+      ],
+      "visible_bbox_size": [
+        1078,
+        355
+      ],
+      "visible_bbox_occupancy": [
+        0.9981,
+        0.5726
+      ],
+      "normalization": "processed_chroma_key_cleanup_preserve_canvas",
+      "status": "passed",
+      "warnings": [],
+      "qa": {
+        "visible_suspicious_pink_before": 496674,
+        "visible_exact_ff00ff_before": 37,
+        "visible_suspicious_pink_after": 0,
+        "visible_exact_ff00ff_after": 0,
+        "accepted_for_integration": true
+      },
+      "fix_review": {
+        "before_fix": "menu_work\\review\\menu_p1\\menu_vignette_bottom_before_fix.png",
+        "compare": "menu_work\\review\\menu_p1\\menu_vignette_bottom_fix_compare.png"
+      }
+    }
+  ],
+  "decision": "ACCEPTED_FOR_INTEGRATION",
+  "last_fix": {
+    "date": "2026-06-11",
+    "asset": "menu_vignette_bottom.png",
+    "method": "processed_chroma_key_cleanup",
+    "threshold": "alpha>10 and R>220 and B>220 and G<120",
+    "before_fix": "menu_work\\review\\menu_p1\\menu_vignette_bottom_before_fix.png",
+    "compare": "menu_work\\review\\menu_p1\\menu_vignette_bottom_fix_compare.png"
+  }
+}

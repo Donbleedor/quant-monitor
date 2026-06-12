@@ -1,0 +1,320 @@
+{
+  "date": "2026-06-11",
+  "scope": "modal_screen_family",
+  "canvas": {
+    "width": 1080,
+    "height": 2400,
+    "ratio": "9:20",
+    "target_devices": [
+      "Transsion mainstream Android phones",
+      "720x1600 reference"
+    ]
+  },
+  "shared_background": {
+    "file": "E:\\\\参考图\\\\麻将\\\\项目\\\\asset_work\\\\processed\\\\first_screen_p0\\\\bg_game_1080x2400.png",
+    "preferred_future_source": "E:\\\\参考图\\\\麻将\\\\项目\\\\asset_work\\\\processed\\\\shared\\\\bg_game_1080x2400.png",
+    "status": "shared_reference_only"
+  },
+  "priority_definition": {
+    "P0": "must_have_for_first_modal_integration",
+    "P1": "follow_up_polish_or_optional_variant"
+  },
+  "asset_groups": [
+    {
+      "group": "modal_overlay_and_panel",
+      "layer_order": 1,
+      "assets": [
+        {
+          "id": "P0-MD-01",
+          "name": "Dark overlay",
+          "file": "modal_overlay_dark.png",
+          "size": { "width": 1080, "height": 2400 },
+          "transparent": false,
+          "usage": "Dark textured overlay base for all modals; code should control opacity.",
+          "attach": "full-screen overlay",
+          "priority": "P0"
+        },
+        {
+          "id": "P0-MD-02",
+          "name": "Standard modal panel",
+          "file": "modal_panel_standard.png",
+          "size": { "width": 860, "height": 1120 },
+          "transparent": true,
+          "usage": "Base panel for pause and settings.",
+          "attach": "center modal body",
+          "priority": "P0"
+        },
+        {
+          "id": "P0-MD-03",
+          "name": "Large modal panel",
+          "file": "modal_panel_large.png",
+          "size": { "width": 940, "height": 1480 },
+          "transparent": true,
+          "usage": "Taller panel for win and level select.",
+          "attach": "center modal body",
+          "priority": "P0"
+        },
+        {
+          "id": "P1-MD-04",
+          "name": "Title strip",
+          "file": "modal_title_strip.png",
+          "size": { "width": 620, "height": 120 },
+          "transparent": true,
+          "usage": "Small title accent strip for modal headers.",
+          "attach": "top of modal body",
+          "priority": "P1"
+        },
+        {
+          "id": "P1-MD-05",
+          "name": "Divider gold",
+          "file": "modal_divider_gold.png",
+          "size": { "width": 720, "height": 24 },
+          "transparent": true,
+          "usage": "Thin divider or separator line.",
+          "attach": "between modal sections",
+          "priority": "P1"
+        }
+      ]
+    },
+    {
+      "group": "modal_actions",
+      "layer_order": 2,
+      "assets": [
+        {
+          "id": "P0-MD-05",
+          "name": "Primary action shell",
+          "file": "btn_modal_primary.png",
+          "size": { "width": 520, "height": 140 },
+          "transparent": true,
+          "usage": "Primary modal action button.",
+          "attach": "primary action row",
+          "priority": "P0"
+        },
+        {
+          "id": "P0-MD-06",
+          "name": "Secondary action shell",
+          "file": "btn_modal_secondary.png",
+          "size": { "width": 520, "height": 120 },
+          "transparent": true,
+          "usage": "Secondary modal action button.",
+          "attach": "secondary action row",
+          "priority": "P0"
+        }
+      ]
+    },
+    {
+      "group": "modal_icons",
+      "layer_order": 3,
+      "assets": [
+        {
+          "id": "P0-MD-07",
+          "name": "Resume icon",
+          "file": "icon_resume.png",
+          "size": { "width": 88, "height": 88 },
+          "transparent": true,
+          "usage": "Resume / play glyph.",
+          "attach": "pause modal primary action",
+          "priority": "P0"
+        },
+        {
+          "id": "P0-MD-08",
+          "name": "Restart icon",
+          "file": "icon_restart.png",
+          "size": { "width": 88, "height": 88 },
+          "transparent": true,
+          "usage": "Restart / replay glyph.",
+          "attach": "pause modal action",
+          "priority": "P0"
+        },
+        {
+          "id": "P0-MD-09",
+          "name": "Home icon",
+          "file": "icon_home.png",
+          "size": { "width": 88, "height": 88 },
+          "transparent": true,
+          "usage": "Home glyph.",
+          "attach": "pause or win modal action",
+          "priority": "P0"
+        },
+        {
+          "id": "P0-MD-10",
+          "name": "Close icon",
+          "file": "icon_close.png",
+          "size": { "width": 88, "height": 88 },
+          "transparent": true,
+          "usage": "Close glyph for the top-right modal exit.",
+          "attach": "modal close button",
+          "priority": "P0"
+        },
+        {
+          "id": "P0-MD-11",
+          "name": "Next icon",
+          "file": "icon_next.png",
+          "size": { "width": 88, "height": 88 },
+          "transparent": true,
+          "usage": "Next / continue glyph.",
+          "attach": "win modal action",
+          "priority": "P0"
+        },
+        {
+          "id": "P0-MD-12",
+          "name": "Star icon",
+          "file": "icon_star.png",
+          "size": { "width": 72, "height": 72 },
+          "transparent": true,
+          "usage": "Reward star for win modal.",
+          "attach": "win modal score / stars",
+          "priority": "P0"
+        },
+        {
+          "id": "P0-MD-13",
+          "name": "Lock icon",
+          "file": "icon_lock.png",
+          "size": { "width": 72, "height": 72 },
+          "transparent": true,
+          "usage": "Locked state glyph for level select.",
+          "attach": "level node locked state",
+          "priority": "P0"
+        }
+      ]
+    },
+    {
+      "group": "level_select_nodes",
+      "layer_order": 4,
+      "assets": [
+        {
+          "id": "P0-MD-14",
+          "name": "Open level node",
+          "file": "level_node_open.png",
+          "size": { "width": 132, "height": 132 },
+          "transparent": true,
+          "usage": "Unlocked level node shell.",
+          "attach": "level grid node",
+          "priority": "P0"
+        },
+        {
+          "id": "P0-MD-15",
+          "name": "Current level node",
+          "file": "level_node_current.png",
+          "size": { "width": 132, "height": 132 },
+          "transparent": true,
+          "usage": "Current level node shell.",
+          "attach": "level grid node",
+          "priority": "P0"
+        },
+        {
+          "id": "P0-MD-16",
+          "name": "Locked level node",
+          "file": "level_node_locked.png",
+          "size": { "width": 132, "height": 132 },
+          "transparent": true,
+          "usage": "Locked level node shell.",
+          "attach": "level grid node",
+          "priority": "P0"
+        },
+        {
+          "id": "P1-MD-17",
+          "name": "Small level star",
+          "file": "level_star_small.png",
+          "size": { "width": 28, "height": 28 },
+          "transparent": true,
+          "usage": "Small completion star under a node.",
+          "attach": "under level node",
+          "priority": "P1"
+        },
+        {
+          "id": "P1-MD-18",
+          "name": "Completed badge",
+          "file": "level_badge_completed.png",
+          "size": { "width": 44, "height": 44 },
+          "transparent": true,
+          "usage": "Completed marker for a node.",
+          "attach": "completed node overlay",
+          "priority": "P1"
+        }
+      ]
+    },
+    {
+      "group": "settings_controls",
+      "layer_order": 5,
+      "assets": [
+        {
+          "id": "P0-MD-19",
+          "name": "Toggle track",
+          "file": "toggle_track.png",
+          "size": { "width": 104, "height": 60 },
+          "transparent": true,
+          "usage": "Switch track body.",
+          "attach": "settings row",
+          "priority": "P0"
+        },
+        {
+          "id": "P0-MD-20",
+          "name": "Toggle knob",
+          "file": "toggle_knob.png",
+          "size": { "width": 52, "height": 52 },
+          "transparent": true,
+          "usage": "Switch thumb.",
+          "attach": "settings row",
+          "priority": "P0"
+        },
+        {
+          "id": "P1-MD-21",
+          "name": "Settings row plate",
+          "file": "settings_row_plate.png",
+          "size": { "width": 760, "height": 112 },
+          "transparent": true,
+          "usage": "Optional row plate for stronger structure.",
+          "attach": "settings row background",
+          "priority": "P1"
+        }
+      ]
+    },
+    {
+      "group": "win_support",
+      "layer_order": 6,
+      "assets": [
+        {
+          "id": "P1-MD-22",
+          "name": "Time stat chip",
+          "file": "stat_chip_time.png",
+          "size": { "width": 320, "height": 108 },
+          "transparent": true,
+          "usage": "Time stat chip for the win modal.",
+          "attach": "win modal stats",
+          "priority": "P1"
+        },
+        {
+          "id": "P1-MD-23",
+          "name": "Moves stat chip",
+          "file": "stat_chip_moves.png",
+          "size": { "width": 320, "height": 108 },
+          "transparent": true,
+          "usage": "Moves stat chip for the win modal.",
+          "attach": "win modal stats",
+          "priority": "P1"
+        },
+        {
+          "id": "P1-MD-24",
+          "name": "Win medal",
+          "file": "win_medal_center.png",
+          "size": { "width": 180, "height": 180 },
+          "transparent": true,
+          "usage": "Decorative reward medallion.",
+          "attach": "win modal header",
+          "priority": "P1"
+        },
+        {
+          "id": "P1-MD-25",
+          "name": "Confetti token",
+          "file": "win_confetti_piece.png",
+          "size": { "width": 28, "height": 28 },
+          "transparent": true,
+          "usage": "Small confetti piece for celebration layer.",
+          "attach": "win celebration layer",
+          "priority": "P1"
+        }
+      ]
+    }
+  ]
+}

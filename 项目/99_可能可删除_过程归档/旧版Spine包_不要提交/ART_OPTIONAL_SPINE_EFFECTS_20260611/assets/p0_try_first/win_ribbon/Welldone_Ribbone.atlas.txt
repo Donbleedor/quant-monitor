@@ -1,0 +1,20 @@
+
+Welldone_Ribbone.png
+size: 99, 103
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+GlowStar
+  rotate: false
+  xy: 2, 5
+  size: 95, 96
+  orig: 100, 100
+  offset: 0, 3
+  index: -1
+black_mask
+  rotate: false
+  xy: 2, 2
+  size: 1, 1
+  orig: 1, 1
+  offset: 0, 0
+  index: -1

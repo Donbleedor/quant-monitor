@@ -1,0 +1,27 @@
+
+cursor.png
+size: 138,64
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+cursor
+  rotate: false
+  xy: 2, 52
+  size: 10, 10
+  orig: 10, 10
+  offset: 0, 0
+  index: -1
+cursor_di
+  rotate: false
+  xy: 14, 2
+  size: 60, 60
+  orig: 60, 60
+  offset: 0, 0
+  index: -1
+cursor_glow
+  rotate: false
+  xy: 76, 2
+  size: 60, 60
+  orig: 60, 60
+  offset: 0, 0
+  index: -1

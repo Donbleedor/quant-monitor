@@ -1,0 +1,106 @@
+{
+  "date": "2026-06-11",
+  "scope": "menu_p0",
+  "source_review": "E:\\参考图\\麻将\\项目\\MENU_SCREEN_EFFECT_REVIEW.md",
+  "raw_dir": "E:\\参考图\\麻将\\项目\\menu_work\\raw_generated\\menu_p0",
+  "processed_dir": "E:\\参考图\\麻将\\项目\\menu_work\\processed\\menu_p0",
+  "review_dir": "E:\\参考图\\麻将\\项目\\menu_work\\review\\menu_p0",
+  "assets": [
+    {
+      "file": "logo_tribal_tiles.png",
+      "source": "E:\\参考图\\麻将\\项目\\menu_work\\raw_generated\\menu_p0\\logo_tribal_tiles_raw.png",
+      "target_size": [
+        760,
+        420
+      ],
+      "actual_size": [
+        760,
+        420
+      ],
+      "transparent": true,
+      "alpha_present": true,
+      "key_mode": "magenta",
+      "bbox": [
+        168,
+        25,
+        592,
+        395
+      ],
+      "visible_bbox_size": [
+        424,
+        370
+      ],
+      "visible_bbox_occupancy": [
+        0.558,
+        0.881
+      ],
+      "normalization": "alpha_bbox_crop_then_contain_fit",
+      "status": "passed",
+      "warnings": []
+    },
+    {
+      "file": "button_play_large.png",
+      "source": "E:\\参考图\\麻将\\项目\\menu_work\\raw_generated\\menu_p0\\button_play_large_raw.png",
+      "target_size": [
+        780,
+        260
+      ],
+      "actual_size": [
+        780,
+        260
+      ],
+      "transparent": true,
+      "alpha_present": true,
+      "key_mode": "magenta",
+      "bbox": [
+        101,
+        5,
+        678,
+        255
+      ],
+      "visible_bbox_size": [
+        577,
+        250
+      ],
+      "visible_bbox_occupancy": [
+        0.74,
+        0.962
+      ],
+      "normalization": "alpha_bbox_crop_then_contain_fit",
+      "status": "passed",
+      "warnings": []
+    },
+    {
+      "file": "icon_settings.png",
+      "source": "E:\\参考图\\麻将\\项目\\menu_work\\raw_generated\\menu_p0\\icon_settings_raw.png",
+      "target_size": [
+        88,
+        88
+      ],
+      "actual_size": [
+        88,
+        88
+      ],
+      "transparent": true,
+      "alpha_present": true,
+      "key_mode": "magenta",
+      "bbox": [
+        9,
+        9,
+        78,
+        79
+      ],
+      "visible_bbox_size": [
+        69,
+        70
+      ],
+      "visible_bbox_occupancy": [
+        0.784,
+        0.795
+      ],
+      "normalization": "alpha_bbox_crop_then_contain_fit",
+      "status": "passed",
+      "warnings": []
+    }
+  ]
+}

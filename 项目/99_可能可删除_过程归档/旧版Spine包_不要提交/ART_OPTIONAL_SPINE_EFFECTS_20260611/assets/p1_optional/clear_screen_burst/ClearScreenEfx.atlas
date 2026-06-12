@@ -1,0 +1,97 @@
+
+ClearScreenEfx.png
+size: 339, 256
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+base_block_1
+  rotate: false
+  xy: 59, 173
+  size: 81, 81
+  orig: 81, 81
+  offset: 0, 0
+  index: -1
+base_block_2
+  rotate: false
+  xy: 225, 173
+  size: 81, 81
+  orig: 81, 81
+  offset: 0, 0
+  index: -1
+base_block_2.5d
+  rotate: false
+  xy: 142, 173
+  size: 81, 81
+  orig: 81, 81
+  offset: 0, 0
+  index: -1
+base_block_3
+  rotate: false
+  xy: 2, 90
+  size: 81, 81
+  orig: 81, 81
+  offset: 0, 0
+  index: -1
+base_block_4
+  rotate: false
+  xy: 85, 90
+  size: 81, 81
+  orig: 81, 81
+  offset: 0, 0
+  index: -1
+base_block_5
+  rotate: false
+  xy: 168, 90
+  size: 81, 81
+  orig: 81, 81
+  offset: 0, 0
+  index: -1
+base_block_6
+  rotate: false
+  xy: 251, 90
+  size: 81, 81
+  orig: 81, 81
+  offset: 0, 0
+  index: -1
+base_block_7
+  rotate: false
+  xy: 2, 7
+  size: 81, 81
+  orig: 81, 81
+  offset: 0, 0
+  index: -1
+base_block_8
+  rotate: false
+  xy: 85, 7
+  size: 81, 81
+  orig: 81, 81
+  offset: 0, 0
+  index: -1
+base_block_9
+  rotate: false
+  xy: 168, 7
+  size: 81, 81
+  orig: 81, 81
+  offset: 0, 0
+  index: -1
+base_block_glow
+  rotate: false
+  xy: 251, 2
+  size: 86, 86
+  orig: 86, 86
+  offset: 0, 0
+  index: -1
+black_mask
+  rotate: false
+  xy: 2, 253
+  size: 1, 1
+  orig: 1, 1
+  offset: 0, 0
+  index: -1
+block-disp3
+  rotate: false
+  xy: 5, 202
+  size: 52, 52
+  orig: 54, 54
+  offset: 1, 1
+  index: -1

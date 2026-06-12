@@ -1,0 +1,181 @@
+{
+  "package": "ART_OPTIONAL_SPINE_EFFECTS_20260611",
+  "date": "2026-06-11",
+  "status": "OPTIONAL_FOR_PROGRAMMER_EVALUATION",
+  "required_static_art_package": "E:\\参考图\\麻将\\项目\\ART_DELIVERY_TO_PROGRAMMER_20260611_V2_FIXED",
+  "runtime_target": {
+    "design_canvas": "1080x2400",
+    "aspect_ratio": "9:20",
+    "notes": "Spine overlay should scale with the fixed game shell, not the full browser window."
+  },
+  "global_notes": [
+    "Current mahjong-v2 is plain H5 DOM/CSS/JS and has no Spine runtime.",
+    "Each folder contains json, png, atlas.txt, and an atlas compatibility copy.",
+    "Cocos meta files and Unity asset/material files are intentionally excluded.",
+    "Use as optional P1/P2 effects after PNG integration is stable."
+  ],
+  "effects": [
+    {
+      "id": "gameplay_tile_disappear",
+      "priority": "P0_TRY_FIRST",
+      "path": "assets/p0_try_first/gameplay_tile_disappear",
+      "source": "E:\\git\\Assets\\RawAsset\\Spine\\ANI_Game_block_disapear",
+      "files": {
+        "json": "ANI_Game_block_disapear.json",
+        "atlas_txt": "ANI_Game_block_disapear.atlas.txt",
+        "atlas": "ANI_Game_block_disapear.atlas",
+        "png": "ANI_Game_block_disapear.png"
+      },
+      "spine_version": "3.8",
+      "png_size": "128x52",
+      "animations": ["ANI_Game_block_disapear"],
+      "recommended_use": "Play once at matched tile positions before removing the tiles.",
+      "loop": false,
+      "risk": "Low. Small generic disappear effect."
+    },
+    {
+      "id": "gameplay_rainbow_fragments",
+      "priority": "P0_TRY_FIRST",
+      "path": "assets/p0_try_first/gameplay_rainbow_fragments",
+      "source": "E:\\git\\Assets\\RawAsset\\Spine\\Rainbow_fragments",
+      "files": {
+        "json": "Rainbow_fragments.json",
+        "atlas_txt": "Rainbow_fragments.atlas.txt",
+        "atlas": "Rainbow_fragments.atlas",
+        "png": "Rainbow_fragments.png"
+      },
+      "spine_version": "3.8.99",
+      "png_size": "168x533",
+      "animations": ["Rainbow_fragments", "Rainbow_fragments2"],
+      "recommended_use": "Use as a stronger match, combo, or shuffle feedback effect.",
+      "loop": false,
+      "risk": "Medium. Colorful visual may need scale and opacity tuning to fit the African totem art direction."
+    },
+    {
+      "id": "win_ribbon",
+      "priority": "P0_TRY_FIRST",
+      "path": "assets/p0_try_first/win_ribbon",
+      "source": "E:\\git\\Assets\\RawAsset\\Spine\\welldone",
+      "files": {
+        "json": "Welldone_Ribbone.json",
+        "atlas_txt": "Welldone_Ribbone.atlas.txt",
+        "atlas": "Welldone_Ribbone.atlas",
+        "png": "Welldone_Ribbone.png"
+      },
+      "spine_version": "3.8",
+      "png_size": "99x103",
+      "animations": ["welldone_ribbone_1", "welldone_ribbone_0.5"],
+      "recommended_use": "Victory modal decorative ribbon. Prefer once on modal open, or short idle if visually stable.",
+      "loop": false,
+      "risk": "Low. Small texture and generic celebration effect."
+    },
+    {
+      "id": "win_partypopper",
+      "priority": "P0_TRY_FIRST",
+      "path": "assets/p0_try_first/win_partypopper",
+      "source": "E:\\TidyCocos\\assets\\bundle\\game\\animations\\spine",
+      "files": {
+        "json": "EFF_partypopper.json",
+        "atlas_txt": "EFF_partypopper.atlas.txt",
+        "atlas": "EFF_partypopper.atlas",
+        "png": "EFF_partypopper.png"
+      },
+      "spine_version": "3.8.99",
+      "png_size": "551x219",
+      "animations": ["EFF_partypopper"],
+      "recommended_use": "Victory modal celebration burst, replacing or supplementing current CSS confetti.",
+      "loop": false,
+      "risk": "Medium. Larger texture and brighter celebration style; verify on low-end phones."
+    },
+    {
+      "id": "gameplay_break_heavy",
+      "priority": "P1_OPTIONAL",
+      "path": "assets/p1_optional/gameplay_break_heavy",
+      "source": "E:\\TidyCocos\\assets\\bundle\\game\\animations\\spine",
+      "files": {
+        "json": "break.json",
+        "atlas_txt": "break.atlas.txt",
+        "atlas": "break.atlas",
+        "png": "break.png"
+      },
+      "spine_version": "3.8.99",
+      "png_size": "793x514",
+      "animations": ["break"],
+      "recommended_use": "Alternative heavier tile break effect. Use only if the small disappear effect feels too weak.",
+      "loop": false,
+      "risk": "Medium-high. Large texture and large visual footprint."
+    },
+    {
+      "id": "guide_hand",
+      "priority": "P1_OPTIONAL",
+      "path": "assets/p1_optional/guide_hand",
+      "source": "E:\\TidyCocos\\assets\\bundle\\game\\animations\\spine",
+      "files": {
+        "json": "Node_hand.json",
+        "atlas_txt": "Node_hand.atlas.txt",
+        "atlas": "Node_hand.atlas",
+        "png": "Node_hand.png"
+      },
+      "spine_version": "3.8.99",
+      "png_size": "306x161",
+      "animations": ["Node_hand_01", "Node_hand_02", "Node_hand_03"],
+      "recommended_use": "Tutorial or first-level tap guidance.",
+      "loop": true,
+      "risk": "Medium. Only useful if tutorial guidance is added."
+    },
+    {
+      "id": "level_cursor",
+      "priority": "P1_OPTIONAL",
+      "path": "assets/p1_optional/level_cursor",
+      "source": "E:\\git\\Assets\\RawAsset\\Spine\\cursor",
+      "files": {
+        "json": "cursor.json",
+        "atlas_txt": "cursor.atlas.txt",
+        "atlas": "cursor.atlas",
+        "png": "cursor.png"
+      },
+      "spine_version": "3.8.99",
+      "png_size": "138x64",
+      "animations": ["cursor_appear", "cursor_di_appear", "cursor_di_idle", "cursor_idle"],
+      "recommended_use": "Level-select highlight or current-level focus marker.",
+      "loop": true,
+      "risk": "Low-medium. Needs level-select layout integration."
+    },
+    {
+      "id": "clear_screen_burst",
+      "priority": "P1_OPTIONAL",
+      "path": "assets/p1_optional/clear_screen_burst",
+      "source": "E:\\git\\Assets\\RawAsset\\Spine\\ClearScreenEfx",
+      "files": {
+        "json": "ClearScreenEfx.json",
+        "atlas_txt": "ClearScreenEfx.atlas.txt",
+        "atlas": "ClearScreenEfx.atlas",
+        "png": "ClearScreenEfx.png"
+      },
+      "spine_version": "3.8",
+      "png_size": "339x256",
+      "animations": ["ClearScreenEfx"],
+      "recommended_use": "Board clear or level-complete burst after the final match.",
+      "loop": false,
+      "risk": "Medium. May compete with win modal visuals if overused."
+    },
+    {
+      "id": "settlement_side_ribbons",
+      "priority": "P1_OPTIONAL",
+      "path": "assets/p1_optional/settlement_side_ribbons",
+      "source": "D:\\bubblepop\\assets\\game\\spine\\win_fail\\worldcup_gameDlgSpine",
+      "files": {
+        "json": "jiesuan_caidai.json",
+        "atlas_txt": "jiesuan_caidai.atlas.txt",
+        "atlas": "jiesuan_caidai.atlas",
+        "png": "jiesuan_caidai.png"
+      },
+      "spine_version": "3.8.99",
+      "png_size": "421x271",
+      "animations": ["daily_idle", "daily_in", "free_idle", "free_in", "lose_idle", "lose_in", "pseudo_setup_pose", "win_idle", "win_in"],
+      "recommended_use": "Alternative settlement side ribbon for win/lose/modal celebration.",
+      "loop": false,
+      "risk": "Medium. Duplicate role with win_ribbon; pick one after visual testing."
+    }
+  ]
+}

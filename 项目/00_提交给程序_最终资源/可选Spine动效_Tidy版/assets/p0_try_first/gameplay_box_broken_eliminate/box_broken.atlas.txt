@@ -1,0 +1,76 @@
+
+box_broken.png
+size: 462,520
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+break_1
+  rotate: true
+  xy: 249, 2
+  size: 27, 29
+  orig: 27, 29
+  offset: 0, 0
+  index: -1
+break_10
+  rotate: false
+  xy: 205, 227
+  size: 36, 27
+  orig: 36, 27
+  offset: 0, 0
+  index: -1
+break_2
+  rotate: false
+  xy: 308, 6
+  size: 25, 23
+  orig: 25, 24
+  offset: 0, 1
+  index: -1
+break_3
+  rotate: true
+  xy: 335, 11
+  size: 18, 23
+  orig: 18, 23
+  offset: 0, 0
+  index: -1
+break_4
+  rotate: false
+  xy: 205, 256
+  size: 28, 28
+  orig: 28, 28
+  offset: 0, 0
+  index: -1
+break_5
+  rotate: true
+  xy: 280, 5
+  size: 24, 26
+  orig: 24, 26
+  offset: 0, 0
+  index: -1
+break_6
+  rotate: false
+  xy: 2, 220
+  size: 201, 298
+  orig: 201, 298
+  offset: 0, 0
+  index: -1
+break_7
+  rotate: true
+  xy: 205, 286
+  size: 232, 255
+  orig: 232, 255
+  offset: 0, 0
+  index: -1
+break_8
+  rotate: true
+  xy: 2, 19
+  size: 199, 245
+  orig: 199, 245
+  offset: 0, 0
+  index: -1
+break_9
+  rotate: true
+  xy: 249, 31
+  size: 253, 197
+  orig: 253, 197
+  offset: 0, 0
+  index: -1

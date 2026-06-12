@@ -1,0 +1,27 @@
+
+EFF_Game_CardCollect_Card_bg.png
+size: 548,260
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Flare21
+  rotate: false
+  xy: 2, 2
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+Smoke17
+  rotate: false
+  xy: 260, 2
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+atom
+  rotate: false
+  xy: 518, 230
+  size: 28, 28
+  orig: 31, 31
+  offset: 1, 2
+  index: -1

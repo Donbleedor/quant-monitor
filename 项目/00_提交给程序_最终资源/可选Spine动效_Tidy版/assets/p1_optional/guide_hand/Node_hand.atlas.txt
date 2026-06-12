@@ -1,0 +1,41 @@
+
+Node_hand.png
+size: 306,161
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+circle_2
+  rotate: false
+  xy: 2, 2
+  size: 157, 157
+  orig: 157, 157
+  offset: 0, 0
+  index: -1
+glow
+  rotate: false
+  xy: 255, 110
+  size: 49, 49
+  orig: 60, 60
+  offset: 5, 6
+  index: -1
+hand00
+  rotate: false
+  xy: 161, 64
+  size: 92, 95
+  orig: 105, 123
+  offset: 12, 0
+  index: -1
+hand01
+  rotate: false
+  xy: 161, 6
+  size: 59, 56
+  orig: 105, 123
+  offset: 3, 60
+  index: -1
+qmlizi
+  rotate: false
+  xy: 222, 8
+  size: 53, 54
+  orig: 63, 64
+  offset: 6, 4
+  index: -1

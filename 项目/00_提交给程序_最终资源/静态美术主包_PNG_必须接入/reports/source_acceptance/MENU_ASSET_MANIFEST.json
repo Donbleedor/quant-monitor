@@ -1,0 +1,185 @@
+﻿{
+  "date": "2026-06-11",
+  "scope": "menu_integration_handoff",
+  "fixedCanvas": {
+    "width": 1080,
+    "height": 2400,
+    "ratio": "9:20"
+  },
+  "runtimeRule": {
+    "description": "Keep the menu inside a fixed 9:20 portrait shell. Do not allow free browser-driven reflow or distortion.",
+    "recommendedShellCss": "aspect-ratio: 9 / 20; width: min(100vw, calc(100dvh * 9 / 20)); height: min(100dvh, calc(100vw * 20 / 9));"
+  },
+  "sharedBackground": {
+    "currentSource": "E:\\参考图\\麻将\\项目\\99_可能可删除_过程归档\\生产工作区_过程产物\\asset_work\\processed\\first_screen_p0\\bg_game_1080x2400.png",
+    "preferredFutureSource": "E:\\参考图\\麻将\\项目\\99_可能可删除_过程归档\\生产工作区_过程产物\\asset_work\\processed\\shared\\bg_game_1080x2400.png",
+    "status": "shared_reference_only",
+    "note": "Do not make the menu permanently depend on first_screen_p0; use this as a shared background reference until it is promoted to the shared path."
+  },
+  "assets": [
+    {
+      "priority": "P0",
+      "file": "E:\\参考图\\麻将\\项目\\99_可能可删除_过程归档\\生产工作区_过程产物\\menu_work\\processed\\menu_p0\\logo_tribal_tiles.png",
+      "name": "logo_tribal_tiles.png",
+      "usage": "Primary menu brand lockup",
+      "size": { "width": 760, "height": 420 },
+      "transparent": true,
+      "alpha": true,
+      "renderMenuAttach": ".menu-logo",
+      "designRect": { "x": 160, "y": 150, "width": 760, "height": 420 },
+      "hitRect": { "x": 160, "y": 150, "width": 760, "height": 420 }
+    },
+    {
+      "priority": "P0",
+      "file": "E:\\参考图\\麻将\\项目\\99_可能可删除_过程归档\\生产工作区_过程产物\\menu_work\\processed\\menu_p0\\button_play_large.png",
+      "name": "button_play_large.png",
+      "usage": "Primary play CTA shell",
+      "size": { "width": 780, "height": 260 },
+      "transparent": true,
+      "alpha": true,
+      "renderMenuAttach": ".btn-play",
+      "designRect": { "x": 150, "y": 860, "width": 780, "height": 260 },
+      "hitRect": { "x": 136, "y": 846, "width": 808, "height": 288 }
+    },
+    {
+      "priority": "P0",
+      "file": "E:\\参考图\\麻将\\项目\\99_可能可删除_过程归档\\生产工作区_过程产物\\menu_work\\processed\\menu_p0\\icon_settings.png",
+      "name": "icon_settings.png",
+      "usage": "Top-right settings control",
+      "size": { "width": 88, "height": 88 },
+      "transparent": true,
+      "alpha": true,
+      "renderMenuAttach": ".menu-settings #btnSettings",
+      "designRect": { "x": 938, "y": 48, "width": 88, "height": 88 },
+      "hitRect": { "x": 914, "y": 24, "width": 136, "height": 136 }
+    },
+    {
+      "priority": "P1",
+      "file": "E:\\参考图\\麻将\\项目\\99_可能可删除_过程归档\\生产工作区_过程产物\\menu_work\\processed\\menu_p1\\title_tribal_tiles.png",
+      "name": "title_tribal_tiles.png",
+      "usage": "Fallback title-only wordmark",
+      "size": { "width": 620, "height": 160 },
+      "transparent": true,
+      "alpha": true,
+      "renderMenuAttach": ".menu-logo fallback / title slot",
+      "designRect": { "x": 230, "y": 190, "width": 620, "height": 160 },
+      "hitRect": { "x": 230, "y": 190, "width": 620, "height": 160 },
+      "warnings": [
+        "width_soft_warning",
+        "can_be_scaled_with_max_width"
+      ]
+    },
+    {
+      "priority": "P1",
+      "file": "E:\\参考图\\麻将\\项目\\99_可能可删除_过程归档\\生产工作区_过程产物\\menu_work\\processed\\menu_p1\\icon_levels.png",
+      "name": "icon_levels.png",
+      "usage": "Level select icon",
+      "size": { "width": 88, "height": 88 },
+      "transparent": true,
+      "alpha": true,
+      "renderMenuAttach": ".btn-levels .btn-icon",
+      "designRect": { "x": 252, "y": 1256, "width": 88, "height": 88 },
+      "hitRect": { "x": 142, "y": 1180, "width": 300, "height": 300 }
+    },
+    {
+      "priority": "P1",
+      "file": "E:\\参考图\\麻将\\项目\\99_可能可删除_过程归档\\生产工作区_过程产物\\menu_work\\processed\\menu_p1\\icon_daily.png",
+      "name": "icon_daily.png",
+      "usage": "Daily challenge icon",
+      "size": { "width": 88, "height": 88 },
+      "transparent": true,
+      "alpha": true,
+      "renderMenuAttach": ".btn-daily .btn-icon",
+      "designRect": { "x": 748, "y": 1256, "width": 88, "height": 88 },
+      "hitRect": { "x": 638, "y": 1180, "width": 300, "height": 300 }
+    },
+    {
+      "priority": "P1",
+      "file": "E:\\参考图\\麻将\\项目\\99_可能可删除_过程归档\\生产工作区_过程产物\\menu_work\\processed\\menu_p1\\tool_btn_shell.png",
+      "name": "tool_btn_shell.png",
+      "usage": "Reusable round button shell for Level/Daily",
+      "size": { "width": 182, "height": 182 },
+      "transparent": true,
+      "alpha": true,
+      "renderMenuAttach": ".btn-levels / .btn-daily shell layer",
+      "designRect": { "x": 142, "y": 1180, "width": 300, "height": 300 },
+      "hitRect": { "x": 142, "y": 1180, "width": 300, "height": 300 }
+    },
+    {
+      "priority": "P1",
+      "file": "E:\\参考图\\麻将\\项目\\99_可能可删除_过程归档\\生产工作区_过程产物\\menu_work\\processed\\menu_p1\\badge_count_coin.png",
+      "name": "badge_count_coin.png",
+      "usage": "Small badge / counter coin",
+      "size": { "width": 44, "height": 44 },
+      "transparent": true,
+      "alpha": true,
+      "renderMenuAttach": "badge overlay on secondary controls",
+      "designRect": { "x": 0, "y": 0, "width": 44, "height": 44 },
+      "hitRect": { "x": 0, "y": 0, "width": 44, "height": 44 }
+    },
+    {
+      "priority": "P1",
+      "file": "E:\\参考图\\麻将\\项目\\99_可能可删除_过程归档\\生产工作区_过程产物\\menu_work\\processed\\menu_p1\\tile_base_ivory.png",
+      "name": "tile_base_ivory.png",
+      "usage": "Shared carved stone material reference",
+      "size": { "width": 168, "height": 201 },
+      "transparent": true,
+      "alpha": true,
+      "renderMenuAttach": "decorative brand/support material",
+      "designRect": { "x": 0, "y": 0, "width": 168, "height": 201 },
+      "hitRect": { "x": 0, "y": 0, "width": 168, "height": 201 }
+    },
+    {
+      "priority": "P1",
+      "file": "E:\\参考图\\麻将\\项目\\99_可能可删除_过程归档\\生产工作区_过程产物\\menu_work\\processed\\menu_p1\\menu_pattern_overlay.png",
+      "name": "menu_pattern_overlay.png",
+      "usage": "Subtle background texture overlay",
+      "size": { "width": 1080, "height": 2400 },
+      "transparent": true,
+      "alpha": true,
+      "renderMenuAttach": ".menu-bg overlay",
+      "designRect": { "x": 0, "y": 0, "width": 1080, "height": 2400 },
+      "hitRect": { "x": 0, "y": 0, "width": 1080, "height": 2400 }
+    },
+    {
+      "priority": "P1",
+      "file": "E:\\参考图\\麻将\\项目\\99_可能可删除_过程归档\\生产工作区_过程产物\\menu_work\\processed\\menu_p1\\menu_vignette_top.png",
+      "name": "menu_vignette_top.png",
+      "usage": "Top ornamental lift",
+      "size": { "width": 1080, "height": 520 },
+      "transparent": true,
+      "alpha": true,
+      "renderMenuAttach": "top decorative band",
+      "designRect": { "x": 0, "y": 0, "width": 1080, "height": 520 },
+      "hitRect": { "x": 0, "y": 0, "width": 1080, "height": 520 }
+    },
+    {
+      "priority": "P1",
+      "file": "E:\\参考图\\麻将\\项目\\99_可能可删除_过程归档\\生产工作区_过程产物\\menu_work\\processed\\menu_p1\\menu_vignette_bottom.png",
+      "name": "menu_vignette_bottom.png",
+      "usage": "Bottom ornamental grounding",
+      "size": { "width": 1080, "height": 620 },
+      "transparent": true,
+      "alpha": true,
+      "renderMenuAttach": "bottom decorative band",
+      "designRect": { "x": 0, "y": 1780, "width": 1080, "height": 620 },
+      "hitRect": { "x": 0, "y": 1780, "width": 1080, "height": 620 }
+    },
+    {
+      "priority": "P0",
+      "file": "E:\\参考图\\麻将\\项目\\99_可能可删除_过程归档\\生产工作区_过程产物\\asset_work\\processed\\first_screen_p0\\bg_game_1080x2400.png",
+      "name": "bg_game_1080x2400.png",
+      "usage": "Shared background reference only; do not hard-couple menu to first_screen_p0 long term",
+      "size": { "width": 1080, "height": 2400 },
+      "transparent": false,
+      "alpha": false,
+      "renderMenuAttach": ".menu-bg base layer",
+      "designRect": { "x": 0, "y": 0, "width": 1080, "height": 2400 },
+      "hitRect": { "x": 0, "y": 0, "width": 1080, "height": 2400 },
+      "dependencyStatus": "shared_reference_only",
+      "preferredFuturePath": "E:\\参考图\\麻将\\项目\\99_可能可删除_过程归档\\生产工作区_过程产物\\asset_work\\processed\\shared\\bg_game_1080x2400.png"
+    }
+  ]
+}
+
+

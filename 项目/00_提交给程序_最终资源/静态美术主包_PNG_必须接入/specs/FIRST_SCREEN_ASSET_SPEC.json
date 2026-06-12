@@ -1,0 +1,371 @@
+{
+  "date": "2026-06-10",
+  "scope": "normal_gameplay_only",
+  "canvas": {
+    "width": 1080,
+    "height": 2400,
+    "ratio": "9:20",
+    "target_devices": [
+      "Transsion mainstream Android phones",
+      "720x1600 reference"
+    ]
+  },
+  "source": "selected conservative gameplay effect image",
+  "priority_definition": {
+    "P0": "must_have_for_first_round_integration",
+    "P1": "optional_follow_up_polish"
+  },
+  "asset_groups": [
+    {
+      "group": "background",
+      "layer_order": 1,
+      "assets": [
+        {
+          "id": "P0-01",
+          "name": "Full screen game background",
+          "file": "bg_game_1080x2400.png",
+          "size": { "width": 1080, "height": 2400 },
+          "transparent": false,
+          "usage": "Dark emerald woven background with low-contrast pattern and vignette.",
+          "attach": "body > #app > .game-shell",
+          "priority": "P0"
+        },
+        {
+          "id": "P0-10",
+          "name": "Board stage backdrop",
+          "file": "board_stage_bg.png",
+          "size": { "width": 1080, "height": 1840 },
+          "transparent": false,
+          "usage": "Darkened central playfield behind tile stack.",
+          "attach": "#app .board-stage",
+          "priority": "P0"
+        },
+        {
+          "id": "P1-01",
+          "name": "Background texture variant",
+          "file": "bg_game_texture_variant.png",
+          "size": { "width": 1080, "height": 2400 },
+          "transparent": false,
+          "usage": "Optional texture pass for extra depth.",
+          "attach": "under bg_game_1080x2400.png",
+          "priority": "P1"
+        },
+        {
+          "id": "P1-05",
+          "name": "Board edge vignette",
+          "file": "board_edge_vignette.png",
+          "size": { "width": 1080, "height": 1840 },
+          "transparent": true,
+          "usage": "Optional extra depth around the board area.",
+          "attach": "above board_stage_bg",
+          "priority": "P1"
+        }
+      ]
+    },
+    {
+      "group": "top_hud",
+      "layer_order": 2,
+      "assets": [
+        {
+          "id": "P0-02",
+          "name": "Top HUD frame",
+          "file": "hud_top_frame.png",
+          "size": { "width": 1080, "height": 188 },
+          "transparent": true,
+          "usage": "Gold/wood carved top strip.",
+          "attach": "#app .top-hud",
+          "priority": "P0"
+        },
+        {
+          "id": "P0-03",
+          "name": "Home button shell",
+          "file": "hud_btn_home_bg.png",
+          "size": { "width": 146, "height": 146 },
+          "transparent": true,
+          "usage": "Left control button container.",
+          "attach": "#app .top-hud .btn-home",
+          "priority": "P0"
+        },
+        {
+          "id": "P0-04",
+          "name": "Home icon",
+          "file": "icon_home.png",
+          "size": { "width": 88, "height": 88 },
+          "transparent": true,
+          "usage": "Return/home action.",
+          "attach": "centered inside hud_btn_home_bg",
+          "priority": "P0"
+        },
+        {
+          "id": "P0-05",
+          "name": "Center HUD plate",
+          "file": "hud_center_plate.png",
+          "size": { "width": 620, "height": 140 },
+          "transparent": true,
+          "usage": "Level and timer carrier plate.",
+          "attach": "#app .top-hud .hud-center",
+          "priority": "P0"
+        },
+        {
+          "id": "P0-06",
+          "name": "Level glyph / badge icon",
+          "file": "icon_mask_level.png",
+          "size": { "width": 44, "height": 44 },
+          "transparent": true,
+          "usage": "Small decorative marker next to level.",
+          "attach": "left of level text",
+          "priority": "P0"
+        },
+        {
+          "id": "P0-07",
+          "name": "Timer icon",
+          "file": "icon_timer.png",
+          "size": { "width": 42, "height": 42 },
+          "transparent": true,
+          "usage": "Timer indicator.",
+          "attach": "left of time text",
+          "priority": "P0"
+        },
+        {
+          "id": "P0-08",
+          "name": "Pause button shell",
+          "file": "hud_btn_pause_bg.png",
+          "size": { "width": 146, "height": 146 },
+          "transparent": true,
+          "usage": "Right control button container.",
+          "attach": "#app .top-hud .btn-pause",
+          "priority": "P0"
+        },
+        {
+          "id": "P0-09",
+          "name": "Pause icon",
+          "file": "icon_pause.png",
+          "size": { "width": 72, "height": 72 },
+          "transparent": true,
+          "usage": "Pause action.",
+          "attach": "centered inside hud_btn_pause_bg",
+          "priority": "P0"
+        }
+      ]
+    },
+    {
+      "group": "board_tiles",
+      "layer_order": 3,
+      "assets": [
+        {
+          "id": "P0-11",
+          "name": "Tile base",
+          "file": "tile_base_ivory.png",
+          "size": { "width": 168, "height": 201 },
+          "transparent": true,
+          "usage": "Main carved tile body.",
+          "attach": "#app .board-stage .tile base layer",
+          "priority": "P0"
+        },
+        {
+          "id": "P0-12",
+          "name": "Tile shadow / depth",
+          "file": "state_tile_shadow.png",
+          "size": { "width": 168, "height": 201 },
+          "transparent": true,
+          "usage": "Soft depth under tile stack.",
+          "attach": "under each tile",
+          "priority": "P0"
+        },
+        {
+          "id": "P0-13",
+          "name": "Tile selected outline",
+          "file": "state_tile_selected_glow.png",
+          "size": { "width": 180, "height": 213 },
+          "transparent": true,
+          "usage": "Gold selected-state glow.",
+          "attach": "overlay on active tile",
+          "priority": "P0"
+        },
+        {
+          "id": "P0-14",
+          "name": "Tile blocked dim overlay",
+          "file": "state_tile_blocked_overlay.png",
+          "size": { "width": 168, "height": 201 },
+          "transparent": true,
+          "usage": "Dimmed non-clickable state.",
+          "attach": "overlay on blocked tile",
+          "priority": "P0"
+        },
+        {
+          "id": "P0-15",
+          "name": "Tile covered overlay",
+          "file": "state_tile_covered_overlay.png",
+          "size": { "width": 168, "height": 201 },
+          "transparent": true,
+          "usage": "Slightly darkened covered tile state.",
+          "attach": "overlay on lower stack tiles",
+          "priority": "P0"
+        }
+      ]
+    },
+    {
+      "group": "tile_symbols",
+      "layer_order": 4,
+      "assets": [
+        { "id": "P0-16-01", "name": "Sun Seed", "file": "tile_totem_01_sun_seed.png", "size": { "width": 96, "height": 96 }, "transparent": true, "usage": "Tile symbol overlay.", "attach": "centered on tile base", "priority": "P0" },
+        { "id": "P0-16-02", "name": "Twin Leaves", "file": "tile_totem_02_twin_leaves.png", "size": { "width": 96, "height": 96 }, "transparent": true, "usage": "Tile symbol overlay.", "attach": "centered on tile base", "priority": "P0" },
+        { "id": "P0-16-03", "name": "Branch Cluster", "file": "tile_totem_03_branch_cluster.png", "size": { "width": 96, "height": 96 }, "transparent": true, "usage": "Tile symbol overlay.", "attach": "centered on tile base", "priority": "P0" },
+        { "id": "P0-16-04", "name": "Flower Cross", "file": "tile_totem_04_flower_cross.png", "size": { "width": 96, "height": 96 }, "transparent": true, "usage": "Tile symbol overlay.", "attach": "centered on tile base", "priority": "P0" },
+        { "id": "P0-16-05", "name": "Palm Fan", "file": "tile_totem_05_palm_fan.png", "size": { "width": 96, "height": 96 }, "transparent": true, "usage": "Tile symbol overlay.", "attach": "centered on tile base", "priority": "P0" },
+        { "id": "P0-16-06", "name": "Rain Pair", "file": "tile_totem_06_rain_pair.png", "size": { "width": 96, "height": 96 }, "transparent": true, "usage": "Tile symbol overlay.", "attach": "centered on tile base", "priority": "P0" },
+        { "id": "P0-16-07", "name": "Water Wave", "file": "tile_totem_07_water_wave.png", "size": { "width": 96, "height": 96 }, "transparent": true, "usage": "Tile symbol overlay.", "attach": "centered on tile base", "priority": "P0" },
+        { "id": "P0-16-08", "name": "Mountain Chevron", "file": "tile_totem_08_mountain_chevron.png", "size": { "width": 96, "height": 96 }, "transparent": true, "usage": "Tile symbol overlay.", "attach": "centered on tile base", "priority": "P0" },
+        { "id": "P0-16-09", "name": "Star Blossom", "file": "tile_totem_09_star_blossom.png", "size": { "width": 96, "height": 96 }, "transparent": true, "usage": "Tile symbol overlay.", "attach": "centered on tile base", "priority": "P0" },
+        { "id": "P0-16-10", "name": "Talking Drum", "file": "tile_totem_10_talking_drum.png", "size": { "width": 96, "height": 96 }, "transparent": true, "usage": "Tile symbol overlay.", "attach": "centered on tile base", "priority": "P0" },
+        { "id": "P0-16-11", "name": "Round Shield", "file": "tile_totem_11_round_shield.png", "size": { "width": 96, "height": 96 }, "transparent": true, "usage": "Tile symbol overlay.", "attach": "centered on tile base", "priority": "P0" },
+        { "id": "P0-16-12", "name": "Cowrie Shell", "file": "tile_totem_12_cowrie_shell.png", "size": { "width": 96, "height": 96 }, "transparent": true, "usage": "Tile symbol overlay.", "attach": "centered on tile base", "priority": "P0" },
+        { "id": "P0-16-13", "name": "Woven Basket", "file": "tile_totem_13_woven_basket.png", "size": { "width": 96, "height": 96 }, "transparent": true, "usage": "Tile symbol overlay.", "attach": "centered on tile base", "priority": "P0" },
+        { "id": "P0-16-14", "name": "Clay Pot", "file": "tile_totem_14_clay_pot.png", "size": { "width": 96, "height": 96 }, "transparent": true, "usage": "Tile symbol overlay.", "attach": "centered on tile base", "priority": "P0" },
+        { "id": "P0-16-15", "name": "Comb Pick", "file": "tile_totem_15_comb_pick.png", "size": { "width": 96, "height": 96 }, "transparent": true, "usage": "Tile symbol overlay.", "attach": "centered on tile base", "priority": "P0" },
+        { "id": "P0-16-16", "name": "Bronze Bell", "file": "tile_totem_16_bronze_bell.png", "size": { "width": 96, "height": 96 }, "transparent": true, "usage": "Tile symbol overlay.", "attach": "centered on tile base", "priority": "P0" },
+        { "id": "P0-16-17", "name": "Spear Tip", "file": "tile_totem_17_spear_tip.png", "size": { "width": 96, "height": 96 }, "transparent": true, "usage": "Tile symbol overlay.", "attach": "centered on tile base", "priority": "P0" },
+        { "id": "P0-16-18", "name": "Gold Bead", "file": "tile_totem_18_gold_bead.png", "size": { "width": 96, "height": 96 }, "transparent": true, "usage": "Tile symbol overlay.", "attach": "centered on tile base", "priority": "P0" },
+        { "id": "P0-16-19", "name": "Diamond Knot", "file": "tile_totem_19_diamond_knot.png", "size": { "width": 96, "height": 96 }, "transparent": true, "usage": "Tile symbol overlay.", "attach": "centered on tile base", "priority": "P0" },
+        { "id": "P0-16-20", "name": "Zigzag Cloth", "file": "tile_totem_20_zigzag_cloth.png", "size": { "width": 96, "height": 96 }, "transparent": true, "usage": "Tile symbol overlay.", "attach": "centered on tile base", "priority": "P0" },
+        { "id": "P0-16-21", "name": "Triple Triangle", "file": "tile_totem_21_triple_triangle.png", "size": { "width": 96, "height": 96 }, "transparent": true, "usage": "Tile symbol overlay.", "attach": "centered on tile base", "priority": "P0" },
+        { "id": "P0-16-22", "name": "Spiral Sun", "file": "tile_totem_22_spiral_sun.png", "size": { "width": 96, "height": 96 }, "transparent": true, "usage": "Tile symbol overlay.", "attach": "centered on tile base", "priority": "P0" },
+        { "id": "P0-16-23", "name": "Cross Weave", "file": "tile_totem_23_cross_weave.png", "size": { "width": 96, "height": 96 }, "transparent": true, "usage": "Tile symbol overlay.", "attach": "centered on tile base", "priority": "P0" },
+        { "id": "P0-16-24", "name": "Step Motif", "file": "tile_totem_24_step_motif.png", "size": { "width": 96, "height": 96 }, "transparent": true, "usage": "Tile symbol overlay.", "attach": "centered on tile base", "priority": "P0" },
+        { "id": "P0-16-25", "name": "Ring Glyph", "file": "tile_totem_25_ring_glyph.png", "size": { "width": 96, "height": 96 }, "transparent": true, "usage": "Tile symbol overlay.", "attach": "centered on tile base", "priority": "P0" },
+        { "id": "P0-16-26", "name": "Blue Stripe", "file": "tile_totem_26_blue_stripe.png", "size": { "width": 96, "height": 96 }, "transparent": true, "usage": "Tile symbol overlay.", "attach": "centered on tile base", "priority": "P0" },
+        { "id": "P0-16-27", "name": "Green Lattice", "file": "tile_totem_27_green_lattice.png", "size": { "width": 96, "height": 96 }, "transparent": true, "usage": "Tile symbol overlay.", "attach": "centered on tile base", "priority": "P0" },
+        { "id": "P0-16-28", "name": "Mask Mark", "file": "tile_totem_28_mask_mark.png", "size": { "width": 96, "height": 96 }, "transparent": true, "usage": "Tile symbol overlay.", "attach": "centered on tile base", "priority": "P0" },
+        { "id": "P0-16-29", "name": "Baobab Tree", "file": "tile_totem_29_baobab_tree.png", "size": { "width": 96, "height": 96 }, "transparent": true, "usage": "Tile symbol overlay.", "attach": "centered on tile base", "priority": "P0" },
+        { "id": "P0-16-30", "name": "Moon Bowl", "file": "tile_totem_30_moon_bowl.png", "size": { "width": 96, "height": 96 }, "transparent": true, "usage": "Tile symbol overlay.", "attach": "centered on tile base", "priority": "P0" },
+        { "id": "P0-16-31", "name": "Fire Mark", "file": "tile_totem_31_fire_mark.png", "size": { "width": 96, "height": 96 }, "transparent": true, "usage": "Tile symbol overlay.", "attach": "centered on tile base", "priority": "P0" },
+        { "id": "P0-16-32", "name": "Water Drop", "file": "tile_totem_32_water_drop.png", "size": { "width": 96, "height": 96 }, "transparent": true, "usage": "Tile symbol overlay.", "attach": "centered on tile base", "priority": "P0" },
+        { "id": "P0-16-33", "name": "Crown Token", "file": "tile_totem_33_crown_token.png", "size": { "width": 96, "height": 96 }, "transparent": true, "usage": "Tile symbol overlay.", "attach": "centered on tile base", "priority": "P0" },
+        { "id": "P0-16-34", "name": "Heritage Knot", "file": "tile_totem_34_heritage_knot.png", "size": { "width": 96, "height": 96 }, "transparent": true, "usage": "Tile symbol overlay.", "attach": "centered on tile base", "priority": "P0" }
+      ]
+    },
+    {
+      "group": "bottom_tray",
+      "layer_order": 5,
+      "assets": [
+        {
+          "id": "P0-17",
+          "name": "Bottom tray panel",
+          "file": "tool_tray_panel.png",
+          "size": { "width": 1080, "height": 374 },
+          "transparent": true,
+          "usage": "Wood/gold bottom bar.",
+          "attach": "#app .bottom-tray",
+          "priority": "P0"
+        },
+        {
+          "id": "P0-18",
+          "name": "Tool button shell",
+          "file": "tool_btn_shell.png",
+          "size": { "width": 182, "height": 182 },
+          "transparent": true,
+          "usage": "Circular green/gold button container.",
+          "attach": "hint / undo / shuffle buttons",
+          "priority": "P0"
+        },
+        {
+          "id": "P0-19",
+          "name": "Hint icon",
+          "file": "icon_hint.png",
+          "size": { "width": 88, "height": 88 },
+          "transparent": true,
+          "usage": "Hint action.",
+          "attach": "centered inside hint button",
+          "priority": "P0"
+        },
+        {
+          "id": "P0-20",
+          "name": "Undo icon",
+          "file": "icon_undo.png",
+          "size": { "width": 88, "height": 88 },
+          "transparent": true,
+          "usage": "Undo action.",
+          "attach": "centered inside undo button",
+          "priority": "P0"
+        },
+        {
+          "id": "P0-21",
+          "name": "Shuffle icon",
+          "file": "icon_shuffle.png",
+          "size": { "width": 88, "height": 88 },
+          "transparent": true,
+          "usage": "Mix / shuffle action.",
+          "attach": "centered inside shuffle button",
+          "priority": "P0"
+        },
+        {
+          "id": "P0-22",
+          "name": "Count badge coin",
+          "file": "badge_count_coin.png",
+          "size": { "width": 44, "height": 44 },
+          "transparent": true,
+          "usage": "Small tool count badge.",
+          "attach": "top-right corner of tool buttons",
+          "priority": "P0"
+        },
+        {
+          "id": "P1-04",
+          "name": "Disabled tool tint",
+          "file": "state_tool_disabled.png",
+          "size": { "width": 182, "height": 182 },
+          "transparent": true,
+          "usage": "Disabled tool visual.",
+          "attach": "over tool button shell",
+          "priority": "P1"
+        },
+        {
+          "id": "P1-06",
+          "name": "Icon fallback label strip",
+          "file": "tool_label_strip.png",
+          "size": { "width": 120, "height": 30 },
+          "transparent": true,
+          "usage": "Tiny English fallback label zone.",
+          "attach": "under tool buttons if needed",
+          "priority": "P1"
+        }
+      ]
+    },
+    {
+      "group": "effects_and_future",
+      "layer_order": 6,
+      "assets": [
+        {
+          "id": "P1-02",
+          "name": "Tile highlight sweep",
+          "file": "state_tile_highlight.png",
+          "size": { "width": 168, "height": 201 },
+          "transparent": true,
+          "usage": "Hover / hint sweep.",
+          "attach": "over tile face",
+          "priority": "P1"
+        },
+        {
+          "id": "P1-03",
+          "name": "Match burst effect",
+          "file": "state_match_burst.png",
+          "size": { "width": 240, "height": 240 },
+          "transparent": true,
+          "usage": "Match feedback sparkle.",
+          "attach": "around matched pair",
+          "priority": "P1"
+        },
+        {
+          "id": "P1-07",
+          "name": "Modal panel family",
+          "file": "modal_panel_dark_gold.png",
+          "size": { "width": 864, "height": 720 },
+          "transparent": true,
+          "usage": "Reserved for later pause / restart dialogs.",
+          "attach": "not used in first screen",
+          "priority": "P1"
+        }
+      ]
+    }
+  ]
+}
+

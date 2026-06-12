@@ -1,0 +1,2294 @@
+﻿{
+  "generated_at": "2026-06-11",
+  "final_decision": "ACCEPTED_FOR_ART_DELIVERY",
+  "status_summary": {
+    "first_screen_p0_final_image": "ACCEPTED_FOR_INTEGRATION",
+    "first_screen_p1_optional": "NOT_DELIVERED_OPTIONAL",
+    "menu_p0": "ACCEPTED_FOR_INTEGRATION",
+    "menu_p1_optional": "ACCEPTED_FOR_INTEGRATION",
+    "modal_p0": "ACCEPTED_FOR_INTEGRATION",
+    "modal_p1_optional": "NOT_DELIVERED_OPTIONAL"
+  },
+  "delivery_directories": [
+    {
+      "path": "E:\\参考图\\麻将\\项目\\99_可能可删除_过程归档\\生产工作区_过程产物\\asset_work\\processed\\first_screen_p0_final_image",
+      "status": "FINAL_CANDIDATE"
+    },
+    {
+      "path": "E:\\参考图\\麻将\\项目\\99_可能可删除_过程归档\\生产工作区_过程产物\\menu_work\\processed\\menu_p0",
+      "status": "ACCEPTED_FOR_INTEGRATION"
+    },
+    {
+      "path": "E:\\参考图\\麻将\\项目\\99_可能可删除_过程归档\\生产工作区_过程产物\\menu_work\\processed\\menu_p1",
+      "status": "ACCEPTED_FOR_INTEGRATION"
+    },
+    {
+      "path": "E:\\参考图\\麻将\\项目\\99_可能可删除_过程归档\\生产工作区_过程产物\\modal_work\\processed\\modal_p0",
+      "status": "ACCEPTED_FOR_INTEGRATION"
+    }
+  ],
+  "excluded_directories": [
+    "E:\\参考图\\麻将\\项目\\99_可能可删除_过程归档\\生产工作区_过程产物\\asset_work\\processed\\first_screen_p0_completion",
+    "E:\\参考图\\麻将\\项目\\99_可能可删除_过程归档\\生产工作区_过程产物\\asset_work\\processed\\first_screen_p0_final",
+    "E:\\参考图\\麻将\\项目\\99_可能可删除_过程归档\\生产工作区_过程产物\\asset_work\\processed\\first_screen_p0",
+    "E:\\参考图\\麻将\\项目\\99_可能可删除_过程归档\\生产工作区_过程产物\\asset_work\\processed\\first_screen_p0_v2",
+    "E:\\参考图\\麻将\\项目\\99_可能可删除_过程归档\\生产工作区_过程产物\\asset_work\\processed\\first_screen_p0_image_completion"
+  ],
+  "first_screen_p0": {
+    "required_p0_count": 55,
+    "required_p0_found": 55,
+    "required_p0_missing": [],
+    "optional_p1_count": 7,
+    "optional_p1_missing": [
+      "bg_game_texture_variant.png",
+      "board_edge_vignette.png",
+      "state_tool_disabled.png",
+      "tool_label_strip.png",
+      "state_tile_highlight.png",
+      "state_match_burst.png",
+      "modal_panel_dark_gold.png"
+    ],
+    "hard_fail_count": 0,
+    "soft_warning_count": 16,
+    "assets": [
+      {
+        "file": "bg_game_1080x2400.png",
+        "path": "E:\\参考图\\麻将\\项目\\99_可能可删除_过程归档\\生产工作区_过程产物\\asset_work\\processed\\first_screen_p0_final_image\\bg_game_1080x2400.png",
+        "size": [
+          1080,
+          2400
+        ],
+        "alpha_present": true,
+        "bbox": [
+          0,
+          0,
+          1080,
+          2400
+        ],
+        "visible_bbox_size": [
+          1080,
+          2400
+        ],
+        "occupancy": [
+          1.0,
+          1.0
+        ],
+        "suspicious_pink_px": 0,
+        "exact_ff00ff_px": 0,
+        "transparent_expected": false
+      },
+      {
+        "file": "board_stage_bg.png",
+        "path": "E:\\参考图\\麻将\\项目\\99_可能可删除_过程归档\\生产工作区_过程产物\\asset_work\\processed\\first_screen_p0_final_image\\board_stage_bg.png",
+        "size": [
+          1080,
+          1840
+        ],
+        "alpha_present": true,
+        "bbox": [
+          0,
+          0,
+          1080,
+          1840
+        ],
+        "visible_bbox_size": [
+          1080,
+          1840
+        ],
+        "occupancy": [
+          1.0,
+          1.0
+        ],
+        "suspicious_pink_px": 0,
+        "exact_ff00ff_px": 0,
+        "transparent_expected": false
+      },
+      {
+        "file": "hud_top_frame.png",
+        "path": "E:\\参考图\\麻将\\项目\\99_可能可删除_过程归档\\生产工作区_过程产物\\asset_work\\processed\\first_screen_p0_final_image\\hud_top_frame.png",
+        "size": [
+          1080,
+          188
+        ],
+        "alpha_present": true,
+        "bbox": [
+          173,
+          2,
+          907,
+          186
+        ],
+        "visible_bbox_size": [
+          734,
+          184
+        ],
+        "occupancy": [
+          0.6796,
+          0.9787
+        ],
+        "suspicious_pink_px": 0,
+        "exact_ff00ff_px": 0,
+        "transparent_expected": true
+      },
+      {
+        "file": "hud_btn_home_bg.png",
+        "path": "E:\\参考图\\麻将\\项目\\99_可能可删除_过程归档\\生产工作区_过程产物\\asset_work\\processed\\first_screen_p0_final_image\\hud_btn_home_bg.png",
+        "size": [
+          146,
+          146
+        ],
+        "alpha_present": true,
+        "bbox": [
+          6,
+          5,
+          139,
+          141
+        ],
+        "visible_bbox_size": [
+          133,
+          136
+        ],
+        "occupancy": [
+          0.911,
+          0.9315
+        ],
+        "suspicious_pink_px": 1,
+        "exact_ff00ff_px": 0,
+        "transparent_expected": true
+      },
+      {
+        "file": "icon_home.png",
+        "path": "E:\\参考图\\麻将\\项目\\99_可能可删除_过程归档\\生产工作区_过程产物\\asset_work\\processed\\first_screen_p0_final_image\\icon_home.png",
+        "size": [
+          88,
+          88
+        ],
+        "alpha_present": true,
+        "bbox": [
+          4,
+          5,
+          83,
+          82
+        ],
+        "visible_bbox_size": [
+          79,
+          77
+        ],
+        "occupancy": [
+          0.8977,
+          0.875
+        ],
+        "suspicious_pink_px": 0,
+        "exact_ff00ff_px": 0,
+        "transparent_expected": true
+      },
+      {
+        "file": "hud_center_plate.png",
+        "path": "E:\\参考图\\麻将\\项目\\99_可能可删除_过程归档\\生产工作区_过程产物\\asset_work\\processed\\first_screen_p0_final_image\\hud_center_plate.png",
+        "size": [
+          620,
+          140
+        ],
+        "alpha_present": true,
+        "bbox": [
+          45,
+          2,
+          575,
+          138
+        ],
+        "visible_bbox_size": [
+          530,
+          136
+        ],
+        "occupancy": [
+          0.8548,
+          0.9714
+        ],
+        "suspicious_pink_px": 4,
+        "exact_ff00ff_px": 1,
+        "transparent_expected": true
+      },
+      {
+        "file": "icon_mask_level.png",
+        "path": "E:\\参考图\\麻将\\项目\\99_可能可删除_过程归档\\生产工作区_过程产物\\asset_work\\processed\\first_screen_p0_final_image\\icon_mask_level.png",
+        "size": [
+          44,
+          44
+        ],
+        "alpha_present": true,
+        "bbox": [
+          10,
+          3,
+          33,
+          41
+        ],
+        "visible_bbox_size": [
+          23,
+          38
+        ],
+        "occupancy": [
+          0.5227,
+          0.8636
+        ],
+        "suspicious_pink_px": 0,
+        "exact_ff00ff_px": 0,
+        "transparent_expected": true
+      },
+      {
+        "file": "icon_timer.png",
+        "path": "E:\\参考图\\麻将\\项目\\99_可能可删除_过程归档\\生产工作区_过程产物\\asset_work\\processed\\first_screen_p0_final_image\\icon_timer.png",
+        "size": [
+          42,
+          42
+        ],
+        "alpha_present": true,
+        "bbox": [
+          8,
+          3,
+          33,
+          39
+        ],
+        "visible_bbox_size": [
+          25,
+          36
+        ],
+        "occupancy": [
+          0.5952,
+          0.8571
+        ],
+        "suspicious_pink_px": 0,
+        "exact_ff00ff_px": 0,
+        "transparent_expected": true
+      },
+      {
+        "file": "hud_btn_pause_bg.png",
+        "path": "E:\\参考图\\麻将\\项目\\99_可能可删除_过程归档\\生产工作区_过程产物\\asset_work\\processed\\first_screen_p0_final_image\\hud_btn_pause_bg.png",
+        "size": [
+          146,
+          146
+        ],
+        "alpha_present": true,
+        "bbox": [
+          7,
+          5,
+          139,
+          141
+        ],
+        "visible_bbox_size": [
+          132,
+          136
+        ],
+        "occupancy": [
+          0.9041,
+          0.9315
+        ],
+        "suspicious_pink_px": 0,
+        "exact_ff00ff_px": 0,
+        "transparent_expected": true
+      },
+      {
+        "file": "icon_pause.png",
+        "path": "E:\\参考图\\麻将\\项目\\99_可能可删除_过程归档\\生产工作区_过程产物\\asset_work\\processed\\first_screen_p0_final_image\\icon_pause.png",
+        "size": [
+          72,
+          72
+        ],
+        "alpha_present": true,
+        "bbox": [
+          9,
+          3,
+          63,
+          68
+        ],
+        "visible_bbox_size": [
+          54,
+          65
+        ],
+        "occupancy": [
+          0.75,
+          0.9028
+        ],
+        "suspicious_pink_px": 0,
+        "exact_ff00ff_px": 0,
+        "transparent_expected": true
+      },
+      {
+        "file": "tile_base_ivory.png",
+        "path": "E:\\参考图\\麻将\\项目\\99_可能可删除_过程归档\\生产工作区_过程产物\\asset_work\\processed\\first_screen_p0_final_image\\tile_base_ivory.png",
+        "size": [
+          168,
+          201
+        ],
+        "alpha_present": true,
+        "bbox": [
+          9,
+          4,
+          158,
+          197
+        ],
+        "visible_bbox_size": [
+          149,
+          193
+        ],
+        "occupancy": [
+          0.8869,
+          0.9602
+        ],
+        "suspicious_pink_px": 0,
+        "exact_ff00ff_px": 0,
+        "transparent_expected": true
+      },
+      {
+        "file": "state_tile_shadow.png",
+        "path": "E:\\参考图\\麻将\\项目\\99_可能可删除_过程归档\\生产工作区_过程产物\\asset_work\\processed\\first_screen_p0_final_image\\state_tile_shadow.png",
+        "size": [
+          168,
+          201
+        ],
+        "alpha_present": true,
+        "bbox": [
+          3,
+          76,
+          165,
+          125
+        ],
+        "visible_bbox_size": [
+          162,
+          49
+        ],
+        "occupancy": [
+          0.9643,
+          0.2438
+        ],
+        "suspicious_pink_px": 0,
+        "exact_ff00ff_px": 0,
+        "transparent_expected": true
+      },
+      {
+        "file": "state_tile_selected_glow.png",
+        "path": "E:\\参考图\\麻将\\项目\\99_可能可删除_过程归档\\生产工作区_过程产物\\asset_work\\processed\\first_screen_p0_final_image\\state_tile_selected_glow.png",
+        "size": [
+          180,
+          213
+        ],
+        "alpha_present": true,
+        "bbox": [
+          13,
+          4,
+          167,
+          209
+        ],
+        "visible_bbox_size": [
+          154,
+          205
+        ],
+        "occupancy": [
+          0.8556,
+          0.9624
+        ],
+        "suspicious_pink_px": 0,
+        "exact_ff00ff_px": 0,
+        "transparent_expected": true
+      },
+      {
+        "file": "state_tile_blocked_overlay.png",
+        "path": "E:\\参考图\\麻将\\项目\\99_可能可删除_过程归档\\生产工作区_过程产物\\asset_work\\processed\\first_screen_p0_final_image\\state_tile_blocked_overlay.png",
+        "size": [
+          168,
+          201
+        ],
+        "alpha_present": true,
+        "bbox": [
+          12,
+          4,
+          155,
+          197
+        ],
+        "visible_bbox_size": [
+          143,
+          193
+        ],
+        "occupancy": [
+          0.8512,
+          0.9602
+        ],
+        "suspicious_pink_px": 0,
+        "exact_ff00ff_px": 0,
+        "transparent_expected": true
+      },
+      {
+        "file": "state_tile_covered_overlay.png",
+        "path": "E:\\参考图\\麻将\\项目\\99_可能可删除_过程归档\\生产工作区_过程产物\\asset_work\\processed\\first_screen_p0_final_image\\state_tile_covered_overlay.png",
+        "size": [
+          168,
+          201
+        ],
+        "alpha_present": true,
+        "bbox": [
+          12,
+          4,
+          156,
+          197
+        ],
+        "visible_bbox_size": [
+          144,
+          193
+        ],
+        "occupancy": [
+          0.8571,
+          0.9602
+        ],
+        "suspicious_pink_px": 8,
+        "exact_ff00ff_px": 2,
+        "transparent_expected": true
+      },
+      {
+        "file": "tile_totem_01_sun_seed.png",
+        "path": "E:\\参考图\\麻将\\项目\\99_可能可删除_过程归档\\生产工作区_过程产物\\asset_work\\processed\\first_screen_p0_final_image\\tile_totem_01_sun_seed.png",
+        "size": [
+          96,
+          96
+        ],
+        "alpha_present": true,
+        "bbox": [
+          4,
+          2,
+          92,
+          94
+        ],
+        "visible_bbox_size": [
+          88,
+          92
+        ],
+        "occupancy": [
+          0.9167,
+          0.9583
+        ],
+        "suspicious_pink_px": 0,
+        "exact_ff00ff_px": 0,
+        "transparent_expected": true
+      },
+      {
+        "file": "tile_totem_02_twin_leaves.png",
+        "path": "E:\\参考图\\麻将\\项目\\99_可能可删除_过程归档\\生产工作区_过程产物\\asset_work\\processed\\first_screen_p0_final_image\\tile_totem_02_twin_leaves.png",
+        "size": [
+          96,
+          96
+        ],
+        "alpha_present": true,
+        "bbox": [
+          5,
+          7,
+          91,
+          88
+        ],
+        "visible_bbox_size": [
+          86,
+          81
+        ],
+        "occupancy": [
+          0.8958,
+          0.8438
+        ],
+        "suspicious_pink_px": 0,
+        "exact_ff00ff_px": 0,
+        "transparent_expected": true
+      },
+      {
+        "file": "tile_totem_03_branch_cluster.png",
+        "path": "E:\\参考图\\麻将\\项目\\99_可能可删除_过程归档\\生产工作区_过程产物\\asset_work\\processed\\first_screen_p0_final_image\\tile_totem_03_branch_cluster.png",
+        "size": [
+          96,
+          96
+        ],
+        "alpha_present": true,
+        "bbox": [
+          11,
+          5,
+          84,
+          91
+        ],
+        "visible_bbox_size": [
+          73,
+          86
+        ],
+        "occupancy": [
+          0.7604,
+          0.8958
+        ],
+        "suspicious_pink_px": 0,
+        "exact_ff00ff_px": 0,
+        "transparent_expected": true
+      },
+      {
+        "file": "tile_totem_04_flower_cross.png",
+        "path": "E:\\参考图\\麻将\\项目\\99_可能可删除_过程归档\\生产工作区_过程产物\\asset_work\\processed\\first_screen_p0_final_image\\tile_totem_04_flower_cross.png",
+        "size": [
+          96,
+          96
+        ],
+        "alpha_present": true,
+        "bbox": [
+          7,
+          5,
+          89,
+          91
+        ],
+        "visible_bbox_size": [
+          82,
+          86
+        ],
+        "occupancy": [
+          0.8542,
+          0.8958
+        ],
+        "suspicious_pink_px": 0,
+        "exact_ff00ff_px": 0,
+        "transparent_expected": true
+      },
+      {
+        "file": "tile_totem_05_palm_fan.png",
+        "path": "E:\\参考图\\麻将\\项目\\99_可能可删除_过程归档\\生产工作区_过程产物\\asset_work\\processed\\first_screen_p0_final_image\\tile_totem_05_palm_fan.png",
+        "size": [
+          96,
+          96
+        ],
+        "alpha_present": true,
+        "bbox": [
+          7,
+          5,
+          88,
+          91
+        ],
+        "visible_bbox_size": [
+          81,
+          86
+        ],
+        "occupancy": [
+          0.8438,
+          0.8958
+        ],
+        "suspicious_pink_px": 10,
+        "exact_ff00ff_px": 2,
+        "transparent_expected": true
+      },
+      {
+        "file": "tile_totem_06_rain_pair.png",
+        "path": "E:\\参考图\\麻将\\项目\\99_可能可删除_过程归档\\生产工作区_过程产物\\asset_work\\processed\\first_screen_p0_final_image\\tile_totem_06_rain_pair.png",
+        "size": [
+          96,
+          96
+        ],
+        "alpha_present": true,
+        "bbox": [
+          5,
+          13,
+          91,
+          83
+        ],
+        "visible_bbox_size": [
+          86,
+          70
+        ],
+        "occupancy": [
+          0.8958,
+          0.7292
+        ],
+        "suspicious_pink_px": 0,
+        "exact_ff00ff_px": 0,
+        "transparent_expected": true
+      },
+      {
+        "file": "tile_totem_07_water_wave.png",
+        "path": "E:\\参考图\\麻将\\项目\\99_可能可删除_过程归档\\生产工作区_过程产物\\asset_work\\processed\\first_screen_p0_final_image\\tile_totem_07_water_wave.png",
+        "size": [
+          96,
+          96
+        ],
+        "alpha_present": true,
+        "bbox": [
+          2,
+          9,
+          94,
+          86
+        ],
+        "visible_bbox_size": [
+          92,
+          77
+        ],
+        "occupancy": [
+          0.9583,
+          0.8021
+        ],
+        "suspicious_pink_px": 0,
+        "exact_ff00ff_px": 0,
+        "transparent_expected": true
+      },
+      {
+        "file": "tile_totem_08_mountain_chevron.png",
+        "path": "E:\\参考图\\麻将\\项目\\99_可能可删除_过程归档\\生产工作区_过程产物\\asset_work\\processed\\first_screen_p0_final_image\\tile_totem_08_mountain_chevron.png",
+        "size": [
+          96,
+          96
+        ],
+        "alpha_present": true,
+        "bbox": [
+          5,
+          11,
+          91,
+          84
+        ],
+        "visible_bbox_size": [
+          86,
+          73
+        ],
+        "occupancy": [
+          0.8958,
+          0.7604
+        ],
+        "suspicious_pink_px": 0,
+        "exact_ff00ff_px": 0,
+        "transparent_expected": true
+      },
+      {
+        "file": "tile_totem_09_star_blossom.png",
+        "path": "E:\\参考图\\麻将\\项目\\99_可能可删除_过程归档\\生产工作区_过程产物\\asset_work\\processed\\first_screen_p0_final_image\\tile_totem_09_star_blossom.png",
+        "size": [
+          96,
+          96
+        ],
+        "alpha_present": true,
+        "bbox": [
+          5,
+          5,
+          90,
+          91
+        ],
+        "visible_bbox_size": [
+          85,
+          86
+        ],
+        "occupancy": [
+          0.8854,
+          0.8958
+        ],
+        "suspicious_pink_px": 1,
+        "exact_ff00ff_px": 0,
+        "transparent_expected": true
+      },
+      {
+        "file": "tile_totem_10_talking_drum.png",
+        "path": "E:\\参考图\\麻将\\项目\\99_可能可删除_过程归档\\生产工作区_过程产物\\asset_work\\processed\\first_screen_p0_final_image\\tile_totem_10_talking_drum.png",
+        "size": [
+          96,
+          96
+        ],
+        "alpha_present": true,
+        "bbox": [
+          16,
+          2,
+          80,
+          94
+        ],
+        "visible_bbox_size": [
+          64,
+          92
+        ],
+        "occupancy": [
+          0.6667,
+          0.9583
+        ],
+        "suspicious_pink_px": 0,
+        "exact_ff00ff_px": 0,
+        "transparent_expected": true
+      },
+      {
+        "file": "tile_totem_11_round_shield.png",
+        "path": "E:\\参考图\\麻将\\项目\\99_可能可删除_过程归档\\生产工作区_过程产物\\asset_work\\processed\\first_screen_p0_final_image\\tile_totem_11_round_shield.png",
+        "size": [
+          96,
+          96
+        ],
+        "alpha_present": true,
+        "bbox": [
+          22,
+          5,
+          90,
+          76
+        ],
+        "visible_bbox_size": [
+          68,
+          71
+        ],
+        "occupancy": [
+          0.7083,
+          0.7396
+        ],
+        "suspicious_pink_px": 0,
+        "exact_ff00ff_px": 0,
+        "transparent_expected": true
+      },
+      {
+        "file": "tile_totem_12_cowrie_shell.png",
+        "path": "E:\\参考图\\麻将\\项目\\99_可能可删除_过程归档\\生产工作区_过程产物\\asset_work\\processed\\first_screen_p0_final_image\\tile_totem_12_cowrie_shell.png",
+        "size": [
+          96,
+          96
+        ],
+        "alpha_present": true,
+        "bbox": [
+          15,
+          2,
+          80,
+          94
+        ],
+        "visible_bbox_size": [
+          65,
+          92
+        ],
+        "occupancy": [
+          0.6771,
+          0.9583
+        ],
+        "suspicious_pink_px": 0,
+        "exact_ff00ff_px": 0,
+        "transparent_expected": true
+      },
+      {
+        "file": "tile_totem_13_woven_basket.png",
+        "path": "E:\\参考图\\麻将\\项目\\99_可能可删除_过程归档\\生产工作区_过程产物\\asset_work\\processed\\first_screen_p0_final_image\\tile_totem_13_woven_basket.png",
+        "size": [
+          96,
+          96
+        ],
+        "alpha_present": true,
+        "bbox": [
+          8,
+          5,
+          87,
+          91
+        ],
+        "visible_bbox_size": [
+          79,
+          86
+        ],
+        "occupancy": [
+          0.8229,
+          0.8958
+        ],
+        "suspicious_pink_px": 0,
+        "exact_ff00ff_px": 0,
+        "transparent_expected": true
+      },
+      {
+        "file": "tile_totem_14_clay_pot.png",
+        "path": "E:\\参考图\\麻将\\项目\\99_可能可删除_过程归档\\生产工作区_过程产物\\asset_work\\processed\\first_screen_p0_final_image\\tile_totem_14_clay_pot.png",
+        "size": [
+          96,
+          96
+        ],
+        "alpha_present": true,
+        "bbox": [
+          10,
+          5,
+          85,
+          91
+        ],
+        "visible_bbox_size": [
+          75,
+          86
+        ],
+        "occupancy": [
+          0.7812,
+          0.8958
+        ],
+        "suspicious_pink_px": 2,
+        "exact_ff00ff_px": 0,
+        "transparent_expected": true
+      },
+      {
+        "file": "tile_totem_15_comb_pick.png",
+        "path": "E:\\参考图\\麻将\\项目\\99_可能可删除_过程归档\\生产工作区_过程产物\\asset_work\\processed\\first_screen_p0_final_image\\tile_totem_15_comb_pick.png",
+        "size": [
+          96,
+          96
+        ],
+        "alpha_present": true,
+        "bbox": [
+          21,
+          5,
+          74,
+          91
+        ],
+        "visible_bbox_size": [
+          53,
+          86
+        ],
+        "occupancy": [
+          0.5521,
+          0.8958
+        ],
+        "suspicious_pink_px": 2,
+        "exact_ff00ff_px": 1,
+        "transparent_expected": true
+      },
+      {
+        "file": "tile_totem_16_bronze_bell.png",
+        "path": "E:\\参考图\\麻将\\项目\\99_可能可删除_过程归档\\生产工作区_过程产物\\asset_work\\processed\\first_screen_p0_final_image\\tile_totem_16_bronze_bell.png",
+        "size": [
+          96,
+          96
+        ],
+        "alpha_present": true,
+        "bbox": [
+          19,
+          5,
+          76,
+          91
+        ],
+        "visible_bbox_size": [
+          57,
+          86
+        ],
+        "occupancy": [
+          0.5938,
+          0.8958
+        ],
+        "suspicious_pink_px": 0,
+        "exact_ff00ff_px": 0,
+        "transparent_expected": true
+      },
+      {
+        "file": "tile_totem_17_spear_tip.png",
+        "path": "E:\\参考图\\麻将\\项目\\99_可能可删除_过程归档\\生产工作区_过程产物\\asset_work\\processed\\first_screen_p0_final_image\\tile_totem_17_spear_tip.png",
+        "size": [
+          96,
+          96
+        ],
+        "alpha_present": true,
+        "bbox": [
+          29,
+          5,
+          67,
+          91
+        ],
+        "visible_bbox_size": [
+          38,
+          86
+        ],
+        "occupancy": [
+          0.3958,
+          0.8958
+        ],
+        "suspicious_pink_px": 0,
+        "exact_ff00ff_px": 0,
+        "transparent_expected": true
+      },
+      {
+        "file": "tile_totem_18_gold_bead.png",
+        "path": "E:\\参考图\\麻将\\项目\\99_可能可删除_过程归档\\生产工作区_过程产物\\asset_work\\processed\\first_screen_p0_final_image\\tile_totem_18_gold_bead.png",
+        "size": [
+          96,
+          96
+        ],
+        "alpha_present": true,
+        "bbox": [
+          7,
+          5,
+          89,
+          91
+        ],
+        "visible_bbox_size": [
+          82,
+          86
+        ],
+        "occupancy": [
+          0.8542,
+          0.8958
+        ],
+        "suspicious_pink_px": 1,
+        "exact_ff00ff_px": 0,
+        "transparent_expected": true
+      },
+      {
+        "file": "tile_totem_19_diamond_knot.png",
+        "path": "E:\\参考图\\麻将\\项目\\99_可能可删除_过程归档\\生产工作区_过程产物\\asset_work\\processed\\first_screen_p0_final_image\\tile_totem_19_diamond_knot.png",
+        "size": [
+          96,
+          96
+        ],
+        "alpha_present": true,
+        "bbox": [
+          2,
+          2,
+          94,
+          94
+        ],
+        "visible_bbox_size": [
+          92,
+          92
+        ],
+        "occupancy": [
+          0.9583,
+          0.9583
+        ],
+        "suspicious_pink_px": 0,
+        "exact_ff00ff_px": 0,
+        "transparent_expected": true
+      },
+      {
+        "file": "tile_totem_20_zigzag_cloth.png",
+        "path": "E:\\参考图\\麻将\\项目\\99_可能可删除_过程归档\\生产工作区_过程产物\\asset_work\\processed\\first_screen_p0_final_image\\tile_totem_20_zigzag_cloth.png",
+        "size": [
+          96,
+          96
+        ],
+        "alpha_present": true,
+        "bbox": [
+          14,
+          5,
+          82,
+          91
+        ],
+        "visible_bbox_size": [
+          68,
+          86
+        ],
+        "occupancy": [
+          0.7083,
+          0.8958
+        ],
+        "suspicious_pink_px": 0,
+        "exact_ff00ff_px": 0,
+        "transparent_expected": true
+      },
+      {
+        "file": "tile_totem_21_triple_triangle.png",
+        "path": "E:\\参考图\\麻将\\项目\\99_可能可删除_过程归档\\生产工作区_过程产物\\asset_work\\processed\\first_screen_p0_final_image\\tile_totem_21_triple_triangle.png",
+        "size": [
+          96,
+          96
+        ],
+        "alpha_present": true,
+        "bbox": [
+          7,
+          12,
+          90,
+          84
+        ],
+        "visible_bbox_size": [
+          83,
+          72
+        ],
+        "occupancy": [
+          0.8646,
+          0.75
+        ],
+        "suspicious_pink_px": 5,
+        "exact_ff00ff_px": 1,
+        "transparent_expected": true
+      },
+      {
+        "file": "tile_totem_22_spiral_sun.png",
+        "path": "E:\\参考图\\麻将\\项目\\99_可能可删除_过程归档\\生产工作区_过程产物\\asset_work\\processed\\first_screen_p0_final_image\\tile_totem_22_spiral_sun.png",
+        "size": [
+          96,
+          96
+        ],
+        "alpha_present": true,
+        "bbox": [
+          9,
+          5,
+          86,
+          91
+        ],
+        "visible_bbox_size": [
+          77,
+          86
+        ],
+        "occupancy": [
+          0.8021,
+          0.8958
+        ],
+        "suspicious_pink_px": 0,
+        "exact_ff00ff_px": 0,
+        "transparent_expected": true
+      },
+      {
+        "file": "tile_totem_23_cross_weave.png",
+        "path": "E:\\参考图\\麻将\\项目\\99_可能可删除_过程归档\\生产工作区_过程产物\\asset_work\\processed\\first_screen_p0_final_image\\tile_totem_23_cross_weave.png",
+        "size": [
+          96,
+          96
+        ],
+        "alpha_present": true,
+        "bbox": [
+          7,
+          5,
+          89,
+          91
+        ],
+        "visible_bbox_size": [
+          82,
+          86
+        ],
+        "occupancy": [
+          0.8542,
+          0.8958
+        ],
+        "suspicious_pink_px": 2,
+        "exact_ff00ff_px": 2,
+        "transparent_expected": true
+      },
+      {
+        "file": "tile_totem_24_step_motif.png",
+        "path": "E:\\参考图\\麻将\\项目\\99_可能可删除_过程归档\\生产工作区_过程产物\\asset_work\\processed\\first_screen_p0_final_image\\tile_totem_24_step_motif.png",
+        "size": [
+          96,
+          96
+        ],
+        "alpha_present": true,
+        "bbox": [
+          5,
+          5,
+          91,
+          91
+        ],
+        "visible_bbox_size": [
+          86,
+          86
+        ],
+        "occupancy": [
+          0.8958,
+          0.8958
+        ],
+        "suspicious_pink_px": 0,
+        "exact_ff00ff_px": 0,
+        "transparent_expected": true
+      },
+      {
+        "file": "tile_totem_25_ring_glyph.png",
+        "path": "E:\\参考图\\麻将\\项目\\99_可能可删除_过程归档\\生产工作区_过程产物\\asset_work\\processed\\first_screen_p0_final_image\\tile_totem_25_ring_glyph.png",
+        "size": [
+          96,
+          96
+        ],
+        "alpha_present": true,
+        "bbox": [
+          28,
+          5,
+          90,
+          68
+        ],
+        "visible_bbox_size": [
+          62,
+          63
+        ],
+        "occupancy": [
+          0.6458,
+          0.6562
+        ],
+        "suspicious_pink_px": 0,
+        "exact_ff00ff_px": 0,
+        "transparent_expected": true
+      },
+      {
+        "file": "tile_totem_26_blue_stripe.png",
+        "path": "E:\\参考图\\麻将\\项目\\99_可能可删除_过程归档\\生产工作区_过程产物\\asset_work\\processed\\first_screen_p0_final_image\\tile_totem_26_blue_stripe.png",
+        "size": [
+          96,
+          96
+        ],
+        "alpha_present": true,
+        "bbox": [
+          23,
+          14,
+          73,
+          62
+        ],
+        "visible_bbox_size": [
+          50,
+          48
+        ],
+        "occupancy": [
+          0.5208,
+          0.5
+        ],
+        "suspicious_pink_px": 8,
+        "exact_ff00ff_px": 3,
+        "transparent_expected": true
+      },
+      {
+        "file": "tile_totem_27_green_lattice.png",
+        "path": "E:\\参考图\\麻将\\项目\\99_可能可删除_过程归档\\生产工作区_过程产物\\asset_work\\processed\\first_screen_p0_final_image\\tile_totem_27_green_lattice.png",
+        "size": [
+          96,
+          96
+        ],
+        "alpha_present": true,
+        "bbox": [
+          6,
+          11,
+          91,
+          84
+        ],
+        "visible_bbox_size": [
+          85,
+          73
+        ],
+        "occupancy": [
+          0.8854,
+          0.7604
+        ],
+        "suspicious_pink_px": 17,
+        "exact_ff00ff_px": 6,
+        "transparent_expected": true
+      },
+      {
+        "file": "tile_totem_28_mask_mark.png",
+        "path": "E:\\参考图\\麻将\\项目\\99_可能可删除_过程归档\\生产工作区_过程产物\\asset_work\\processed\\first_screen_p0_final_image\\tile_totem_28_mask_mark.png",
+        "size": [
+          96,
+          96
+        ],
+        "alpha_present": true,
+        "bbox": [
+          23,
+          2,
+          72,
+          94
+        ],
+        "visible_bbox_size": [
+          49,
+          92
+        ],
+        "occupancy": [
+          0.5104,
+          0.9583
+        ],
+        "suspicious_pink_px": 0,
+        "exact_ff00ff_px": 0,
+        "transparent_expected": true
+      },
+      {
+        "file": "tile_totem_29_baobab_tree.png",
+        "path": "E:\\参考图\\麻将\\项目\\99_可能可删除_过程归档\\生产工作区_过程产物\\asset_work\\processed\\first_screen_p0_final_image\\tile_totem_29_baobab_tree.png",
+        "size": [
+          96,
+          96
+        ],
+        "alpha_present": true,
+        "bbox": [
+          7,
+          10,
+          91,
+          85
+        ],
+        "visible_bbox_size": [
+          84,
+          75
+        ],
+        "occupancy": [
+          0.875,
+          0.7812
+        ],
+        "suspicious_pink_px": 7,
+        "exact_ff00ff_px": 5,
+        "transparent_expected": true
+      },
+      {
+        "file": "tile_totem_30_moon_bowl.png",
+        "path": "E:\\参考图\\麻将\\项目\\99_可能可删除_过程归档\\生产工作区_过程产物\\asset_work\\processed\\first_screen_p0_final_image\\tile_totem_30_moon_bowl.png",
+        "size": [
+          96,
+          96
+        ],
+        "alpha_present": true,
+        "bbox": [
+          5,
+          6,
+          91,
+          89
+        ],
+        "visible_bbox_size": [
+          86,
+          83
+        ],
+        "occupancy": [
+          0.8958,
+          0.8646
+        ],
+        "suspicious_pink_px": 0,
+        "exact_ff00ff_px": 0,
+        "transparent_expected": true
+      },
+      {
+        "file": "tile_totem_31_fire_mark.png",
+        "path": "E:\\参考图\\麻将\\项目\\99_可能可删除_过程归档\\生产工作区_过程产物\\asset_work\\processed\\first_screen_p0_final_image\\tile_totem_31_fire_mark.png",
+        "size": [
+          96,
+          96
+        ],
+        "alpha_present": true,
+        "bbox": [
+          22,
+          5,
+          74,
+          91
+        ],
+        "visible_bbox_size": [
+          52,
+          86
+        ],
+        "occupancy": [
+          0.5417,
+          0.8958
+        ],
+        "suspicious_pink_px": 0,
+        "exact_ff00ff_px": 0,
+        "transparent_expected": true
+      },
+      {
+        "file": "tile_totem_32_water_drop.png",
+        "path": "E:\\参考图\\麻将\\项目\\99_可能可删除_过程归档\\生产工作区_过程产物\\asset_work\\processed\\first_screen_p0_final_image\\tile_totem_32_water_drop.png",
+        "size": [
+          96,
+          96
+        ],
+        "alpha_present": true,
+        "bbox": [
+          5,
+          12,
+          91,
+          84
+        ],
+        "visible_bbox_size": [
+          86,
+          72
+        ],
+        "occupancy": [
+          0.8958,
+          0.75
+        ],
+        "suspicious_pink_px": 5,
+        "exact_ff00ff_px": 0,
+        "transparent_expected": true
+      },
+      {
+        "file": "tile_totem_33_crown_token.png",
+        "path": "E:\\参考图\\麻将\\项目\\99_可能可删除_过程归档\\生产工作区_过程产物\\asset_work\\processed\\first_screen_p0_final_image\\tile_totem_33_crown_token.png",
+        "size": [
+          96,
+          96
+        ],
+        "alpha_present": true,
+        "bbox": [
+          7,
+          5,
+          89,
+          91
+        ],
+        "visible_bbox_size": [
+          82,
+          86
+        ],
+        "occupancy": [
+          0.8542,
+          0.8958
+        ],
+        "suspicious_pink_px": 2,
+        "exact_ff00ff_px": 0,
+        "transparent_expected": true
+      },
+      {
+        "file": "tile_totem_34_heritage_knot.png",
+        "path": "E:\\参考图\\麻将\\项目\\99_可能可删除_过程归档\\生产工作区_过程产物\\asset_work\\processed\\first_screen_p0_final_image\\tile_totem_34_heritage_knot.png",
+        "size": [
+          96,
+          96
+        ],
+        "alpha_present": true,
+        "bbox": [
+          13,
+          11,
+          87,
+          84
+        ],
+        "visible_bbox_size": [
+          74,
+          73
+        ],
+        "occupancy": [
+          0.7708,
+          0.7604
+        ],
+        "suspicious_pink_px": 10,
+        "exact_ff00ff_px": 1,
+        "transparent_expected": true
+      },
+      {
+        "file": "tool_tray_panel.png",
+        "path": "E:\\参考图\\麻将\\项目\\99_可能可删除_过程归档\\生产工作区_过程产物\\asset_work\\processed\\first_screen_p0_final_image\\tool_tray_panel.png",
+        "size": [
+          1080,
+          374
+        ],
+        "alpha_present": true,
+        "bbox": [
+          12,
+          47,
+          1068,
+          326
+        ],
+        "visible_bbox_size": [
+          1056,
+          279
+        ],
+        "occupancy": [
+          0.9778,
+          0.746
+        ],
+        "suspicious_pink_px": 0,
+        "exact_ff00ff_px": 0,
+        "transparent_expected": true
+      },
+      {
+        "file": "tool_btn_shell.png",
+        "path": "E:\\参考图\\麻将\\项目\\99_可能可删除_过程归档\\生产工作区_过程产物\\asset_work\\processed\\first_screen_p0_final_image\\tool_btn_shell.png",
+        "size": [
+          182,
+          182
+        ],
+        "alpha_present": true,
+        "bbox": [
+          5,
+          5,
+          177,
+          177
+        ],
+        "visible_bbox_size": [
+          172,
+          172
+        ],
+        "occupancy": [
+          0.9451,
+          0.9451
+        ],
+        "suspicious_pink_px": 0,
+        "exact_ff00ff_px": 0,
+        "transparent_expected": true
+      },
+      {
+        "file": "icon_hint.png",
+        "path": "E:\\参考图\\麻将\\项目\\99_可能可删除_过程归档\\生产工作区_过程产物\\asset_work\\processed\\first_screen_p0_final_image\\icon_hint.png",
+        "size": [
+          88,
+          88
+        ],
+        "alpha_present": true,
+        "bbox": [
+          11,
+          4,
+          77,
+          83
+        ],
+        "visible_bbox_size": [
+          66,
+          79
+        ],
+        "occupancy": [
+          0.75,
+          0.8977
+        ],
+        "suspicious_pink_px": 0,
+        "exact_ff00ff_px": 0,
+        "transparent_expected": true
+      },
+      {
+        "file": "icon_undo.png",
+        "path": "E:\\参考图\\麻将\\项目\\99_可能可删除_过程归档\\生产工作区_过程产物\\asset_work\\processed\\first_screen_p0_final_image\\icon_undo.png",
+        "size": [
+          88,
+          88
+        ],
+        "alpha_present": true,
+        "bbox": [
+          11,
+          4,
+          77,
+          83
+        ],
+        "visible_bbox_size": [
+          66,
+          79
+        ],
+        "occupancy": [
+          0.75,
+          0.8977
+        ],
+        "suspicious_pink_px": 0,
+        "exact_ff00ff_px": 0,
+        "transparent_expected": true
+      },
+      {
+        "file": "icon_shuffle.png",
+        "path": "E:\\参考图\\麻将\\项目\\99_可能可删除_过程归档\\生产工作区_过程产物\\asset_work\\processed\\first_screen_p0_final_image\\icon_shuffle.png",
+        "size": [
+          88,
+          88
+        ],
+        "alpha_present": true,
+        "bbox": [
+          5,
+          4,
+          83,
+          83
+        ],
+        "visible_bbox_size": [
+          78,
+          79
+        ],
+        "occupancy": [
+          0.8864,
+          0.8977
+        ],
+        "suspicious_pink_px": 0,
+        "exact_ff00ff_px": 0,
+        "transparent_expected": true
+      },
+      {
+        "file": "badge_count_coin.png",
+        "path": "E:\\参考图\\麻将\\项目\\99_可能可删除_过程归档\\生产工作区_过程产物\\asset_work\\processed\\first_screen_p0_final_image\\badge_count_coin.png",
+        "size": [
+          44,
+          44
+        ],
+        "alpha_present": true,
+        "bbox": [
+          2,
+          2,
+          41,
+          42
+        ],
+        "visible_bbox_size": [
+          39,
+          40
+        ],
+        "occupancy": [
+          0.8864,
+          0.9091
+        ],
+        "suspicious_pink_px": 0,
+        "exact_ff00ff_px": 0,
+        "transparent_expected": true
+      }
+    ]
+  },
+  "menu_screen": {
+    "declared_unique_count": 14,
+    "required_local_count": 12,
+    "required_local_found": 12,
+    "required_local_missing": [],
+    "optional_p1_count": 1,
+    "optional_p1_missing": [
+      "icon_play.png"
+    ],
+    "shared_background_reused_from_first_screen": true,
+    "shared_background_file": "bg_game_1080x2400.png",
+    "hard_fail_count": 0,
+    "soft_warning_count": 1,
+    "assets": [
+      {
+        "file": "tile_base_ivory.png",
+        "path": "E:\\参考图\\麻将\\项目\\99_可能可删除_过程归档\\生产工作区_过程产物\\menu_work\\processed\\menu_p1\\tile_base_ivory.png",
+        "size": [
+          168,
+          201
+        ],
+        "alpha_present": true,
+        "bbox": [
+          21,
+          4,
+          146,
+          197
+        ],
+        "visible_bbox_size": [
+          125,
+          193
+        ],
+        "occupancy": [
+          0.744,
+          0.9602
+        ],
+        "suspicious_pink_px": 0,
+        "exact_ff00ff_px": 0,
+        "transparent_expected": true
+      },
+      {
+        "file": "tool_btn_shell.png",
+        "path": "E:\\参考图\\麻将\\项目\\99_可能可删除_过程归档\\生产工作区_过程产物\\menu_work\\processed\\menu_p1\\tool_btn_shell.png",
+        "size": [
+          182,
+          182
+        ],
+        "alpha_present": true,
+        "bbox": [
+          4,
+          3,
+          177,
+          178
+        ],
+        "visible_bbox_size": [
+          173,
+          175
+        ],
+        "occupancy": [
+          0.9505,
+          0.9615
+        ],
+        "suspicious_pink_px": 0,
+        "exact_ff00ff_px": 0,
+        "transparent_expected": true
+      },
+      {
+        "file": "badge_count_coin.png",
+        "path": "E:\\参考图\\麻将\\项目\\99_可能可删除_过程归档\\生产工作区_过程产物\\menu_work\\processed\\menu_p1\\badge_count_coin.png",
+        "size": [
+          44,
+          44
+        ],
+        "alpha_present": true,
+        "bbox": [
+          2,
+          2,
+          41,
+          41
+        ],
+        "visible_bbox_size": [
+          39,
+          39
+        ],
+        "occupancy": [
+          0.8864,
+          0.8864
+        ],
+        "suspicious_pink_px": 0,
+        "exact_ff00ff_px": 0,
+        "transparent_expected": true
+      },
+      {
+        "file": "logo_tribal_tiles.png",
+        "path": "E:\\参考图\\麻将\\项目\\99_可能可删除_过程归档\\生产工作区_过程产物\\menu_work\\processed\\menu_p0\\logo_tribal_tiles.png",
+        "size": [
+          760,
+          420
+        ],
+        "alpha_present": true,
+        "bbox": [
+          168,
+          25,
+          592,
+          395
+        ],
+        "visible_bbox_size": [
+          424,
+          370
+        ],
+        "occupancy": [
+          0.5579,
+          0.881
+        ],
+        "suspicious_pink_px": 0,
+        "exact_ff00ff_px": 0,
+        "transparent_expected": true
+      },
+      {
+        "file": "title_tribal_tiles.png",
+        "path": "E:\\参考图\\麻将\\项目\\99_可能可删除_过程归档\\生产工作区_过程产物\\menu_work\\processed\\menu_p1\\title_tribal_tiles.png",
+        "size": [
+          620,
+          160
+        ],
+        "alpha_present": true,
+        "bbox": [
+          172,
+          13,
+          447,
+          147
+        ],
+        "visible_bbox_size": [
+          275,
+          134
+        ],
+        "occupancy": [
+          0.4435,
+          0.8375
+        ],
+        "suspicious_pink_px": 0,
+        "exact_ff00ff_px": 0,
+        "transparent_expected": true
+      },
+      {
+        "file": "button_play_large.png",
+        "path": "E:\\参考图\\麻将\\项目\\99_可能可删除_过程归档\\生产工作区_过程产物\\menu_work\\processed\\menu_p0\\button_play_large.png",
+        "size": [
+          780,
+          260
+        ],
+        "alpha_present": true,
+        "bbox": [
+          101,
+          5,
+          678,
+          255
+        ],
+        "visible_bbox_size": [
+          577,
+          250
+        ],
+        "occupancy": [
+          0.7397,
+          0.9615
+        ],
+        "suspicious_pink_px": 0,
+        "exact_ff00ff_px": 0,
+        "transparent_expected": true
+      },
+      {
+        "file": "icon_settings.png",
+        "path": "E:\\参考图\\麻将\\项目\\99_可能可删除_过程归档\\生产工作区_过程产物\\menu_work\\processed\\menu_p0\\icon_settings.png",
+        "size": [
+          88,
+          88
+        ],
+        "alpha_present": true,
+        "bbox": [
+          9,
+          9,
+          78,
+          79
+        ],
+        "visible_bbox_size": [
+          69,
+          70
+        ],
+        "occupancy": [
+          0.7841,
+          0.7955
+        ],
+        "suspicious_pink_px": 0,
+        "exact_ff00ff_px": 0,
+        "transparent_expected": true
+      },
+      {
+        "file": "icon_levels.png",
+        "path": "E:\\参考图\\麻将\\项目\\99_可能可删除_过程归档\\生产工作区_过程产物\\menu_work\\processed\\menu_p1\\icon_levels.png",
+        "size": [
+          88,
+          88
+        ],
+        "alpha_present": true,
+        "bbox": [
+          10,
+          9,
+          77,
+          79
+        ],
+        "visible_bbox_size": [
+          67,
+          70
+        ],
+        "occupancy": [
+          0.7614,
+          0.7955
+        ],
+        "suspicious_pink_px": 0,
+        "exact_ff00ff_px": 0,
+        "transparent_expected": true
+      },
+      {
+        "file": "icon_daily.png",
+        "path": "E:\\参考图\\麻将\\项目\\99_可能可删除_过程归档\\生产工作区_过程产物\\menu_work\\processed\\menu_p1\\icon_daily.png",
+        "size": [
+          88,
+          88
+        ],
+        "alpha_present": true,
+        "bbox": [
+          9,
+          9,
+          78,
+          79
+        ],
+        "visible_bbox_size": [
+          69,
+          70
+        ],
+        "occupancy": [
+          0.7841,
+          0.7955
+        ],
+        "suspicious_pink_px": 0,
+        "exact_ff00ff_px": 0,
+        "transparent_expected": true
+      },
+      {
+        "file": "menu_pattern_overlay.png",
+        "path": "E:\\参考图\\麻将\\项目\\99_可能可删除_过程归档\\生产工作区_过程产物\\menu_work\\processed\\menu_p1\\menu_pattern_overlay.png",
+        "size": [
+          1080,
+          2400
+        ],
+        "alpha_present": true,
+        "bbox": [
+          0,
+          389,
+          1080,
+          2010
+        ],
+        "visible_bbox_size": [
+          1080,
+          1621
+        ],
+        "occupancy": [
+          1.0,
+          0.6754
+        ],
+        "suspicious_pink_px": 1,
+        "exact_ff00ff_px": 0,
+        "transparent_expected": true
+      },
+      {
+        "file": "menu_vignette_top.png",
+        "path": "E:\\参考图\\麻将\\项目\\99_可能可删除_过程归档\\生产工作区_过程产物\\menu_work\\processed\\menu_p1\\menu_vignette_top.png",
+        "size": [
+          1080,
+          520
+        ],
+        "alpha_present": true,
+        "bbox": [
+          0,
+          141,
+          1080,
+          379
+        ],
+        "visible_bbox_size": [
+          1080,
+          238
+        ],
+        "occupancy": [
+          1.0,
+          0.4577
+        ],
+        "suspicious_pink_px": 0,
+        "exact_ff00ff_px": 0,
+        "transparent_expected": true
+      },
+      {
+        "file": "menu_vignette_bottom.png",
+        "path": "E:\\参考图\\麻将\\项目\\99_可能可删除_过程归档\\生产工作区_过程产物\\menu_work\\processed\\menu_p1\\menu_vignette_bottom.png",
+        "size": [
+          1080,
+          620
+        ],
+        "alpha_present": true,
+        "bbox": [
+          1,
+          265,
+          1079,
+          620
+        ],
+        "visible_bbox_size": [
+          1078,
+          355
+        ],
+        "occupancy": [
+          0.9981,
+          0.5726
+        ],
+        "suspicious_pink_px": 0,
+        "exact_ff00ff_px": 0,
+        "transparent_expected": true
+      }
+    ],
+    "optional_present": []
+  },
+  "modal_p0": {
+    "required_p0_count": 17,
+    "required_p0_found": 17,
+    "required_p0_missing": [],
+    "optional_p1_count": 9,
+    "optional_p1_missing": [
+      "modal_title_strip.png",
+      "modal_divider_gold.png",
+      "level_star_small.png",
+      "level_badge_completed.png",
+      "settings_row_plate.png",
+      "stat_chip_time.png",
+      "stat_chip_moves.png",
+      "win_medal_center.png",
+      "win_confetti_piece.png"
+    ],
+    "hard_fail_count": 0,
+    "soft_warning_count": 0,
+    "assets": [
+      {
+        "file": "modal_overlay_dark.png",
+        "path": "E:\\参考图\\麻将\\项目\\99_可能可删除_过程归档\\生产工作区_过程产物\\modal_work\\processed\\modal_p0\\modal_overlay_dark.png",
+        "size": [
+          1080,
+          2400
+        ],
+        "alpha_present": true,
+        "bbox": [
+          0,
+          0,
+          1080,
+          2400
+        ],
+        "visible_bbox_size": [
+          1080,
+          2400
+        ],
+        "occupancy": [
+          1.0,
+          1.0
+        ],
+        "suspicious_pink_px": 0,
+        "exact_ff00ff_px": 0,
+        "transparent_expected": false
+      },
+      {
+        "file": "modal_panel_standard.png",
+        "path": "E:\\参考图\\麻将\\项目\\99_可能可删除_过程归档\\生产工作区_过程产物\\modal_work\\processed\\modal_p0\\modal_panel_standard.png",
+        "size": [
+          860,
+          1120
+        ],
+        "alpha_present": true,
+        "bbox": [
+          13,
+          239,
+          847,
+          879
+        ],
+        "visible_bbox_size": [
+          834,
+          640
+        ],
+        "occupancy": [
+          0.9698,
+          0.5714
+        ],
+        "suspicious_pink_px": 0,
+        "exact_ff00ff_px": 0,
+        "transparent_expected": true
+      },
+      {
+        "file": "modal_panel_large.png",
+        "path": "E:\\参考图\\麻将\\项目\\99_可能可删除_过程归档\\生产工作区_过程产物\\modal_work\\processed\\modal_p0\\modal_panel_large.png",
+        "size": [
+          940,
+          1480
+        ],
+        "alpha_present": true,
+        "bbox": [
+          41,
+          44,
+          900,
+          1398
+        ],
+        "visible_bbox_size": [
+          859,
+          1354
+        ],
+        "occupancy": [
+          0.9138,
+          0.9149
+        ],
+        "suspicious_pink_px": 0,
+        "exact_ff00ff_px": 0,
+        "transparent_expected": true
+      },
+      {
+        "file": "btn_modal_primary.png",
+        "path": "E:\\参考图\\麻将\\项目\\99_可能可删除_过程归档\\生产工作区_过程产物\\modal_work\\processed\\modal_p0\\btn_modal_primary.png",
+        "size": [
+          520,
+          140
+        ],
+        "alpha_present": true,
+        "bbox": [
+          25,
+          30,
+          495,
+          107
+        ],
+        "visible_bbox_size": [
+          470,
+          77
+        ],
+        "occupancy": [
+          0.9038,
+          0.55
+        ],
+        "suspicious_pink_px": 0,
+        "exact_ff00ff_px": 0,
+        "transparent_expected": true
+      },
+      {
+        "file": "btn_modal_secondary.png",
+        "path": "E:\\参考图\\麻将\\项目\\99_可能可删除_过程归档\\生产工作区_过程产物\\modal_work\\processed\\modal_p0\\btn_modal_secondary.png",
+        "size": [
+          520,
+          120
+        ],
+        "alpha_present": true,
+        "bbox": [
+          55,
+          26,
+          464,
+          93
+        ],
+        "visible_bbox_size": [
+          409,
+          67
+        ],
+        "occupancy": [
+          0.7865,
+          0.5583
+        ],
+        "suspicious_pink_px": 0,
+        "exact_ff00ff_px": 0,
+        "transparent_expected": true
+      },
+      {
+        "file": "icon_resume.png",
+        "path": "E:\\参考图\\麻将\\项目\\99_可能可删除_过程归档\\生产工作区_过程产物\\modal_work\\processed\\modal_p0\\icon_resume.png",
+        "size": [
+          88,
+          88
+        ],
+        "alpha_present": true,
+        "bbox": [
+          10,
+          9,
+          78,
+          79
+        ],
+        "visible_bbox_size": [
+          68,
+          70
+        ],
+        "occupancy": [
+          0.7727,
+          0.7955
+        ],
+        "suspicious_pink_px": 0,
+        "exact_ff00ff_px": 0,
+        "transparent_expected": true
+      },
+      {
+        "file": "icon_restart.png",
+        "path": "E:\\参考图\\麻将\\项目\\99_可能可删除_过程归档\\生产工作区_过程产物\\modal_work\\processed\\modal_p0\\icon_restart.png",
+        "size": [
+          88,
+          88
+        ],
+        "alpha_present": true,
+        "bbox": [
+          9,
+          9,
+          78,
+          79
+        ],
+        "visible_bbox_size": [
+          69,
+          70
+        ],
+        "occupancy": [
+          0.7841,
+          0.7955
+        ],
+        "suspicious_pink_px": 0,
+        "exact_ff00ff_px": 0,
+        "transparent_expected": true
+      },
+      {
+        "file": "icon_home.png",
+        "path": "E:\\参考图\\麻将\\项目\\99_可能可删除_过程归档\\生产工作区_过程产物\\modal_work\\processed\\modal_p0\\icon_home.png",
+        "size": [
+          88,
+          88
+        ],
+        "alpha_present": true,
+        "bbox": [
+          9,
+          9,
+          78,
+          79
+        ],
+        "visible_bbox_size": [
+          69,
+          70
+        ],
+        "occupancy": [
+          0.7841,
+          0.7955
+        ],
+        "suspicious_pink_px": 0,
+        "exact_ff00ff_px": 0,
+        "transparent_expected": true
+      },
+      {
+        "file": "icon_close.png",
+        "path": "E:\\参考图\\麻将\\项目\\99_可能可删除_过程归档\\生产工作区_过程产物\\modal_work\\processed\\modal_p0\\icon_close.png",
+        "size": [
+          88,
+          88
+        ],
+        "alpha_present": true,
+        "bbox": [
+          10,
+          9,
+          78,
+          79
+        ],
+        "visible_bbox_size": [
+          68,
+          70
+        ],
+        "occupancy": [
+          0.7727,
+          0.7955
+        ],
+        "suspicious_pink_px": 0,
+        "exact_ff00ff_px": 0,
+        "transparent_expected": true
+      },
+      {
+        "file": "icon_next.png",
+        "path": "E:\\参考图\\麻将\\项目\\99_可能可删除_过程归档\\生产工作区_过程产物\\modal_work\\processed\\modal_p0\\icon_next.png",
+        "size": [
+          88,
+          88
+        ],
+        "alpha_present": true,
+        "bbox": [
+          10,
+          9,
+          78,
+          79
+        ],
+        "visible_bbox_size": [
+          68,
+          70
+        ],
+        "occupancy": [
+          0.7727,
+          0.7955
+        ],
+        "suspicious_pink_px": 0,
+        "exact_ff00ff_px": 0,
+        "transparent_expected": true
+      },
+      {
+        "file": "icon_star.png",
+        "path": "E:\\参考图\\麻将\\项目\\99_可能可删除_过程归档\\生产工作区_过程产物\\modal_work\\processed\\modal_p0\\icon_star.png",
+        "size": [
+          72,
+          72
+        ],
+        "alpha_present": true,
+        "bbox": [
+          7,
+          7,
+          64,
+          65
+        ],
+        "visible_bbox_size": [
+          57,
+          58
+        ],
+        "occupancy": [
+          0.7917,
+          0.8056
+        ],
+        "suspicious_pink_px": 0,
+        "exact_ff00ff_px": 0,
+        "transparent_expected": true
+      },
+      {
+        "file": "icon_lock.png",
+        "path": "E:\\参考图\\麻将\\项目\\99_可能可删除_过程归档\\生产工作区_过程产物\\modal_work\\processed\\modal_p0\\icon_lock.png",
+        "size": [
+          72,
+          72
+        ],
+        "alpha_present": true,
+        "bbox": [
+          7,
+          7,
+          64,
+          65
+        ],
+        "visible_bbox_size": [
+          57,
+          58
+        ],
+        "occupancy": [
+          0.7917,
+          0.8056
+        ],
+        "suspicious_pink_px": 0,
+        "exact_ff00ff_px": 0,
+        "transparent_expected": true
+      },
+      {
+        "file": "level_node_open.png",
+        "path": "E:\\参考图\\麻将\\项目\\99_可能可删除_过程归档\\生产工作区_过程产物\\modal_work\\processed\\modal_p0\\level_node_open.png",
+        "size": [
+          132,
+          132
+        ],
+        "alpha_present": true,
+        "bbox": [
+          7,
+          7,
+          125,
+          124
+        ],
+        "visible_bbox_size": [
+          118,
+          117
+        ],
+        "occupancy": [
+          0.8939,
+          0.8864
+        ],
+        "suspicious_pink_px": 0,
+        "exact_ff00ff_px": 0,
+        "transparent_expected": true
+      },
+      {
+        "file": "level_node_current.png",
+        "path": "E:\\参考图\\麻将\\项目\\99_可能可删除_过程归档\\生产工作区_过程产物\\modal_work\\processed\\modal_p0\\level_node_current.png",
+        "size": [
+          132,
+          132
+        ],
+        "alpha_present": true,
+        "bbox": [
+          7,
+          7,
+          124,
+          125
+        ],
+        "visible_bbox_size": [
+          117,
+          118
+        ],
+        "occupancy": [
+          0.8864,
+          0.8939
+        ],
+        "suspicious_pink_px": 0,
+        "exact_ff00ff_px": 0,
+        "transparent_expected": true
+      },
+      {
+        "file": "level_node_locked.png",
+        "path": "E:\\参考图\\麻将\\项目\\99_可能可删除_过程归档\\生产工作区_过程产物\\modal_work\\processed\\modal_p0\\level_node_locked.png",
+        "size": [
+          132,
+          132
+        ],
+        "alpha_present": true,
+        "bbox": [
+          7,
+          7,
+          124,
+          125
+        ],
+        "visible_bbox_size": [
+          117,
+          118
+        ],
+        "occupancy": [
+          0.8864,
+          0.8939
+        ],
+        "suspicious_pink_px": 0,
+        "exact_ff00ff_px": 0,
+        "transparent_expected": true
+      },
+      {
+        "file": "toggle_track.png",
+        "path": "E:\\参考图\\麻将\\项目\\99_可能可删除_过程归档\\生产工作区_过程产物\\modal_work\\processed\\modal_p0\\toggle_track.png",
+        "size": [
+          104,
+          60
+        ],
+        "alpha_present": true,
+        "bbox": [
+          4,
+          8,
+          100,
+          51
+        ],
+        "visible_bbox_size": [
+          96,
+          43
+        ],
+        "occupancy": [
+          0.9231,
+          0.7167
+        ],
+        "suspicious_pink_px": 0,
+        "exact_ff00ff_px": 0,
+        "transparent_expected": true
+      },
+      {
+        "file": "toggle_knob.png",
+        "path": "E:\\参考图\\麻将\\项目\\99_可能可删除_过程归档\\生产工作区_过程产物\\modal_work\\processed\\modal_p0\\toggle_knob.png",
+        "size": [
+          52,
+          52
+        ],
+        "alpha_present": true,
+        "bbox": [
+          3,
+          3,
+          49,
+          49
+        ],
+        "visible_bbox_size": [
+          46,
+          46
+        ],
+        "occupancy": [
+          0.8846,
+          0.8846
+        ],
+        "suspicious_pink_px": 0,
+        "exact_ff00ff_px": 0,
+        "transparent_expected": true
+      }
+    ]
+  },
+  "menu_vignette_bottom_fix": {
+    "file": "menu_work/processed/menu_p1/menu_vignette_bottom.png",
+    "suspicious_pink_px": 0,
+    "exact_ff00ff_px": 0,
+    "alpha_present": true,
+    "accepted": true
+  },
+  "excluded_batches": {
+    "first_screen_p0_completion": "REJECTED_PLACEHOLDER",
+    "first_screen_p0_final": "STALE",
+    "first_screen_p0": "STALE",
+    "first_screen_p0_v2": "STALE",
+    "first_screen_p0_image_completion": "STALE",
+    "vector_render_magenta_fill_or_procedural_placeholder_batches": "EXCLUDED"
+  },
+  "blocking_hard_fails": []
+}

@@ -1,0 +1,83 @@
+
+Rainbow_fragments.png
+size: 168,533
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+block-ap01
+  rotate: false
+  xy: 2, 2
+  size: 58, 58
+  orig: 64, 65
+  offset: 3, 3
+  index: -1
+block-disp4
+  rotate: false
+  xy: 62, 24
+  size: 36, 36
+  orig: 36, 36
+  offset: 0, 0
+  index: -1
+encourage_quan
+  rotate: false
+  xy: 2, 394
+  size: 137, 137
+  orig: 137, 137
+  offset: 0, 0
+  index: -1
+rainbow_block1
+  rotate: false
+  xy: 2, 311
+  size: 81, 81
+  orig: 81, 81
+  offset: 0, 0
+  index: -1
+rainbow_block2
+  rotate: false
+  xy: 2, 228
+  size: 81, 81
+  orig: 81, 81
+  offset: 0, 0
+  index: -1
+rainbow_block3
+  rotate: false
+  xy: 2, 145
+  size: 81, 81
+  orig: 81, 81
+  offset: 0, 0
+  index: -1
+rainbow_block4
+  rotate: false
+  xy: 2, 62
+  size: 81, 81
+  orig: 81, 81
+  offset: 0, 0
+  index: -1
+rainbow_block5
+  rotate: false
+  xy: 85, 311
+  size: 81, 81
+  orig: 81, 81
+  offset: 0, 0
+  index: -1
+rainbow_block6
+  rotate: false
+  xy: 85, 228
+  size: 81, 81
+  orig: 81, 81
+  offset: 0, 0
+  index: -1
+rainbow_block7
+  rotate: false
+  xy: 85, 145
+  size: 81, 81
+  orig: 81, 81
+  offset: 0, 0
+  index: -1
+rainbow_block8
+  rotate: false
+  xy: 85, 62
+  size: 81, 81
+  orig: 81, 81
+  offset: 0, 0
+  index: -1

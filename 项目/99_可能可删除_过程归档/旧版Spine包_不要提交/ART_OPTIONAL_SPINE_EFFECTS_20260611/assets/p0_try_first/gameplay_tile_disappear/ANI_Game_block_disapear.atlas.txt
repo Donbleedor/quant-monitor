@@ -1,0 +1,27 @@
+
+ANI_Game_block_disapear.png
+size: 128, 52
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+FX_texture_LSL_002new
+  rotate: false
+  xy: 2, 2
+  size: 48, 48
+  orig: 48, 48
+  offset: 0, 0
+  index: -1
+FX_texture_LSL_003_1
+  rotate: false
+  xy: 52, 14
+  size: 36, 36
+  orig: 36, 36
+  offset: 0, 0
+  index: -1
+block-disp4
+  rotate: false
+  xy: 90, 14
+  size: 36, 36
+  orig: 36, 36
+  offset: 0, 0
+  index: -1

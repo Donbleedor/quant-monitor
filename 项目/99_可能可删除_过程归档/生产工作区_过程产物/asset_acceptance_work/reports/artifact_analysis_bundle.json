@@ -1,0 +1,2650 @@
+{
+  "first_cov": {
+    "expected_count": 62,
+    "found_count": 55,
+    "missing_count": 7,
+    "extra_count": 0,
+    "wrong_size_count": 0,
+    "alpha_missing_count": 0,
+    "missing": [
+      {
+        "file": "bg_game_texture_variant.png",
+        "id": "P1-01",
+        "name": "Background texture variant",
+        "size": {
+          "width": 1080,
+          "height": 2400
+        },
+        "transparent": false,
+        "usage": "Optional texture pass for extra depth.",
+        "attach": "under bg_game_1080x2400.png",
+        "priority": "P1",
+        "group": "background"
+      },
+      {
+        "file": "board_edge_vignette.png",
+        "id": "P1-05",
+        "name": "Board edge vignette",
+        "size": {
+          "width": 1080,
+          "height": 1840
+        },
+        "transparent": true,
+        "usage": "Optional extra depth around the board area.",
+        "attach": "above board_stage_bg",
+        "priority": "P1",
+        "group": "background"
+      },
+      {
+        "file": "state_tool_disabled.png",
+        "id": "P1-04",
+        "name": "Disabled tool tint",
+        "size": {
+          "width": 182,
+          "height": 182
+        },
+        "transparent": true,
+        "usage": "Disabled tool visual.",
+        "attach": "over tool button shell",
+        "priority": "P1",
+        "group": "bottom_tray"
+      },
+      {
+        "file": "tool_label_strip.png",
+        "id": "P1-06",
+        "name": "Icon fallback label strip",
+        "size": {
+          "width": 120,
+          "height": 30
+        },
+        "transparent": true,
+        "usage": "Tiny English fallback label zone.",
+        "attach": "under tool buttons if needed",
+        "priority": "P1",
+        "group": "bottom_tray"
+      },
+      {
+        "file": "state_tile_highlight.png",
+        "id": "P1-02",
+        "name": "Tile highlight sweep",
+        "size": {
+          "width": 168,
+          "height": 201
+        },
+        "transparent": true,
+        "usage": "Hover / hint sweep.",
+        "attach": "over tile face",
+        "priority": "P1",
+        "group": "effects_and_future"
+      },
+      {
+        "file": "state_match_burst.png",
+        "id": "P1-03",
+        "name": "Match burst effect",
+        "size": {
+          "width": 240,
+          "height": 240
+        },
+        "transparent": true,
+        "usage": "Match feedback sparkle.",
+        "attach": "around matched pair",
+        "priority": "P1",
+        "group": "effects_and_future"
+      },
+      {
+        "file": "modal_panel_dark_gold.png",
+        "id": "P1-07",
+        "name": "Modal panel family",
+        "size": {
+          "width": 864,
+          "height": 720
+        },
+        "transparent": true,
+        "usage": "Reserved for later pause / restart dialogs.",
+        "attach": "not used in first screen",
+        "priority": "P1",
+        "group": "effects_and_future"
+      }
+    ],
+    "extra": [],
+    "wrong_size": [],
+    "alpha_missing": []
+  },
+  "menu_cov": {
+    "expected_count": 14,
+    "found_count": 12,
+    "missing_count": 2,
+    "extra_count": 0,
+    "wrong_size_count": 0,
+    "alpha_missing_count": 0,
+    "missing": [
+      {
+        "file": "bg_game_1080x2400.png",
+        "id": "P0-SH-01",
+        "name": "Full screen menu background",
+        "size": {
+          "width": 1080,
+          "height": 2400
+        },
+        "transparent": false,
+        "usage": "Dark emerald woven background reused from the gameplay family.",
+        "attach": "body > #app > .menu-screen",
+        "priority": "P0",
+        "group": "shared_style_reuse"
+      },
+      {
+        "file": "icon_play.png",
+        "id": "P1-MN-04",
+        "name": "Play glyph",
+        "size": {
+          "width": 120,
+          "height": 120
+        },
+        "transparent": true,
+        "usage": "Optional inner play glyph if the CTA is split into shell and icon layers.",
+        "attach": "center of play button",
+        "priority": "P1",
+        "group": "menu_primary_action"
+      }
+    ],
+    "extra": [],
+    "wrong_size": [],
+    "alpha_missing": []
+  },
+  "modal_cov": {
+    "expected_count": 27,
+    "found_count": 2,
+    "missing_count": 27,
+    "extra_count": 2,
+    "wrong_size_count": 0,
+    "alpha_missing_count": 0,
+    "missing": [
+      {
+        "file": "modal_overlay_dark.png",
+        "id": "P0-MD-01",
+        "name": "Dark overlay",
+        "size": {
+          "width": 1080,
+          "height": 2400
+        },
+        "transparent": false,
+        "usage": "Dark textured overlay base for all modals; code should control opacity.",
+        "attach": "full-screen overlay",
+        "priority": "P0",
+        "group": "modal_overlay_and_panel"
+      },
+      {
+        "file": "modal_panel_standard.png",
+        "id": "P0-MD-02",
+        "name": "Standard modal panel",
+        "size": {
+          "width": 860,
+          "height": 1120
+        },
+        "transparent": true,
+        "usage": "Base panel for pause and settings.",
+        "attach": "center modal body",
+        "priority": "P0",
+        "group": "modal_overlay_and_panel"
+      },
+      {
+        "file": "modal_panel_large.png",
+        "id": "P0-MD-03",
+        "name": "Large modal panel",
+        "size": {
+          "width": 940,
+          "height": 1480
+        },
+        "transparent": true,
+        "usage": "Taller panel for win and level select.",
+        "attach": "center modal body",
+        "priority": "P0",
+        "group": "modal_overlay_and_panel"
+      },
+      {
+        "file": "modal_title_strip.png",
+        "id": "P1-MD-04",
+        "name": "Title strip",
+        "size": {
+          "width": 620,
+          "height": 120
+        },
+        "transparent": true,
+        "usage": "Small title accent strip for modal headers.",
+        "attach": "top of modal body",
+        "priority": "P1",
+        "group": "modal_overlay_and_panel"
+      },
+      {
+        "file": "modal_divider_gold.png",
+        "id": "P1-MD-05",
+        "name": "Divider gold",
+        "size": {
+          "width": 720,
+          "height": 24
+        },
+        "transparent": true,
+        "usage": "Thin divider or separator line.",
+        "attach": "between modal sections",
+        "priority": "P1",
+        "group": "modal_overlay_and_panel"
+      },
+      {
+        "file": "btn_modal_primary.png",
+        "id": "P0-MD-05",
+        "name": "Primary action shell",
+        "size": {
+          "width": 520,
+          "height": 140
+        },
+        "transparent": true,
+        "usage": "Primary modal action button.",
+        "attach": "primary action row",
+        "priority": "P0",
+        "group": "modal_actions"
+      },
+      {
+        "file": "btn_modal_secondary.png",
+        "id": "P0-MD-06",
+        "name": "Secondary action shell",
+        "size": {
+          "width": 520,
+          "height": 120
+        },
+        "transparent": true,
+        "usage": "Secondary modal action button.",
+        "attach": "secondary action row",
+        "priority": "P0",
+        "group": "modal_actions"
+      },
+      {
+        "file": "icon_resume.png",
+        "id": "P0-MD-07",
+        "name": "Resume icon",
+        "size": {
+          "width": 88,
+          "height": 88
+        },
+        "transparent": true,
+        "usage": "Resume / play glyph.",
+        "attach": "pause modal primary action",
+        "priority": "P0",
+        "group": "modal_icons"
+      },
+      {
+        "file": "icon_restart.png",
+        "id": "P0-MD-08",
+        "name": "Restart icon",
+        "size": {
+          "width": 88,
+          "height": 88
+        },
+        "transparent": true,
+        "usage": "Restart / replay glyph.",
+        "attach": "pause modal action",
+        "priority": "P0",
+        "group": "modal_icons"
+      },
+      {
+        "file": "icon_home.png",
+        "id": "P0-MD-09",
+        "name": "Home icon",
+        "size": {
+          "width": 88,
+          "height": 88
+        },
+        "transparent": true,
+        "usage": "Home glyph.",
+        "attach": "pause or win modal action",
+        "priority": "P0",
+        "group": "modal_icons"
+      },
+      {
+        "file": "icon_close.png",
+        "id": "P0-MD-10",
+        "name": "Close icon",
+        "size": {
+          "width": 88,
+          "height": 88
+        },
+        "transparent": true,
+        "usage": "Close glyph for the top-right modal exit.",
+        "attach": "modal close button",
+        "priority": "P0",
+        "group": "modal_icons"
+      },
+      {
+        "file": "icon_next.png",
+        "id": "P0-MD-11",
+        "name": "Next icon",
+        "size": {
+          "width": 88,
+          "height": 88
+        },
+        "transparent": true,
+        "usage": "Next / continue glyph.",
+        "attach": "win modal action",
+        "priority": "P0",
+        "group": "modal_icons"
+      },
+      {
+        "file": "icon_star.png",
+        "id": "P0-MD-12",
+        "name": "Star icon",
+        "size": {
+          "width": 72,
+          "height": 72
+        },
+        "transparent": true,
+        "usage": "Reward star for win modal.",
+        "attach": "win modal score / stars",
+        "priority": "P0",
+        "group": "modal_icons"
+      },
+      {
+        "file": "icon_lock.png",
+        "id": "P0-MD-13",
+        "name": "Lock icon",
+        "size": {
+          "width": 72,
+          "height": 72
+        },
+        "transparent": true,
+        "usage": "Locked state glyph for level select.",
+        "attach": "level node locked state",
+        "priority": "P0",
+        "group": "modal_icons"
+      },
+      {
+        "file": "level_node_open.png",
+        "id": "P0-MD-14",
+        "name": "Open level node",
+        "size": {
+          "width": 132,
+          "height": 132
+        },
+        "transparent": true,
+        "usage": "Unlocked level node shell.",
+        "attach": "level grid node",
+        "priority": "P0",
+        "group": "level_select_nodes"
+      },
+      {
+        "file": "level_node_current.png",
+        "id": "P0-MD-15",
+        "name": "Current level node",
+        "size": {
+          "width": 132,
+          "height": 132
+        },
+        "transparent": true,
+        "usage": "Current level node shell.",
+        "attach": "level grid node",
+        "priority": "P0",
+        "group": "level_select_nodes"
+      },
+      {
+        "file": "level_node_locked.png",
+        "id": "P0-MD-16",
+        "name": "Locked level node",
+        "size": {
+          "width": 132,
+          "height": 132
+        },
+        "transparent": true,
+        "usage": "Locked level node shell.",
+        "attach": "level grid node",
+        "priority": "P0",
+        "group": "level_select_nodes"
+      },
+      {
+        "file": "level_star_small.png",
+        "id": "P1-MD-17",
+        "name": "Small level star",
+        "size": {
+          "width": 28,
+          "height": 28
+        },
+        "transparent": true,
+        "usage": "Small completion star under a node.",
+        "attach": "under level node",
+        "priority": "P1",
+        "group": "level_select_nodes"
+      },
+      {
+        "file": "level_badge_completed.png",
+        "id": "P1-MD-18",
+        "name": "Completed badge",
+        "size": {
+          "width": 44,
+          "height": 44
+        },
+        "transparent": true,
+        "usage": "Completed marker for a node.",
+        "attach": "completed node overlay",
+        "priority": "P1",
+        "group": "level_select_nodes"
+      },
+      {
+        "file": "toggle_track.png",
+        "id": "P0-MD-19",
+        "name": "Toggle track",
+        "size": {
+          "width": 104,
+          "height": 60
+        },
+        "transparent": true,
+        "usage": "Switch track body.",
+        "attach": "settings row",
+        "priority": "P0",
+        "group": "settings_controls"
+      },
+      {
+        "file": "toggle_knob.png",
+        "id": "P0-MD-20",
+        "name": "Toggle knob",
+        "size": {
+          "width": 52,
+          "height": 52
+        },
+        "transparent": true,
+        "usage": "Switch thumb.",
+        "attach": "settings row",
+        "priority": "P0",
+        "group": "settings_controls"
+      },
+      {
+        "file": "settings_row_plate.png",
+        "id": "P1-MD-21",
+        "name": "Settings row plate",
+        "size": {
+          "width": 760,
+          "height": 112
+        },
+        "transparent": true,
+        "usage": "Optional row plate for stronger structure.",
+        "attach": "settings row background",
+        "priority": "P1",
+        "group": "settings_controls"
+      },
+      {
+        "file": "stat_chip_time.png",
+        "id": "P1-MD-22",
+        "name": "Time stat chip",
+        "size": {
+          "width": 320,
+          "height": 108
+        },
+        "transparent": true,
+        "usage": "Time stat chip for the win modal.",
+        "attach": "win modal stats",
+        "priority": "P1",
+        "group": "win_support"
+      },
+      {
+        "file": "stat_chip_moves.png",
+        "id": "P1-MD-23",
+        "name": "Moves stat chip",
+        "size": {
+          "width": 320,
+          "height": 108
+        },
+        "transparent": true,
+        "usage": "Moves stat chip for the win modal.",
+        "attach": "win modal stats",
+        "priority": "P1",
+        "group": "win_support"
+      },
+      {
+        "file": "win_medal_center.png",
+        "id": "P1-MD-24",
+        "name": "Win medal",
+        "size": {
+          "width": 180,
+          "height": 180
+        },
+        "transparent": true,
+        "usage": "Decorative reward medallion.",
+        "attach": "win modal header",
+        "priority": "P1",
+        "group": "win_support"
+      },
+      {
+        "file": "win_confetti_piece.png",
+        "id": "P1-MD-25",
+        "name": "Confetti token",
+        "size": {
+          "width": 28,
+          "height": 28
+        },
+        "transparent": true,
+        "usage": "Small confetti piece for celebration layer.",
+        "attach": "win celebration layer",
+        "priority": "P1",
+        "group": "win_support"
+      },
+      {
+        "file": "bg_game_1080x2400.png",
+        "size": null,
+        "transparent": false,
+        "priority": "P0",
+        "group": "shared_background"
+      }
+    ],
+    "extra": [
+      {
+        "file": "modal_overlay_dark_raw.png",
+        "dir_name": "modal_p0_raw"
+      },
+      {
+        "file": "modal_p0_asset_board_raw.png",
+        "dir_name": "modal_p0_raw"
+      }
+    ],
+    "wrong_size": [],
+    "alpha_missing": []
+  },
+  "final_reports": [
+    {
+      "file": "badge_count_coin.png",
+      "path": "E:\\参考图\\麻将\\项目\\asset_work\\processed\\first_screen_p0_final_image\\badge_count_coin.png",
+      "size": [
+        44,
+        44
+      ],
+      "orig_mode": "RGBA",
+      "alpha_exists": true,
+      "bbox": [
+        2,
+        2,
+        41,
+        42
+      ],
+      "visible_bbox_size": [
+        39,
+        40
+      ],
+      "occupancy": [
+        0.8864,
+        0.9091
+      ],
+      "visible_px": 1281,
+      "suspicious_pink_px": 0,
+      "exact_ff00ff_px": 0,
+      "pink_pct_of_canvas": 0.0,
+      "pink_pct_of_visible": 0.0,
+      "transparent_expected": true,
+      "hard_fail": false,
+      "hard_reasons": []
+    },
+    {
+      "file": "bg_game_1080x2400.png",
+      "path": "E:\\参考图\\麻将\\项目\\asset_work\\processed\\first_screen_p0_final_image\\bg_game_1080x2400.png",
+      "size": [
+        1080,
+        2400
+      ],
+      "orig_mode": "RGB",
+      "alpha_exists": false,
+      "bbox": null,
+      "visible_bbox_size": [
+        0,
+        0
+      ],
+      "occupancy": [
+        0.0,
+        0.0
+      ],
+      "visible_px": 2592000,
+      "suspicious_pink_px": 0,
+      "exact_ff00ff_px": 0,
+      "pink_pct_of_canvas": 0.0,
+      "pink_pct_of_visible": 0.0,
+      "transparent_expected": false,
+      "hard_fail": false,
+      "hard_reasons": []
+    },
+    {
+      "file": "board_stage_bg.png",
+      "path": "E:\\参考图\\麻将\\项目\\asset_work\\processed\\first_screen_p0_final_image\\board_stage_bg.png",
+      "size": [
+        1080,
+        1840
+      ],
+      "orig_mode": "RGB",
+      "alpha_exists": false,
+      "bbox": null,
+      "visible_bbox_size": [
+        0,
+        0
+      ],
+      "occupancy": [
+        0.0,
+        0.0
+      ],
+      "visible_px": 1987200,
+      "suspicious_pink_px": 0,
+      "exact_ff00ff_px": 0,
+      "pink_pct_of_canvas": 0.0,
+      "pink_pct_of_visible": 0.0,
+      "transparent_expected": false,
+      "hard_fail": false,
+      "hard_reasons": []
+    },
+    {
+      "file": "hud_btn_home_bg.png",
+      "path": "E:\\参考图\\麻将\\项目\\asset_work\\processed\\first_screen_p0_final_image\\hud_btn_home_bg.png",
+      "size": [
+        146,
+        146
+      ],
+      "orig_mode": "RGBA",
+      "alpha_exists": true,
+      "bbox": [
+        6,
+        5,
+        139,
+        141
+      ],
+      "visible_bbox_size": [
+        133,
+        136
+      ],
+      "occupancy": [
+        0.911,
+        0.9315
+      ],
+      "visible_px": 17098,
+      "suspicious_pink_px": 1,
+      "exact_ff00ff_px": 0,
+      "pink_pct_of_canvas": 0.004691,
+      "pink_pct_of_visible": 0.005849,
+      "transparent_expected": true,
+      "hard_fail": false,
+      "hard_reasons": []
+    },
+    {
+      "file": "hud_btn_pause_bg.png",
+      "path": "E:\\参考图\\麻将\\项目\\asset_work\\processed\\first_screen_p0_final_image\\hud_btn_pause_bg.png",
+      "size": [
+        146,
+        146
+      ],
+      "orig_mode": "RGBA",
+      "alpha_exists": true,
+      "bbox": [
+        7,
+        5,
+        139,
+        141
+      ],
+      "visible_bbox_size": [
+        132,
+        136
+      ],
+      "occupancy": [
+        0.9041,
+        0.9315
+      ],
+      "visible_px": 16580,
+      "suspicious_pink_px": 0,
+      "exact_ff00ff_px": 0,
+      "pink_pct_of_canvas": 0.0,
+      "pink_pct_of_visible": 0.0,
+      "transparent_expected": true,
+      "hard_fail": false,
+      "hard_reasons": []
+    },
+    {
+      "file": "hud_center_plate.png",
+      "path": "E:\\参考图\\麻将\\项目\\asset_work\\processed\\first_screen_p0_final_image\\hud_center_plate.png",
+      "size": [
+        620,
+        140
+      ],
+      "orig_mode": "RGBA",
+      "alpha_exists": true,
+      "bbox": [
+        45,
+        2,
+        575,
+        138
+      ],
+      "visible_bbox_size": [
+        530,
+        136
+      ],
+      "occupancy": [
+        0.8548,
+        0.9714
+      ],
+      "visible_px": 56299,
+      "suspicious_pink_px": 4,
+      "exact_ff00ff_px": 1,
+      "pink_pct_of_canvas": 0.004608,
+      "pink_pct_of_visible": 0.007105,
+      "transparent_expected": true,
+      "hard_fail": false,
+      "hard_reasons": []
+    },
+    {
+      "file": "hud_top_frame.png",
+      "path": "E:\\参考图\\麻将\\项目\\asset_work\\processed\\first_screen_p0_final_image\\hud_top_frame.png",
+      "size": [
+        1080,
+        188
+      ],
+      "orig_mode": "RGBA",
+      "alpha_exists": true,
+      "bbox": [
+        173,
+        2,
+        907,
+        186
+      ],
+      "visible_bbox_size": [
+        734,
+        184
+      ],
+      "occupancy": [
+        0.6796,
+        0.9787
+      ],
+      "visible_px": 104246,
+      "suspicious_pink_px": 0,
+      "exact_ff00ff_px": 0,
+      "pink_pct_of_canvas": 0.0,
+      "pink_pct_of_visible": 0.0,
+      "transparent_expected": true,
+      "hard_fail": false,
+      "hard_reasons": []
+    },
+    {
+      "file": "icon_hint.png",
+      "path": "E:\\参考图\\麻将\\项目\\asset_work\\processed\\first_screen_p0_final_image\\icon_hint.png",
+      "size": [
+        88,
+        88
+      ],
+      "orig_mode": "RGBA",
+      "alpha_exists": true,
+      "bbox": [
+        11,
+        4,
+        77,
+        83
+      ],
+      "visible_bbox_size": [
+        66,
+        79
+      ],
+      "occupancy": [
+        0.75,
+        0.8977
+      ],
+      "visible_px": 4420,
+      "suspicious_pink_px": 0,
+      "exact_ff00ff_px": 0,
+      "pink_pct_of_canvas": 0.0,
+      "pink_pct_of_visible": 0.0,
+      "transparent_expected": true,
+      "hard_fail": false,
+      "hard_reasons": []
+    },
+    {
+      "file": "icon_home.png",
+      "path": "E:\\参考图\\麻将\\项目\\asset_work\\processed\\first_screen_p0_final_image\\icon_home.png",
+      "size": [
+        88,
+        88
+      ],
+      "orig_mode": "RGBA",
+      "alpha_exists": true,
+      "bbox": [
+        4,
+        5,
+        83,
+        82
+      ],
+      "visible_bbox_size": [
+        79,
+        77
+      ],
+      "occupancy": [
+        0.8977,
+        0.875
+      ],
+      "visible_px": 3490,
+      "suspicious_pink_px": 0,
+      "exact_ff00ff_px": 0,
+      "pink_pct_of_canvas": 0.0,
+      "pink_pct_of_visible": 0.0,
+      "transparent_expected": true,
+      "hard_fail": false,
+      "hard_reasons": []
+    },
+    {
+      "file": "icon_mask_level.png",
+      "path": "E:\\参考图\\麻将\\项目\\asset_work\\processed\\first_screen_p0_final_image\\icon_mask_level.png",
+      "size": [
+        44,
+        44
+      ],
+      "orig_mode": "RGBA",
+      "alpha_exists": true,
+      "bbox": [
+        10,
+        3,
+        33,
+        41
+      ],
+      "visible_bbox_size": [
+        23,
+        38
+      ],
+      "occupancy": [
+        0.5227,
+        0.8636
+      ],
+      "visible_px": 728,
+      "suspicious_pink_px": 0,
+      "exact_ff00ff_px": 0,
+      "pink_pct_of_canvas": 0.0,
+      "pink_pct_of_visible": 0.0,
+      "transparent_expected": true,
+      "hard_fail": false,
+      "hard_reasons": []
+    },
+    {
+      "file": "icon_pause.png",
+      "path": "E:\\参考图\\麻将\\项目\\asset_work\\processed\\first_screen_p0_final_image\\icon_pause.png",
+      "size": [
+        72,
+        72
+      ],
+      "orig_mode": "RGBA",
+      "alpha_exists": true,
+      "bbox": [
+        9,
+        3,
+        63,
+        68
+      ],
+      "visible_bbox_size": [
+        54,
+        65
+      ],
+      "occupancy": [
+        0.75,
+        0.9028
+      ],
+      "visible_px": 3059,
+      "suspicious_pink_px": 0,
+      "exact_ff00ff_px": 0,
+      "pink_pct_of_canvas": 0.0,
+      "pink_pct_of_visible": 0.0,
+      "transparent_expected": true,
+      "hard_fail": false,
+      "hard_reasons": []
+    },
+    {
+      "file": "icon_shuffle.png",
+      "path": "E:\\参考图\\麻将\\项目\\asset_work\\processed\\first_screen_p0_final_image\\icon_shuffle.png",
+      "size": [
+        88,
+        88
+      ],
+      "orig_mode": "RGBA",
+      "alpha_exists": true,
+      "bbox": [
+        5,
+        4,
+        83,
+        83
+      ],
+      "visible_bbox_size": [
+        78,
+        79
+      ],
+      "occupancy": [
+        0.8864,
+        0.8977
+      ],
+      "visible_px": 3166,
+      "suspicious_pink_px": 0,
+      "exact_ff00ff_px": 0,
+      "pink_pct_of_canvas": 0.0,
+      "pink_pct_of_visible": 0.0,
+      "transparent_expected": true,
+      "hard_fail": false,
+      "hard_reasons": []
+    },
+    {
+      "file": "icon_timer.png",
+      "path": "E:\\参考图\\麻将\\项目\\asset_work\\processed\\first_screen_p0_final_image\\icon_timer.png",
+      "size": [
+        42,
+        42
+      ],
+      "orig_mode": "RGBA",
+      "alpha_exists": true,
+      "bbox": [
+        8,
+        3,
+        33,
+        39
+      ],
+      "visible_bbox_size": [
+        25,
+        36
+      ],
+      "occupancy": [
+        0.5952,
+        0.8571
+      ],
+      "visible_px": 719,
+      "suspicious_pink_px": 0,
+      "exact_ff00ff_px": 0,
+      "pink_pct_of_canvas": 0.0,
+      "pink_pct_of_visible": 0.0,
+      "transparent_expected": true,
+      "hard_fail": false,
+      "hard_reasons": []
+    },
+    {
+      "file": "icon_undo.png",
+      "path": "E:\\参考图\\麻将\\项目\\asset_work\\processed\\first_screen_p0_final_image\\icon_undo.png",
+      "size": [
+        88,
+        88
+      ],
+      "orig_mode": "RGBA",
+      "alpha_exists": true,
+      "bbox": [
+        11,
+        4,
+        77,
+        83
+      ],
+      "visible_bbox_size": [
+        66,
+        79
+      ],
+      "occupancy": [
+        0.75,
+        0.8977
+      ],
+      "visible_px": 2223,
+      "suspicious_pink_px": 0,
+      "exact_ff00ff_px": 0,
+      "pink_pct_of_canvas": 0.0,
+      "pink_pct_of_visible": 0.0,
+      "transparent_expected": true,
+      "hard_fail": false,
+      "hard_reasons": []
+    },
+    {
+      "file": "state_tile_blocked_overlay.png",
+      "path": "E:\\参考图\\麻将\\项目\\asset_work\\processed\\first_screen_p0_final_image\\state_tile_blocked_overlay.png",
+      "size": [
+        168,
+        201
+      ],
+      "orig_mode": "RGBA",
+      "alpha_exists": true,
+      "bbox": [
+        12,
+        4,
+        155,
+        197
+      ],
+      "visible_bbox_size": [
+        143,
+        193
+      ],
+      "occupancy": [
+        0.8512,
+        0.9602
+      ],
+      "visible_px": 27273,
+      "suspicious_pink_px": 0,
+      "exact_ff00ff_px": 0,
+      "pink_pct_of_canvas": 0.0,
+      "pink_pct_of_visible": 0.0,
+      "transparent_expected": true,
+      "hard_fail": false,
+      "hard_reasons": []
+    },
+    {
+      "file": "state_tile_covered_overlay.png",
+      "path": "E:\\参考图\\麻将\\项目\\asset_work\\processed\\first_screen_p0_final_image\\state_tile_covered_overlay.png",
+      "size": [
+        168,
+        201
+      ],
+      "orig_mode": "RGBA",
+      "alpha_exists": true,
+      "bbox": [
+        12,
+        4,
+        156,
+        197
+      ],
+      "visible_bbox_size": [
+        144,
+        193
+      ],
+      "occupancy": [
+        0.8571,
+        0.9602
+      ],
+      "visible_px": 27424,
+      "suspicious_pink_px": 8,
+      "exact_ff00ff_px": 2,
+      "pink_pct_of_canvas": 0.023691,
+      "pink_pct_of_visible": 0.029172,
+      "transparent_expected": true,
+      "hard_fail": false,
+      "hard_reasons": []
+    },
+    {
+      "file": "state_tile_selected_glow.png",
+      "path": "E:\\参考图\\麻将\\项目\\asset_work\\processed\\first_screen_p0_final_image\\state_tile_selected_glow.png",
+      "size": [
+        180,
+        213
+      ],
+      "orig_mode": "RGBA",
+      "alpha_exists": true,
+      "bbox": [
+        13,
+        4,
+        167,
+        209
+      ],
+      "visible_bbox_size": [
+        154,
+        205
+      ],
+      "occupancy": [
+        0.8556,
+        0.9624
+      ],
+      "visible_px": 12259,
+      "suspicious_pink_px": 0,
+      "exact_ff00ff_px": 0,
+      "pink_pct_of_canvas": 0.0,
+      "pink_pct_of_visible": 0.0,
+      "transparent_expected": true,
+      "hard_fail": false,
+      "hard_reasons": []
+    },
+    {
+      "file": "state_tile_shadow.png",
+      "path": "E:\\参考图\\麻将\\项目\\asset_work\\processed\\first_screen_p0_final_image\\state_tile_shadow.png",
+      "size": [
+        168,
+        201
+      ],
+      "orig_mode": "RGBA",
+      "alpha_exists": true,
+      "bbox": [
+        3,
+        76,
+        165,
+        125
+      ],
+      "visible_bbox_size": [
+        162,
+        49
+      ],
+      "occupancy": [
+        0.9643,
+        0.2438
+      ],
+      "visible_px": 6163,
+      "suspicious_pink_px": 0,
+      "exact_ff00ff_px": 0,
+      "pink_pct_of_canvas": 0.0,
+      "pink_pct_of_visible": 0.0,
+      "transparent_expected": true,
+      "hard_fail": false,
+      "hard_reasons": []
+    },
+    {
+      "file": "tile_base_ivory.png",
+      "path": "E:\\参考图\\麻将\\项目\\asset_work\\processed\\first_screen_p0_final_image\\tile_base_ivory.png",
+      "size": [
+        168,
+        201
+      ],
+      "orig_mode": "RGBA",
+      "alpha_exists": true,
+      "bbox": [
+        9,
+        4,
+        158,
+        197
+      ],
+      "visible_bbox_size": [
+        149,
+        193
+      ],
+      "occupancy": [
+        0.8869,
+        0.9602
+      ],
+      "visible_px": 28295,
+      "suspicious_pink_px": 0,
+      "exact_ff00ff_px": 0,
+      "pink_pct_of_canvas": 0.0,
+      "pink_pct_of_visible": 0.0,
+      "transparent_expected": true,
+      "hard_fail": false,
+      "hard_reasons": []
+    },
+    {
+      "file": "tile_totem_01_sun_seed.png",
+      "path": "E:\\参考图\\麻将\\项目\\asset_work\\processed\\first_screen_p0_final_image\\tile_totem_01_sun_seed.png",
+      "size": [
+        96,
+        96
+      ],
+      "orig_mode": "RGBA",
+      "alpha_exists": true,
+      "bbox": [
+        4,
+        2,
+        92,
+        94
+      ],
+      "visible_bbox_size": [
+        88,
+        92
+      ],
+      "occupancy": [
+        0.9167,
+        0.9583
+      ],
+      "visible_px": 5039,
+      "suspicious_pink_px": 0,
+      "exact_ff00ff_px": 0,
+      "pink_pct_of_canvas": 0.0,
+      "pink_pct_of_visible": 0.0,
+      "transparent_expected": true,
+      "hard_fail": false,
+      "hard_reasons": []
+    },
+    {
+      "file": "tile_totem_02_twin_leaves.png",
+      "path": "E:\\参考图\\麻将\\项目\\asset_work\\processed\\first_screen_p0_final_image\\tile_totem_02_twin_leaves.png",
+      "size": [
+        96,
+        96
+      ],
+      "orig_mode": "RGBA",
+      "alpha_exists": true,
+      "bbox": [
+        5,
+        7,
+        91,
+        88
+      ],
+      "visible_bbox_size": [
+        86,
+        81
+      ],
+      "occupancy": [
+        0.8958,
+        0.8438
+      ],
+      "visible_px": 4185,
+      "suspicious_pink_px": 0,
+      "exact_ff00ff_px": 0,
+      "pink_pct_of_canvas": 0.0,
+      "pink_pct_of_visible": 0.0,
+      "transparent_expected": true,
+      "hard_fail": false,
+      "hard_reasons": []
+    },
+    {
+      "file": "tile_totem_03_branch_cluster.png",
+      "path": "E:\\参考图\\麻将\\项目\\asset_work\\processed\\first_screen_p0_final_image\\tile_totem_03_branch_cluster.png",
+      "size": [
+        96,
+        96
+      ],
+      "orig_mode": "RGBA",
+      "alpha_exists": true,
+      "bbox": [
+        11,
+        5,
+        84,
+        91
+      ],
+      "visible_bbox_size": [
+        73,
+        86
+      ],
+      "occupancy": [
+        0.7604,
+        0.8958
+      ],
+      "visible_px": 3056,
+      "suspicious_pink_px": 0,
+      "exact_ff00ff_px": 0,
+      "pink_pct_of_canvas": 0.0,
+      "pink_pct_of_visible": 0.0,
+      "transparent_expected": true,
+      "hard_fail": false,
+      "hard_reasons": []
+    },
+    {
+      "file": "tile_totem_04_flower_cross.png",
+      "path": "E:\\参考图\\麻将\\项目\\asset_work\\processed\\first_screen_p0_final_image\\tile_totem_04_flower_cross.png",
+      "size": [
+        96,
+        96
+      ],
+      "orig_mode": "RGBA",
+      "alpha_exists": true,
+      "bbox": [
+        7,
+        5,
+        89,
+        91
+      ],
+      "visible_bbox_size": [
+        82,
+        86
+      ],
+      "occupancy": [
+        0.8542,
+        0.8958
+      ],
+      "visible_px": 3211,
+      "suspicious_pink_px": 0,
+      "exact_ff00ff_px": 0,
+      "pink_pct_of_canvas": 0.0,
+      "pink_pct_of_visible": 0.0,
+      "transparent_expected": true,
+      "hard_fail": false,
+      "hard_reasons": []
+    },
+    {
+      "file": "tile_totem_05_palm_fan.png",
+      "path": "E:\\参考图\\麻将\\项目\\asset_work\\processed\\first_screen_p0_final_image\\tile_totem_05_palm_fan.png",
+      "size": [
+        96,
+        96
+      ],
+      "orig_mode": "RGBA",
+      "alpha_exists": true,
+      "bbox": [
+        7,
+        5,
+        88,
+        91
+      ],
+      "visible_bbox_size": [
+        81,
+        86
+      ],
+      "occupancy": [
+        0.8438,
+        0.8958
+      ],
+      "visible_px": 3451,
+      "suspicious_pink_px": 10,
+      "exact_ff00ff_px": 2,
+      "pink_pct_of_canvas": 0.108507,
+      "pink_pct_of_visible": 0.289771,
+      "transparent_expected": true,
+      "hard_fail": false,
+      "hard_reasons": []
+    },
+    {
+      "file": "tile_totem_06_rain_pair.png",
+      "path": "E:\\参考图\\麻将\\项目\\asset_work\\processed\\first_screen_p0_final_image\\tile_totem_06_rain_pair.png",
+      "size": [
+        96,
+        96
+      ],
+      "orig_mode": "RGBA",
+      "alpha_exists": true,
+      "bbox": [
+        5,
+        13,
+        91,
+        83
+      ],
+      "visible_bbox_size": [
+        86,
+        70
+      ],
+      "occupancy": [
+        0.8958,
+        0.7292
+      ],
+      "visible_px": 3692,
+      "suspicious_pink_px": 0,
+      "exact_ff00ff_px": 0,
+      "pink_pct_of_canvas": 0.0,
+      "pink_pct_of_visible": 0.0,
+      "transparent_expected": true,
+      "hard_fail": false,
+      "hard_reasons": []
+    },
+    {
+      "file": "tile_totem_07_water_wave.png",
+      "path": "E:\\参考图\\麻将\\项目\\asset_work\\processed\\first_screen_p0_final_image\\tile_totem_07_water_wave.png",
+      "size": [
+        96,
+        96
+      ],
+      "orig_mode": "RGBA",
+      "alpha_exists": true,
+      "bbox": [
+        2,
+        9,
+        94,
+        86
+      ],
+      "visible_bbox_size": [
+        92,
+        77
+      ],
+      "occupancy": [
+        0.9583,
+        0.8021
+      ],
+      "visible_px": 5336,
+      "suspicious_pink_px": 0,
+      "exact_ff00ff_px": 0,
+      "pink_pct_of_canvas": 0.0,
+      "pink_pct_of_visible": 0.0,
+      "transparent_expected": true,
+      "hard_fail": false,
+      "hard_reasons": []
+    },
+    {
+      "file": "tile_totem_08_mountain_chevron.png",
+      "path": "E:\\参考图\\麻将\\项目\\asset_work\\processed\\first_screen_p0_final_image\\tile_totem_08_mountain_chevron.png",
+      "size": [
+        96,
+        96
+      ],
+      "orig_mode": "RGBA",
+      "alpha_exists": true,
+      "bbox": [
+        5,
+        11,
+        91,
+        84
+      ],
+      "visible_bbox_size": [
+        86,
+        73
+      ],
+      "occupancy": [
+        0.8958,
+        0.7604
+      ],
+      "visible_px": 4024,
+      "suspicious_pink_px": 0,
+      "exact_ff00ff_px": 0,
+      "pink_pct_of_canvas": 0.0,
+      "pink_pct_of_visible": 0.0,
+      "transparent_expected": true,
+      "hard_fail": false,
+      "hard_reasons": []
+    },
+    {
+      "file": "tile_totem_09_star_blossom.png",
+      "path": "E:\\参考图\\麻将\\项目\\asset_work\\processed\\first_screen_p0_final_image\\tile_totem_09_star_blossom.png",
+      "size": [
+        96,
+        96
+      ],
+      "orig_mode": "RGBA",
+      "alpha_exists": true,
+      "bbox": [
+        5,
+        5,
+        90,
+        91
+      ],
+      "visible_bbox_size": [
+        85,
+        86
+      ],
+      "occupancy": [
+        0.8854,
+        0.8958
+      ],
+      "visible_px": 4025,
+      "suspicious_pink_px": 1,
+      "exact_ff00ff_px": 0,
+      "pink_pct_of_canvas": 0.010851,
+      "pink_pct_of_visible": 0.024845,
+      "transparent_expected": true,
+      "hard_fail": false,
+      "hard_reasons": []
+    },
+    {
+      "file": "tile_totem_10_talking_drum.png",
+      "path": "E:\\参考图\\麻将\\项目\\asset_work\\processed\\first_screen_p0_final_image\\tile_totem_10_talking_drum.png",
+      "size": [
+        96,
+        96
+      ],
+      "orig_mode": "RGBA",
+      "alpha_exists": true,
+      "bbox": [
+        16,
+        2,
+        80,
+        94
+      ],
+      "visible_bbox_size": [
+        64,
+        92
+      ],
+      "occupancy": [
+        0.6667,
+        0.9583
+      ],
+      "visible_px": 4417,
+      "suspicious_pink_px": 0,
+      "exact_ff00ff_px": 0,
+      "pink_pct_of_canvas": 0.0,
+      "pink_pct_of_visible": 0.0,
+      "transparent_expected": true,
+      "hard_fail": false,
+      "hard_reasons": []
+    },
+    {
+      "file": "tile_totem_11_round_shield.png",
+      "path": "E:\\参考图\\麻将\\项目\\asset_work\\processed\\first_screen_p0_final_image\\tile_totem_11_round_shield.png",
+      "size": [
+        96,
+        96
+      ],
+      "orig_mode": "RGBA",
+      "alpha_exists": true,
+      "bbox": [
+        6,
+        5,
+        90,
+        91
+      ],
+      "visible_bbox_size": [
+        84,
+        86
+      ],
+      "occupancy": [
+        0.875,
+        0.8958
+      ],
+      "visible_px": 3843,
+      "suspicious_pink_px": 0,
+      "exact_ff00ff_px": 0,
+      "pink_pct_of_canvas": 0.0,
+      "pink_pct_of_visible": 0.0,
+      "transparent_expected": true,
+      "hard_fail": false,
+      "hard_reasons": []
+    },
+    {
+      "file": "tile_totem_12_cowrie_shell.png",
+      "path": "E:\\参考图\\麻将\\项目\\asset_work\\processed\\first_screen_p0_final_image\\tile_totem_12_cowrie_shell.png",
+      "size": [
+        96,
+        96
+      ],
+      "orig_mode": "RGBA",
+      "alpha_exists": true,
+      "bbox": [
+        15,
+        2,
+        80,
+        94
+      ],
+      "visible_bbox_size": [
+        65,
+        92
+      ],
+      "occupancy": [
+        0.6771,
+        0.9583
+      ],
+      "visible_px": 4625,
+      "suspicious_pink_px": 0,
+      "exact_ff00ff_px": 0,
+      "pink_pct_of_canvas": 0.0,
+      "pink_pct_of_visible": 0.0,
+      "transparent_expected": true,
+      "hard_fail": false,
+      "hard_reasons": []
+    },
+    {
+      "file": "tile_totem_13_woven_basket.png",
+      "path": "E:\\参考图\\麻将\\项目\\asset_work\\processed\\first_screen_p0_final_image\\tile_totem_13_woven_basket.png",
+      "size": [
+        96,
+        96
+      ],
+      "orig_mode": "RGBA",
+      "alpha_exists": true,
+      "bbox": [
+        8,
+        5,
+        87,
+        91
+      ],
+      "visible_bbox_size": [
+        79,
+        86
+      ],
+      "occupancy": [
+        0.8229,
+        0.8958
+      ],
+      "visible_px": 5701,
+      "suspicious_pink_px": 0,
+      "exact_ff00ff_px": 0,
+      "pink_pct_of_canvas": 0.0,
+      "pink_pct_of_visible": 0.0,
+      "transparent_expected": true,
+      "hard_fail": false,
+      "hard_reasons": []
+    },
+    {
+      "file": "tile_totem_14_clay_pot.png",
+      "path": "E:\\参考图\\麻将\\项目\\asset_work\\processed\\first_screen_p0_final_image\\tile_totem_14_clay_pot.png",
+      "size": [
+        96,
+        96
+      ],
+      "orig_mode": "RGBA",
+      "alpha_exists": true,
+      "bbox": [
+        10,
+        5,
+        85,
+        91
+      ],
+      "visible_bbox_size": [
+        75,
+        86
+      ],
+      "occupancy": [
+        0.7812,
+        0.8958
+      ],
+      "visible_px": 4819,
+      "suspicious_pink_px": 2,
+      "exact_ff00ff_px": 0,
+      "pink_pct_of_canvas": 0.021701,
+      "pink_pct_of_visible": 0.041502,
+      "transparent_expected": true,
+      "hard_fail": false,
+      "hard_reasons": []
+    },
+    {
+      "file": "tile_totem_15_comb_pick.png",
+      "path": "E:\\参考图\\麻将\\项目\\asset_work\\processed\\first_screen_p0_final_image\\tile_totem_15_comb_pick.png",
+      "size": [
+        96,
+        96
+      ],
+      "orig_mode": "RGBA",
+      "alpha_exists": true,
+      "bbox": [
+        21,
+        5,
+        74,
+        91
+      ],
+      "visible_bbox_size": [
+        53,
+        86
+      ],
+      "occupancy": [
+        0.5521,
+        0.8958
+      ],
+      "visible_px": 3241,
+      "suspicious_pink_px": 2,
+      "exact_ff00ff_px": 1,
+      "pink_pct_of_canvas": 0.021701,
+      "pink_pct_of_visible": 0.061709,
+      "transparent_expected": true,
+      "hard_fail": false,
+      "hard_reasons": []
+    },
+    {
+      "file": "tile_totem_16_bronze_bell.png",
+      "path": "E:\\参考图\\麻将\\项目\\asset_work\\processed\\first_screen_p0_final_image\\tile_totem_16_bronze_bell.png",
+      "size": [
+        96,
+        96
+      ],
+      "orig_mode": "RGBA",
+      "alpha_exists": true,
+      "bbox": [
+        19,
+        5,
+        76,
+        91
+      ],
+      "visible_bbox_size": [
+        57,
+        86
+      ],
+      "occupancy": [
+        0.5938,
+        0.8958
+      ],
+      "visible_px": 2845,
+      "suspicious_pink_px": 0,
+      "exact_ff00ff_px": 0,
+      "pink_pct_of_canvas": 0.0,
+      "pink_pct_of_visible": 0.0,
+      "transparent_expected": true,
+      "hard_fail": false,
+      "hard_reasons": []
+    },
+    {
+      "file": "tile_totem_17_spear_tip.png",
+      "path": "E:\\参考图\\麻将\\项目\\asset_work\\processed\\first_screen_p0_final_image\\tile_totem_17_spear_tip.png",
+      "size": [
+        96,
+        96
+      ],
+      "orig_mode": "RGBA",
+      "alpha_exists": true,
+      "bbox": [
+        29,
+        5,
+        67,
+        91
+      ],
+      "visible_bbox_size": [
+        38,
+        86
+      ],
+      "occupancy": [
+        0.3958,
+        0.8958
+      ],
+      "visible_px": 1791,
+      "suspicious_pink_px": 0,
+      "exact_ff00ff_px": 0,
+      "pink_pct_of_canvas": 0.0,
+      "pink_pct_of_visible": 0.0,
+      "transparent_expected": true,
+      "hard_fail": false,
+      "hard_reasons": []
+    },
+    {
+      "file": "tile_totem_18_gold_bead.png",
+      "path": "E:\\参考图\\麻将\\项目\\asset_work\\processed\\first_screen_p0_final_image\\tile_totem_18_gold_bead.png",
+      "size": [
+        96,
+        96
+      ],
+      "orig_mode": "RGBA",
+      "alpha_exists": true,
+      "bbox": [
+        7,
+        5,
+        89,
+        91
+      ],
+      "visible_bbox_size": [
+        82,
+        86
+      ],
+      "occupancy": [
+        0.8542,
+        0.8958
+      ],
+      "visible_px": 5634,
+      "suspicious_pink_px": 1,
+      "exact_ff00ff_px": 0,
+      "pink_pct_of_canvas": 0.010851,
+      "pink_pct_of_visible": 0.017749,
+      "transparent_expected": true,
+      "hard_fail": false,
+      "hard_reasons": []
+    },
+    {
+      "file": "tile_totem_19_diamond_knot.png",
+      "path": "E:\\参考图\\麻将\\项目\\asset_work\\processed\\first_screen_p0_final_image\\tile_totem_19_diamond_knot.png",
+      "size": [
+        96,
+        96
+      ],
+      "orig_mode": "RGBA",
+      "alpha_exists": true,
+      "bbox": [
+        2,
+        2,
+        94,
+        94
+      ],
+      "visible_bbox_size": [
+        92,
+        92
+      ],
+      "occupancy": [
+        0.9583,
+        0.9583
+      ],
+      "visible_px": 4359,
+      "suspicious_pink_px": 0,
+      "exact_ff00ff_px": 0,
+      "pink_pct_of_canvas": 0.0,
+      "pink_pct_of_visible": 0.0,
+      "transparent_expected": true,
+      "hard_fail": false,
+      "hard_reasons": []
+    },
+    {
+      "file": "tile_totem_20_zigzag_cloth.png",
+      "path": "E:\\参考图\\麻将\\项目\\asset_work\\processed\\first_screen_p0_final_image\\tile_totem_20_zigzag_cloth.png",
+      "size": [
+        96,
+        96
+      ],
+      "orig_mode": "RGBA",
+      "alpha_exists": true,
+      "bbox": [
+        14,
+        5,
+        82,
+        91
+      ],
+      "visible_bbox_size": [
+        68,
+        86
+      ],
+      "occupancy": [
+        0.7083,
+        0.8958
+      ],
+      "visible_px": 4908,
+      "suspicious_pink_px": 0,
+      "exact_ff00ff_px": 0,
+      "pink_pct_of_canvas": 0.0,
+      "pink_pct_of_visible": 0.0,
+      "transparent_expected": true,
+      "hard_fail": false,
+      "hard_reasons": []
+    },
+    {
+      "file": "tile_totem_21_triple_triangle.png",
+      "path": "E:\\参考图\\麻将\\项目\\asset_work\\processed\\first_screen_p0_final_image\\tile_totem_21_triple_triangle.png",
+      "size": [
+        96,
+        96
+      ],
+      "orig_mode": "RGBA",
+      "alpha_exists": true,
+      "bbox": [
+        5,
+        12,
+        91,
+        84
+      ],
+      "visible_bbox_size": [
+        86,
+        72
+      ],
+      "occupancy": [
+        0.8958,
+        0.75
+      ],
+      "visible_px": 2461,
+      "suspicious_pink_px": 5,
+      "exact_ff00ff_px": 1,
+      "pink_pct_of_canvas": 0.054253,
+      "pink_pct_of_visible": 0.203169,
+      "transparent_expected": true,
+      "hard_fail": false,
+      "hard_reasons": []
+    },
+    {
+      "file": "tile_totem_22_spiral_sun.png",
+      "path": "E:\\参考图\\麻将\\项目\\asset_work\\processed\\first_screen_p0_final_image\\tile_totem_22_spiral_sun.png",
+      "size": [
+        96,
+        96
+      ],
+      "orig_mode": "RGBA",
+      "alpha_exists": true,
+      "bbox": [
+        9,
+        5,
+        86,
+        91
+      ],
+      "visible_bbox_size": [
+        77,
+        86
+      ],
+      "occupancy": [
+        0.8021,
+        0.8958
+      ],
+      "visible_px": 3868,
+      "suspicious_pink_px": 0,
+      "exact_ff00ff_px": 0,
+      "pink_pct_of_canvas": 0.0,
+      "pink_pct_of_visible": 0.0,
+      "transparent_expected": true,
+      "hard_fail": false,
+      "hard_reasons": []
+    },
+    {
+      "file": "tile_totem_23_cross_weave.png",
+      "path": "E:\\参考图\\麻将\\项目\\asset_work\\processed\\first_screen_p0_final_image\\tile_totem_23_cross_weave.png",
+      "size": [
+        96,
+        96
+      ],
+      "orig_mode": "RGBA",
+      "alpha_exists": true,
+      "bbox": [
+        7,
+        5,
+        89,
+        91
+      ],
+      "visible_bbox_size": [
+        82,
+        86
+      ],
+      "occupancy": [
+        0.8542,
+        0.8958
+      ],
+      "visible_px": 3472,
+      "suspicious_pink_px": 2,
+      "exact_ff00ff_px": 2,
+      "pink_pct_of_canvas": 0.021701,
+      "pink_pct_of_visible": 0.057604,
+      "transparent_expected": true,
+      "hard_fail": false,
+      "hard_reasons": []
+    },
+    {
+      "file": "tile_totem_24_step_motif.png",
+      "path": "E:\\参考图\\麻将\\项目\\asset_work\\processed\\first_screen_p0_final_image\\tile_totem_24_step_motif.png",
+      "size": [
+        96,
+        96
+      ],
+      "orig_mode": "RGBA",
+      "alpha_exists": true,
+      "bbox": [
+        5,
+        5,
+        91,
+        91
+      ],
+      "visible_bbox_size": [
+        86,
+        86
+      ],
+      "occupancy": [
+        0.8958,
+        0.8958
+      ],
+      "visible_px": 5265,
+      "suspicious_pink_px": 0,
+      "exact_ff00ff_px": 0,
+      "pink_pct_of_canvas": 0.0,
+      "pink_pct_of_visible": 0.0,
+      "transparent_expected": true,
+      "hard_fail": false,
+      "hard_reasons": []
+    },
+    {
+      "file": "tile_totem_25_ring_glyph.png",
+      "path": "E:\\参考图\\麻将\\项目\\asset_work\\processed\\first_screen_p0_final_image\\tile_totem_25_ring_glyph.png",
+      "size": [
+        96,
+        96
+      ],
+      "orig_mode": "RGBA",
+      "alpha_exists": true,
+      "bbox": [
+        6,
+        5,
+        90,
+        91
+      ],
+      "visible_bbox_size": [
+        84,
+        86
+      ],
+      "occupancy": [
+        0.875,
+        0.8958
+      ],
+      "visible_px": 2995,
+      "suspicious_pink_px": 0,
+      "exact_ff00ff_px": 0,
+      "pink_pct_of_canvas": 0.0,
+      "pink_pct_of_visible": 0.0,
+      "transparent_expected": true,
+      "hard_fail": false,
+      "hard_reasons": []
+    },
+    {
+      "file": "tile_totem_26_blue_stripe.png",
+      "path": "E:\\参考图\\麻将\\项目\\asset_work\\processed\\first_screen_p0_final_image\\tile_totem_26_blue_stripe.png",
+      "size": [
+        96,
+        96
+      ],
+      "orig_mode": "RGBA",
+      "alpha_exists": true,
+      "bbox": [
+        5,
+        14,
+        91,
+        81
+      ],
+      "visible_bbox_size": [
+        86,
+        67
+      ],
+      "occupancy": [
+        0.8958,
+        0.6979
+      ],
+      "visible_px": 1771,
+      "suspicious_pink_px": 8,
+      "exact_ff00ff_px": 3,
+      "pink_pct_of_canvas": 0.086806,
+      "pink_pct_of_visible": 0.451722,
+      "transparent_expected": true,
+      "hard_fail": false,
+      "hard_reasons": []
+    },
+    {
+      "file": "tile_totem_27_green_lattice.png",
+      "path": "E:\\参考图\\麻将\\项目\\asset_work\\processed\\first_screen_p0_final_image\\tile_totem_27_green_lattice.png",
+      "size": [
+        96,
+        96
+      ],
+      "orig_mode": "RGBA",
+      "alpha_exists": true,
+      "bbox": [
+        5,
+        11,
+        91,
+        84
+      ],
+      "visible_bbox_size": [
+        86,
+        73
+      ],
+      "occupancy": [
+        0.8958,
+        0.7604
+      ],
+      "visible_px": 3636,
+      "suspicious_pink_px": 17,
+      "exact_ff00ff_px": 6,
+      "pink_pct_of_canvas": 0.184462,
+      "pink_pct_of_visible": 0.467547,
+      "transparent_expected": true,
+      "hard_fail": false,
+      "hard_reasons": []
+    },
+    {
+      "file": "tile_totem_28_mask_mark.png",
+      "path": "E:\\参考图\\麻将\\项目\\asset_work\\processed\\first_screen_p0_final_image\\tile_totem_28_mask_mark.png",
+      "size": [
+        96,
+        96
+      ],
+      "orig_mode": "RGBA",
+      "alpha_exists": true,
+      "bbox": [
+        23,
+        2,
+        72,
+        94
+      ],
+      "visible_bbox_size": [
+        49,
+        92
+      ],
+      "occupancy": [
+        0.5104,
+        0.9583
+      ],
+      "visible_px": 3518,
+      "suspicious_pink_px": 0,
+      "exact_ff00ff_px": 0,
+      "pink_pct_of_canvas": 0.0,
+      "pink_pct_of_visible": 0.0,
+      "transparent_expected": true,
+      "hard_fail": false,
+      "hard_reasons": []
+    },
+    {
+      "file": "tile_totem_29_baobab_tree.png",
+      "path": "E:\\参考图\\麻将\\项目\\asset_work\\processed\\first_screen_p0_final_image\\tile_totem_29_baobab_tree.png",
+      "size": [
+        96,
+        96
+      ],
+      "orig_mode": "RGBA",
+      "alpha_exists": true,
+      "bbox": [
+        5,
+        10,
+        91,
+        85
+      ],
+      "visible_bbox_size": [
+        86,
+        75
+      ],
+      "occupancy": [
+        0.8958,
+        0.7812
+      ],
+      "visible_px": 2867,
+      "suspicious_pink_px": 7,
+      "exact_ff00ff_px": 5,
+      "pink_pct_of_canvas": 0.075955,
+      "pink_pct_of_visible": 0.244158,
+      "transparent_expected": true,
+      "hard_fail": false,
+      "hard_reasons": []
+    },
+    {
+      "file": "tile_totem_30_moon_bowl.png",
+      "path": "E:\\参考图\\麻将\\项目\\asset_work\\processed\\first_screen_p0_final_image\\tile_totem_30_moon_bowl.png",
+      "size": [
+        96,
+        96
+      ],
+      "orig_mode": "RGBA",
+      "alpha_exists": true,
+      "bbox": [
+        5,
+        6,
+        91,
+        89
+      ],
+      "visible_bbox_size": [
+        86,
+        83
+      ],
+      "occupancy": [
+        0.8958,
+        0.8646
+      ],
+      "visible_px": 3269,
+      "suspicious_pink_px": 0,
+      "exact_ff00ff_px": 0,
+      "pink_pct_of_canvas": 0.0,
+      "pink_pct_of_visible": 0.0,
+      "transparent_expected": true,
+      "hard_fail": false,
+      "hard_reasons": []
+    },
+    {
+      "file": "tile_totem_31_fire_mark.png",
+      "path": "E:\\参考图\\麻将\\项目\\asset_work\\processed\\first_screen_p0_final_image\\tile_totem_31_fire_mark.png",
+      "size": [
+        96,
+        96
+      ],
+      "orig_mode": "RGBA",
+      "alpha_exists": true,
+      "bbox": [
+        22,
+        5,
+        74,
+        91
+      ],
+      "visible_bbox_size": [
+        52,
+        86
+      ],
+      "occupancy": [
+        0.5417,
+        0.8958
+      ],
+      "visible_px": 2732,
+      "suspicious_pink_px": 0,
+      "exact_ff00ff_px": 0,
+      "pink_pct_of_canvas": 0.0,
+      "pink_pct_of_visible": 0.0,
+      "transparent_expected": true,
+      "hard_fail": false,
+      "hard_reasons": []
+    },
+    {
+      "file": "tile_totem_32_water_drop.png",
+      "path": "E:\\参考图\\麻将\\项目\\asset_work\\processed\\first_screen_p0_final_image\\tile_totem_32_water_drop.png",
+      "size": [
+        96,
+        96
+      ],
+      "orig_mode": "RGBA",
+      "alpha_exists": true,
+      "bbox": [
+        5,
+        12,
+        91,
+        84
+      ],
+      "visible_bbox_size": [
+        86,
+        72
+      ],
+      "occupancy": [
+        0.8958,
+        0.75
+      ],
+      "visible_px": 4036,
+      "suspicious_pink_px": 5,
+      "exact_ff00ff_px": 0,
+      "pink_pct_of_canvas": 0.054253,
+      "pink_pct_of_visible": 0.123885,
+      "transparent_expected": true,
+      "hard_fail": false,
+      "hard_reasons": []
+    },
+    {
+      "file": "tile_totem_33_crown_token.png",
+      "path": "E:\\参考图\\麻将\\项目\\asset_work\\processed\\first_screen_p0_final_image\\tile_totem_33_crown_token.png",
+      "size": [
+        96,
+        96
+      ],
+      "orig_mode": "RGBA",
+      "alpha_exists": true,
+      "bbox": [
+        7,
+        5,
+        89,
+        91
+      ],
+      "visible_bbox_size": [
+        82,
+        86
+      ],
+      "occupancy": [
+        0.8542,
+        0.8958
+      ],
+      "visible_px": 4965,
+      "suspicious_pink_px": 2,
+      "exact_ff00ff_px": 0,
+      "pink_pct_of_canvas": 0.021701,
+      "pink_pct_of_visible": 0.040282,
+      "transparent_expected": true,
+      "hard_fail": false,
+      "hard_reasons": []
+    },
+    {
+      "file": "tile_totem_34_heritage_knot.png",
+      "path": "E:\\参考图\\麻将\\项目\\asset_work\\processed\\first_screen_p0_final_image\\tile_totem_34_heritage_knot.png",
+      "size": [
+        96,
+        96
+      ],
+      "orig_mode": "RGBA",
+      "alpha_exists": true,
+      "bbox": [
+        5,
+        11,
+        91,
+        84
+      ],
+      "visible_bbox_size": [
+        86,
+        73
+      ],
+      "occupancy": [
+        0.8958,
+        0.7604
+      ],
+      "visible_px": 2342,
+      "suspicious_pink_px": 10,
+      "exact_ff00ff_px": 1,
+      "pink_pct_of_canvas": 0.108507,
+      "pink_pct_of_visible": 0.426985,
+      "transparent_expected": true,
+      "hard_fail": false,
+      "hard_reasons": []
+    },
+    {
+      "file": "tool_btn_shell.png",
+      "path": "E:\\参考图\\麻将\\项目\\asset_work\\processed\\first_screen_p0_final_image\\tool_btn_shell.png",
+      "size": [
+        182,
+        182
+      ],
+      "orig_mode": "RGBA",
+      "alpha_exists": true,
+      "bbox": [
+        5,
+        5,
+        177,
+        177
+      ],
+      "visible_bbox_size": [
+        172,
+        172
+      ],
+      "occupancy": [
+        0.9451,
+        0.9451
+      ],
+      "visible_px": 22422,
+      "suspicious_pink_px": 0,
+      "exact_ff00ff_px": 0,
+      "pink_pct_of_canvas": 0.0,
+      "pink_pct_of_visible": 0.0,
+      "transparent_expected": true,
+      "hard_fail": false,
+      "hard_reasons": []
+    },
+    {
+      "file": "tool_tray_panel.png",
+      "path": "E:\\参考图\\麻将\\项目\\asset_work\\processed\\first_screen_p0_final_image\\tool_tray_panel.png",
+      "size": [
+        1080,
+        374
+      ],
+      "orig_mode": "RGBA",
+      "alpha_exists": true,
+      "bbox": [
+        11,
+        47,
+        1069,
+        327
+      ],
+      "visible_bbox_size": [
+        1058,
+        280
+      ],
+      "occupancy": [
+        0.9796,
+        0.7487
+      ],
+      "visible_px": 289425,
+      "suspicious_pink_px": 0,
+      "exact_ff00ff_px": 0,
+      "pink_pct_of_canvas": 0.0,
+      "pink_pct_of_visible": 0.0,
+      "transparent_expected": true,
+      "hard_fail": false,
+      "hard_reasons": []
+    }
+  ],
+  "menu_p1_reports": [
+    {
+      "file": "badge_count_coin.png",
+      "path": "E:\\参考图\\麻将\\项目\\menu_work\\processed\\menu_p1\\badge_count_coin.png",
+      "size": [
+        44,
+        44
+      ],
+      "orig_mode": "RGBA",
+      "alpha_exists": true,
+      "bbox": [
+        2,
+        2,
+        41,
+        41
+      ],
+      "visible_bbox_size": [
+        39,
+        39
+      ],
+      "occupancy": [
+        0.8864,
+        0.8864
+      ],
+      "visible_px": 1243,
+      "suspicious_pink_px": 0,
+      "exact_ff00ff_px": 0,
+      "pink_pct_of_canvas": 0.0,
+      "pink_pct_of_visible": 0.0,
+      "transparent_expected": true,
+      "hard_fail": false,
+      "hard_reasons": []
+    },
+    {
+      "file": "icon_daily.png",
+      "path": "E:\\参考图\\麻将\\项目\\menu_work\\processed\\menu_p1\\icon_daily.png",
+      "size": [
+        88,
+        88
+      ],
+      "orig_mode": "RGBA",
+      "alpha_exists": true,
+      "bbox": [
+        9,
+        9,
+        78,
+        79
+      ],
+      "visible_bbox_size": [
+        69,
+        70
+      ],
+      "occupancy": [
+        0.7841,
+        0.7955
+      ],
+      "visible_px": 2250,
+      "suspicious_pink_px": 0,
+      "exact_ff00ff_px": 0,
+      "pink_pct_of_canvas": 0.0,
+      "pink_pct_of_visible": 0.0,
+      "transparent_expected": true,
+      "hard_fail": false,
+      "hard_reasons": []
+    },
+    {
+      "file": "icon_levels.png",
+      "path": "E:\\参考图\\麻将\\项目\\menu_work\\processed\\menu_p1\\icon_levels.png",
+      "size": [
+        88,
+        88
+      ],
+      "orig_mode": "RGBA",
+      "alpha_exists": true,
+      "bbox": [
+        10,
+        9,
+        77,
+        79
+      ],
+      "visible_bbox_size": [
+        67,
+        70
+      ],
+      "occupancy": [
+        0.7614,
+        0.7955
+      ],
+      "visible_px": 3341,
+      "suspicious_pink_px": 0,
+      "exact_ff00ff_px": 0,
+      "pink_pct_of_canvas": 0.0,
+      "pink_pct_of_visible": 0.0,
+      "transparent_expected": true,
+      "hard_fail": false,
+      "hard_reasons": []
+    },
+    {
+      "file": "menu_pattern_overlay.png",
+      "path": "E:\\参考图\\麻将\\项目\\menu_work\\processed\\menu_p1\\menu_pattern_overlay.png",
+      "size": [
+        1080,
+        2400
+      ],
+      "orig_mode": "RGBA",
+      "alpha_exists": true,
+      "bbox": [
+        0,
+        389,
+        1080,
+        2010
+      ],
+      "visible_bbox_size": [
+        1080,
+        1621
+      ],
+      "occupancy": [
+        1.0,
+        0.6754
+      ],
+      "visible_px": 7,
+      "suspicious_pink_px": 1,
+      "exact_ff00ff_px": 0,
+      "pink_pct_of_canvas": 3.9e-05,
+      "pink_pct_of_visible": 14.285714,
+      "transparent_expected": true,
+      "hard_fail": false,
+      "hard_reasons": []
+    },
+    {
+      "file": "menu_vignette_bottom.png",
+      "path": "E:\\参考图\\麻将\\项目\\menu_work\\processed\\menu_p1\\menu_vignette_bottom.png",
+      "size": [
+        1080,
+        620
+      ],
+      "orig_mode": "RGBA",
+      "alpha_exists": true,
+      "bbox": [
+        1,
+        0,
+        1079,
+        620
+      ],
+      "visible_bbox_size": [
+        1078,
+        620
+      ],
+      "occupancy": [
+        0.9981,
+        1.0
+      ],
+      "visible_px": 668192,
+      "suspicious_pink_px": 496674,
+      "exact_ff00ff_px": 37,
+      "pink_pct_of_canvas": 74.174731,
+      "pink_pct_of_visible": 74.331031,
+      "transparent_expected": true,
+      "hard_fail": true,
+      "hard_reasons": [
+        "pink_residual"
+      ]
+    },
+    {
+      "file": "menu_vignette_top.png",
+      "path": "E:\\参考图\\麻将\\项目\\menu_work\\processed\\menu_p1\\menu_vignette_top.png",
+      "size": [
+        1080,
+        520
+      ],
+      "orig_mode": "RGBA",
+      "alpha_exists": true,
+      "bbox": [
+        0,
+        141,
+        1080,
+        379
+      ],
+      "visible_bbox_size": [
+        1080,
+        238
+      ],
+      "occupancy": [
+        1.0,
+        0.4577
+      ],
+      "visible_px": 145018,
+      "suspicious_pink_px": 0,
+      "exact_ff00ff_px": 0,
+      "pink_pct_of_canvas": 0.0,
+      "pink_pct_of_visible": 0.0,
+      "transparent_expected": true,
+      "hard_fail": false,
+      "hard_reasons": []
+    },
+    {
+      "file": "tile_base_ivory.png",
+      "path": "E:\\参考图\\麻将\\项目\\menu_work\\processed\\menu_p1\\tile_base_ivory.png",
+      "size": [
+        168,
+        201
+      ],
+      "orig_mode": "RGBA",
+      "alpha_exists": true,
+      "bbox": [
+        21,
+        4,
+        146,
+        197
+      ],
+      "visible_bbox_size": [
+        125,
+        193
+      ],
+      "occupancy": [
+        0.744,
+        0.9602
+      ],
+      "visible_px": 23751,
+      "suspicious_pink_px": 0,
+      "exact_ff00ff_px": 0,
+      "pink_pct_of_canvas": 0.0,
+      "pink_pct_of_visible": 0.0,
+      "transparent_expected": true,
+      "hard_fail": false,
+      "hard_reasons": []
+    },
+    {
+      "file": "title_tribal_tiles.png",
+      "path": "E:\\参考图\\麻将\\项目\\menu_work\\processed\\menu_p1\\title_tribal_tiles.png",
+      "size": [
+        620,
+        160
+      ],
+      "orig_mode": "RGBA",
+      "alpha_exists": true,
+      "bbox": [
+        172,
+        13,
+        447,
+        147
+      ],
+      "visible_bbox_size": [
+        275,
+        134
+      ],
+      "occupancy": [
+        0.4435,
+        0.8375
+      ],
+      "visible_px": 25122,
+      "suspicious_pink_px": 0,
+      "exact_ff00ff_px": 0,
+      "pink_pct_of_canvas": 0.0,
+      "pink_pct_of_visible": 0.0,
+      "transparent_expected": true,
+      "hard_fail": false,
+      "hard_reasons": []
+    },
+    {
+      "file": "tool_btn_shell.png",
+      "path": "E:\\参考图\\麻将\\项目\\menu_work\\processed\\menu_p1\\tool_btn_shell.png",
+      "size": [
+        182,
+        182
+      ],
+      "orig_mode": "RGBA",
+      "alpha_exists": true,
+      "bbox": [
+        4,
+        3,
+        177,
+        178
+      ],
+      "visible_bbox_size": [
+        173,
+        175
+      ],
+      "occupancy": [
+        0.9505,
+        0.9615
+      ],
+      "visible_px": 23997,
+      "suspicious_pink_px": 0,
+      "exact_ff00ff_px": 0,
+      "pink_pct_of_canvas": 0.0,
+      "pink_pct_of_visible": 0.0,
+      "transparent_expected": true,
+      "hard_fail": false,
+      "hard_reasons": []
+    }
+  ],
+  "modal_raw_reports": [
+    {
+      "file": "modal_overlay_dark_raw.png",
+      "path": "E:\\参考图\\麻将\\项目\\modal_work\\raw_generated\\modal_p0\\modal_overlay_dark_raw.png",
+      "size": [
+        841,
+        1870
+      ],
+      "orig_mode": "RGB",
+      "alpha_exists": false,
+      "bbox": null,
+      "visible_bbox_size": [
+        0,
+        0
+      ],
+      "occupancy": [
+        0.0,
+        0.0
+      ],
+      "visible_px": 1572670,
+      "suspicious_pink_px": 0,
+      "exact_ff00ff_px": 0,
+      "pink_pct_of_canvas": 0.0,
+      "pink_pct_of_visible": 0.0,
+      "transparent_expected": null,
+      "hard_fail": false,
+      "hard_reasons": []
+    },
+    {
+      "file": "modal_p0_asset_board_raw.png",
+      "path": "E:\\参考图\\麻将\\项目\\modal_work\\raw_generated\\modal_p0\\modal_p0_asset_board_raw.png",
+      "size": [
+        841,
+        1870
+      ],
+      "orig_mode": "RGB",
+      "alpha_exists": false,
+      "bbox": null,
+      "visible_bbox_size": [
+        0,
+        0
+      ],
+      "occupancy": [
+        0.0,
+        0.0
+      ],
+      "visible_px": 1572670,
+      "suspicious_pink_px": 763895,
+      "exact_ff00ff_px": 11,
+      "pink_pct_of_canvas": 48.573127,
+      "pink_pct_of_visible": 48.573127,
+      "transparent_expected": null,
+      "hard_fail": true,
+      "hard_reasons": [
+        "pink_residual"
+      ]
+    }
+  ],
+  "final_decision": "NEEDS_FIX_BEFORE_ART_DELIVERY"
+}

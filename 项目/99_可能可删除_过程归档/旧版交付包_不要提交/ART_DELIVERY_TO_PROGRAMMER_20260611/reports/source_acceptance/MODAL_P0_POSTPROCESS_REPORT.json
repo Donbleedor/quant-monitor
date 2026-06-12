@@ -1,0 +1,89 @@
+﻿{
+    "fixed_files":  [
+                        "modal_panel_large.png",
+                        "btn_modal_primary.png",
+                        "btn_modal_secondary.png"
+                    ],
+    "summary":  {
+                    "pink_residual_files":  [
+
+                                            ],
+                    "total_suspicious_pink_pixels":  0,
+                    "total_exact_ff00ff_visible_pixels":  0,
+                    "failures":  [
+
+                                 ]
+                },
+    "outputs":  {
+                    "processed_dir":  "E:\\参考图\\麻将\\项目\\modal_work\\processed\\modal_p0",
+                    "fix_raw_dir":  "E:\\参考图\\麻将\\项目\\modal_work\\raw_generated\\modal_p0_fix",
+                    "fix_compare":  "E:\\参考图\\麻将\\项目\\modal_work\\review\\modal_p0\\modal_p0_fix_compare.png",
+                    "review_contact_sheet":  "E:\\参考图\\麻将\\项目\\modal_work\\review\\modal_p0\\modal_p0_review_contact_sheet.png"
+                },
+    "processed_count":  17,
+    "fixed_assets":  {
+                         "btn_modal_secondary":  {
+                                                     "visible_bbox":  [
+                                                                          78,
+                                                                          1,
+                                                                          442,
+                                                                          119
+                                                                      ],
+                                                     "visible_bbox_size":  [
+                                                                               364,
+                                                                               118
+                                                                           ],
+                                                     "pink_visible":  0,
+                                                     "exact_ff00ff_visible_pixels":  0,
+                                                     "status":  "passed",
+                                                     "size":  [
+                                                                  520,
+                                                                  120
+                                                              ]
+                                                 },
+                         "btn_modal_primary":  {
+                                                   "visible_bbox":  [
+                                                                        46,
+                                                                        1,
+                                                                        474,
+                                                                        139
+                                                                    ],
+                                                   "visible_bbox_size":  [
+                                                                             428,
+                                                                             138
+                                                                         ],
+                                                   "pink_visible":  0,
+                                                   "exact_ff00ff_visible_pixels":  0,
+                                                   "status":  "passed",
+                                                   "size":  [
+                                                                520,
+                                                                140
+                                                            ]
+                                               },
+                         "modal_panel_large":  {
+                                                   "visible_bbox":  [
+                                                                        13,
+                                                                        18,
+                                                                        927,
+                                                                        1462
+                                                                    ],
+                                                   "visible_bbox_size":  [
+                                                                             914,
+                                                                             1444
+                                                                         ],
+                                                   "pink_visible":  0,
+                                                   "exact_ff00ff_visible_pixels":  0,
+                                                   "status":  "passed",
+                                                   "size":  [
+                                                                940,
+                                                                1480
+                                                            ]
+                                               }
+                     },
+    "image_generation_used":  true,
+    "date":  "2026-06-11",
+    "decision":  "ACCEPTED_FOR_INTEGRATION",
+    "source_policy":  "three failed assets regenerated with image generation on pure magenta raw; final operations limited to keying, cleanup, bbox normalization, resize, QA; other processed assets unchanged",
+    "scope":  "modal_p0_postprocess_fix",
+    "expected_count":  17
+}
